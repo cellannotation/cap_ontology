@@ -1,0 +1,21 @@
+id: capo
+title: "CAP Ontology"
+github_org: kharchenkolab
+git_main_branch: main
+repo: cap_ontology
+use_dosdps: TRUE
+release_artefacts: 
+  - base
+  - full
+  - simple
+primary_release: full
+export_formats:
+  - owl
+  - obo
+  - json
+import_group:
+  products: 
+    - id: ro
+    - id: pato
+robot_java_args: '-Xmx8G'
+

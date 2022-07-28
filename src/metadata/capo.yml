@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/capo
+
+idspace: CAPO
+base_url: /obo/capo
+
+products:
+- capo.owl: https://raw.githubusercontent.com/kharchenkolab/cap_ontology/main/capo.owl
+- capo.obo: https://raw.githubusercontent.com/kharchenkolab/cap_ontology/main/capo.obo
+
+term_browser: ontobee
+example_terms:
+- CAPO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/kharchenkolab/cap_ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/kharchenkolab/cap_ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/CAPO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/kharchenkolab/cap_ontology/main/
