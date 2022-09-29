@@ -17,5 +17,8 @@ import_group:
   products: 
     - id: ro
     - id: pato
-robot_java_args: '-Xmx8G'
+    - id: efo
+      module_type: MIREOT
+      mirror_from: https://www.ebi.ac.uk/efo/efo-base.owl
+robot_java_args: '-Xmx16G'
 
