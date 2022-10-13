@@ -345,7 +345,8 @@ mirror-pato: | $(TMPDIR)
 .PHONY: mirror-efo
 .PRECIOUS: $(MIRRORDIR)/efo.owl
 mirror-efo: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://www.ebi.ac.uk/efo/efo-base.owl -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/efo.owl --create-dirs -o $(MIRRORDIR)/efo.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/efo.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
