@@ -8,16 +8,10 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
-
 Ontology(<http://purl.obolibrary.org/obo/capo.owl>
-
 Import(<http://purl.obolibrary.org/obo/capo/imports/ro_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/capo/imports/pato_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/capo/imports/efo_import.owl>)
-
-
 Import(<http://purl.obolibrary.org/obo/capo/patterns/definitions.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
