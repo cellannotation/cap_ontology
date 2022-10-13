@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: capo/releases/2022-07-28/capo-simple.owl
+data-version: capo/releases/2022-10-13/capo-simple.owl
 ontology: capo/capo-simple
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "CAP Ontology" xsd:string
-property_value: owl:versionInfo "2022-07-28" xsd:string
+property_value: owl:versionInfo "2022-10-13" xsd:string
 
 [Term]
 id: CAPO:0000000

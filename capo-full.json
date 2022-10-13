@@ -1058,10 +1058,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-07-28"
+            "val": "2022-10-13"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/capo/releases/2022-07-28/capo-full.json"
+        "version": "http://purl.obolibrary.org/obo/capo/releases/2022-10-13/capo-full.json"
       },
       "nodes": [
         {
