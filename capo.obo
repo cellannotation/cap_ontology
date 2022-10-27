@@ -1,5 +1,6 @@
 format-version: 1.2
-data-version: releases/2022-07-28
+data-version: releases/2022-10-27
+subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: goslim_agr ""
 subsetdef: goslim_candida ""
@@ -20,11 +21,12 @@ subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
 subsetdef: prokaryote_subset ""
 subsetdef: ro-eco ""
 subsetdef: RO:0002259 ""
+synonymtypedef: IUPAC_NAME ""
 ontology: capo
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "CAP Ontology" xsd:string
-property_value: owl:versionInfo "2022-07-28" xsd:string
+property_value: owl:versionInfo "2022-10-27" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -103,12 +105,950 @@ id: CAPO:0000000
 name: root node
 
 [Term]
+id: CHEBI:10545
+name: electron
+namespace: chebi_ontology
+def: "Elementary particle not affected by the strong force having a spin 1/2, a negative elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV." []
+subset: 3_STAR
+synonym: "beta" RELATED [IUPAC]
+synonym: "beta(-)" RELATED [ChEBI]
+synonym: "beta-particle" RELATED [IUPAC]
+synonym: "e" RELATED [IUPAC]
+synonym: "e(-)" RELATED [UniProt]
+synonym: "e-" RELATED [KEGG_COMPOUND]
+synonym: "electron" EXACT [KEGG_COMPOUND]
+synonym: "electron" EXACT IUPAC_NAME [IUPAC]
+synonym: "electron" EXACT [ChEBI]
+synonym: "Elektron" RELATED [ChEBI]
+synonym: "negatron" RELATED [IUPAC]
+xref: KEGG:C05359
+xref: PMID:21614077 {source="Europe PMC"}
+xref: Wikipedia:Electron
+is_a: CHEBI:36338 ! lepton
+property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "0.000548579903" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "0.0" xsd:string
+
+[Term]
+id: CHEBI:15986
+name: polynucleotide
+namespace: chebi_ontology
+alt_id: CHEBI:13672
+alt_id: CHEBI:14859
+alt_id: CHEBI:8312
+def: "A nucleobase-containing molecular entity with a polymeric structure comprised of a linear sequence of 13 or more nucleotide residues." []
+subset: 3_STAR
+synonym: "Polynucleotide" EXACT [KEGG_COMPOUND]
+synonym: "polynucleotides" RELATED [ChEBI]
+xref: KEGG:C00419
+is_a: CHEBI:33695 ! information biomacromolecule
+is_a: CHEBI:61120 ! nucleobase-containing molecular entity
+relationship: has_part CHEBI:50319 ! nucleotide residue
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "(C5H8O6PR)n.C10H17O10PR2" xsd:string
+
+[Term]
+id: CHEBI:18282
+name: nucleobase
+namespace: chebi_ontology
+alt_id: CHEBI:13873
+alt_id: CHEBI:25598
+alt_id: CHEBI:2995
+def: "That part of DNA or RNA that may be involved in pairing." []
+subset: 3_STAR
+synonym: "Base" RELATED [KEGG_COMPOUND]
+synonym: "nucleobases" RELATED [ChEBI]
+xref: KEGG:C00701
+xref: Wikipedia:Nucleobase
+is_a: CHEBI:38101 ! organonitrogen heterocyclic compound
+
+[Term]
+id: CHEBI:23367
+name: molecular entity
+namespace: chebi_ontology
+def: "Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity." []
+subset: 3_STAR
+synonym: "entidad molecular" RELATED [IUPAC]
+synonym: "entidades moleculares" RELATED [IUPAC]
+synonym: "entite moleculaire" RELATED [IUPAC]
+synonym: "molecular entities" RELATED [IUPAC]
+synonym: "molecular entity" EXACT IUPAC_NAME [IUPAC]
+synonym: "molekulare Entitaet" RELATED [ChEBI]
+is_a: CHEBI:24431 ! chemical entity
+
+[Term]
+id: CHEBI:24431
+name: chemical entity
+namespace: chebi_ontology
+def: "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." []
+subset: 3_STAR
+synonym: "chemical entity" EXACT [UniProt]
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: CHEBI:24432
+name: biological role
+namespace: chebi_ontology
+def: "A role played by the molecular entity or part thereof within a biological context." []
+subset: 3_STAR
+synonym: "biological function" RELATED [ChEBI]
+is_a: BFO:0000023 ! role
+is_a: CHEBI:50906 ! role
+
+[Term]
+id: CHEBI:24433
+name: group
+namespace: chebi_ontology
+def: "A defined linked collection of atoms or a single atom within a molecular entity." []
+subset: 3_STAR
+synonym: "group" EXACT IUPAC_NAME [IUPAC]
+synonym: "groupe" RELATED [IUPAC]
+synonym: "grupo" RELATED [IUPAC]
+synonym: "grupos" RELATED [IUPAC]
+synonym: "Gruppe" RELATED [ChEBI]
+synonym: "Rest" RELATED [ChEBI]
+is_a: CHEBI:24431 ! chemical entity
+relationship: has_part CHEBI:33250 ! atom
+
+[Term]
+id: CHEBI:24532
+name: organic heterocyclic compound
+namespace: chebi_ontology
+def: "A cyclic compound having as ring members atoms of carbon and at least of one other element." []
+subset: 3_STAR
+synonym: "organic heterocycle" RELATED [ChEBI]
+synonym: "organic heterocyclic compounds" RELATED [ChEBI]
+is_a: CHEBI:33285 ! heteroorganic entity
+is_a: CHEBI:33832 ! organic cyclic compound
+is_a: CHEBI:5686 ! heterocyclic compound
+
+[Term]
+id: CHEBI:25367
+name: molecule
+namespace: chebi_ontology
+def: "Any polyatomic entity that is an electrically neutral entity consisting of more than one atom." []
+subset: 3_STAR
+synonym: "molecula" RELATED [IUPAC]
+synonym: "molecule" EXACT [IUPAC]
+synonym: "molecules" RELATED [IUPAC]
+synonym: "Molekuel" RELATED [ChEBI]
+synonym: "neutral molecular compounds" RELATED [IUPAC]
+is_a: CHEBI:36357 ! polyatomic entity
+
+[Term]
+id: CHEBI:25555
+name: nitrogen atom
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "7N" RELATED [IUPAC]
+synonym: "azote" RELATED [IUPAC]
+synonym: "N" RELATED [IUPAC]
+synonym: "nitrogen" EXACT IUPAC_NAME [IUPAC]
+synonym: "nitrogen" RELATED [ChEBI]
+synonym: "nitrogeno" RELATED [ChEBI]
+synonym: "Stickstoff" RELATED [ChEBI]
+xref: WebElements:N
+is_a: CHEBI:25585 ! nonmetal atom
+is_a: CHEBI:33300 ! pnictogen
+relationship: RO:0000087 CHEBI:33937 ! has role macronutrient
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "N" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "14.007" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "14.00307" xsd:string
+
+[Term]
+id: CHEBI:25585
+name: nonmetal atom
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "Nichtmetall" RELATED [ChEBI]
+synonym: "Nichtmetalle" RELATED [ChEBI]
+synonym: "no metal" RELATED [ChEBI]
+synonym: "no metales" RELATED [ChEBI]
+synonym: "non-metal" RELATED [ChEBI]
+synonym: "non-metaux" RELATED [ChEBI]
+synonym: "nonmetal" EXACT IUPAC_NAME [IUPAC]
+synonym: "nonmetal" RELATED [ChEBI]
+synonym: "nonmetals" RELATED [ChEBI]
+is_a: CHEBI:33250 ! atom
+
+[Term]
+id: CHEBI:27594
+name: carbon atom
+namespace: chebi_ontology
+alt_id: CHEBI:23009
+alt_id: CHEBI:3399
+subset: 3_STAR
+synonym: "6C" RELATED [IUPAC]
+synonym: "C" RELATED [KEGG_COMPOUND]
+synonym: "C" RELATED [IUPAC]
+synonym: "Carbon" RELATED [KEGG_COMPOUND]
+synonym: "carbon" EXACT IUPAC_NAME [IUPAC]
+synonym: "carbon" RELATED [ChEBI]
+synonym: "carbone" RELATED [ChEBI]
+synonym: "carbonium" RELATED [ChEBI]
+synonym: "carbono" RELATED [ChEBI]
+synonym: "Kohlenstoff" RELATED [ChEBI]
+xref: CAS:7440-44-0 {source="ChemIDplus"}
+xref: CAS:7440-44-0 {source="KEGG COMPOUND"}
+xref: KEGG:C06265
+xref: WebElements:C
+is_a: CHEBI:25585 ! nonmetal atom
+is_a: CHEBI:33306 ! carbon group element atom
+relationship: RO:0000087 CHEBI:33937 ! has role macronutrient
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "OKTJSMMVPCPJKN-UHFFFAOYSA-N" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "12.01070" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "12.00000" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "[C]" xsd:string
+
+[Term]
+id: CHEBI:33233
+name: fundamental particle
+namespace: chebi_ontology
+def: "A particle not known to have substructure." []
+subset: 3_STAR
+synonym: "elementary particle" EXACT IUPAC_NAME [IUPAC]
+synonym: "elementary particles" RELATED [ChEBI]
+is_a: CHEBI:36342 ! subatomic particle
+
+[Term]
+id: CHEBI:33247
+name: organic group
+namespace: chebi_ontology
+def: "Any substituent group or skeleton containing carbon." []
+subset: 3_STAR
+synonym: "organic groups" RELATED [ChEBI]
+is_a: CHEBI:24433 ! group
+relationship: is_substituent_group_from CHEBI:50860 ! organic molecular entity
+
+[Term]
+id: CHEBI:33250
+name: atom
+namespace: chebi_ontology
+alt_id: CHEBI:22671
+alt_id: CHEBI:23907
+def: "A chemical entity constituting the smallest component of an element having the chemical properties of the element." []
+subset: 3_STAR
+synonym: "atom" EXACT IUPAC_NAME [IUPAC]
+synonym: "atome" RELATED [IUPAC]
+synonym: "atomo" RELATED [IUPAC]
+synonym: "atoms" RELATED [ChEBI]
+synonym: "atomus" RELATED [ChEBI]
+synonym: "element" RELATED [ChEBI]
+synonym: "elements" RELATED [ChEBI]
+is_a: CHEBI:24431 ! chemical entity
+relationship: has_part CHEBI:10545 ! electron
+relationship: has_part CHEBI:33252 ! atomic nucleus
+
+[Term]
+id: CHEBI:33252
+name: atomic nucleus
+namespace: chebi_ontology
+def: "A nucleus is the positively charged central portion of an atom, excluding the orbital electrons." []
+subset: 3_STAR
+synonym: "Atomkern" RELATED [ChEBI]
+synonym: "Kern" RELATED [ChEBI]
+synonym: "noyau" RELATED [IUPAC]
+synonym: "noyau atomique" RELATED [ChEBI]
+synonym: "nuclei" RELATED [ChEBI]
+synonym: "nucleo" RELATED [IUPAC]
+synonym: "nucleo atomico" RELATED [ChEBI]
+synonym: "nucleus" EXACT IUPAC_NAME [IUPAC]
+synonym: "nucleus atomi" RELATED [ChEBI]
+is_a: CHEBI:36347 ! nuclear particle
+relationship: has_part CHEBI:33253 ! nucleon
+
+[Term]
+id: CHEBI:33253
+name: nucleon
+namespace: chebi_ontology
+def: "Heavy nuclear particle: proton or neutron." []
+subset: 3_STAR
+synonym: "nucleon" EXACT [IUPAC]
+synonym: "nucleon" EXACT IUPAC_NAME [IUPAC]
+synonym: "nucleons" RELATED [ChEBI]
+synonym: "Nukleon" RELATED [ChEBI]
+synonym: "Nukleonen" RELATED [ChEBI]
+is_a: CHEBI:36339 ! baryon
+is_a: CHEBI:36347 ! nuclear particle
+
+[Term]
+id: CHEBI:33284
+name: nutrient
+namespace: chebi_ontology
+def: "A nutrient is a food component that an organism uses to survive and grow." []
+subset: 3_STAR
+synonym: "nutrients" RELATED [ChEBI]
+is_a: CHEBI:78295 ! food component
+
+[Term]
+id: CHEBI:33285
+name: heteroorganic entity
+namespace: chebi_ontology
+def: "A heteroorganic entity is an organic molecular entity in which carbon atoms or organic groups are bonded directly to one or more heteroatoms." []
+subset: 3_STAR
+synonym: "heteroorganic entities" RELATED [ChEBI]
+synonym: "organoelement compounds" RELATED [ChEBI]
+is_a: CHEBI:50860 ! organic molecular entity
+
+[Term]
+id: CHEBI:33300
+name: pnictogen
+namespace: chebi_ontology
+def: "Any p-block element atom that is in group 15 of the periodic table: nitrogen, phosphorus, arsenic, antimony and bismuth." []
+subset: 3_STAR
+synonym: "group 15 elements" RELATED [ChEBI]
+synonym: "group V elements" RELATED [ChEBI]
+synonym: "nitrogenoideos" RELATED [ChEBI]
+synonym: "nitrogenoides" RELATED [ChEBI]
+synonym: "pnictogene" RELATED [ChEBI]
+synonym: "pnictogenes" RELATED [ChEBI]
+synonym: "pnictogens" EXACT IUPAC_NAME [IUPAC]
+is_a: CHEBI:33560 ! p-block element atom
+
+[Term]
+id: CHEBI:33302
+name: pnictogen molecular entity
+namespace: chebi_ontology
+def: "A p-block molecular entity containing any pnictogen." []
+subset: 3_STAR
+synonym: "pnictogen molecular entities" RELATED [ChEBI]
+synonym: "pnictogen molecular entity" EXACT [ChEBI]
+is_a: CHEBI:33675 ! p-block molecular entity
+relationship: has_part CHEBI:33300 ! pnictogen
+
+[Term]
+id: CHEBI:33306
+name: carbon group element atom
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "carbon group element" RELATED [ChEBI]
+synonym: "carbon group elements" RELATED [ChEBI]
+synonym: "carbonoides" RELATED [ChEBI]
+synonym: "cristallogene" RELATED [ChEBI]
+synonym: "cristallogenes" RELATED [ChEBI]
+synonym: "group 14 elements" EXACT IUPAC_NAME [IUPAC]
+synonym: "group IV elements" RELATED [ChEBI]
+is_a: CHEBI:33560 ! p-block element atom
+
+[Term]
+id: CHEBI:33318
+name: main group element atom
+namespace: chebi_ontology
+def: "An atom belonging to one of the main groups (found in the s- and p- blocks) of the periodic table." []
+subset: 3_STAR
+synonym: "Hauptgruppenelement" RELATED [ChEBI]
+synonym: "Hauptgruppenelemente" RELATED [ChEBI]
+synonym: "main group element" RELATED [ChEBI]
+synonym: "main group elements" EXACT IUPAC_NAME [IUPAC]
+is_a: CHEBI:33250 ! atom
+
+[Term]
+id: CHEBI:33560
+name: p-block element atom
+namespace: chebi_ontology
+def: "Any main group element atom belonging to the p-block of the periodic table." []
+subset: 3_STAR
+synonym: "p-block element" RELATED [ChEBI]
+synonym: "p-block elements" RELATED [ChEBI]
+is_a: CHEBI:33318 ! main group element atom
+
+[Term]
+id: CHEBI:33579
+name: main group molecular entity
+namespace: chebi_ontology
+def: "A molecular entity containing one or more atoms from any of groups 1, 2, 13, 14, 15, 16, 17, and 18 of the periodic table." []
+subset: 3_STAR
+synonym: "main group compounds" RELATED [ChEBI]
+synonym: "main group molecular entities" RELATED [ChEBI]
+is_a: CHEBI:23367 ! molecular entity
+relationship: has_part CHEBI:33318 ! main group element atom
+
+[Term]
+id: CHEBI:33582
+name: carbon group molecular entity
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "carbon group molecular entities" RELATED [ChEBI]
+synonym: "carbon group molecular entity" EXACT [ChEBI]
+is_a: CHEBI:33675 ! p-block molecular entity
+relationship: has_part CHEBI:33306 ! carbon group element atom
+
+[Term]
+id: CHEBI:33595
+name: cyclic compound
+namespace: chebi_ontology
+def: "Any molecule that consists of a series of atoms joined together to form a ring." []
+subset: 3_STAR
+synonym: "cyclic compounds" RELATED [ChEBI]
+xref: Wikipedia:Cyclic_compound
+is_a: CHEBI:25367 ! molecule
+
+[Term]
+id: CHEBI:33655
+name: aromatic compound
+namespace: chebi_ontology
+def: "A cyclically conjugated molecular entity with a stability (due to delocalization) significantly greater than that of a hypothetical localized structure (e.g. Kekule structure) is said to possess aromatic character." []
+subset: 3_STAR
+synonym: "aromatic compounds" EXACT IUPAC_NAME [IUPAC]
+synonym: "aromatic molecular entity" EXACT IUPAC_NAME [IUPAC]
+synonym: "aromatics" RELATED [ChEBI]
+synonym: "aromatische Verbindungen" RELATED [ChEBI]
+is_a: CHEBI:33595 ! cyclic compound
+
+[Term]
+id: CHEBI:33659
+name: organic aromatic compound
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "organic aromatic compounds" RELATED [ChEBI]
+is_a: CHEBI:33655 ! aromatic compound
+is_a: CHEBI:33832 ! organic cyclic compound
+
+[Term]
+id: CHEBI:33675
+name: p-block molecular entity
+namespace: chebi_ontology
+def: "A main group molecular entity that contains one or more atoms of a p-block element." []
+subset: 3_STAR
+synonym: "p-block compounds" RELATED [ChEBI]
+synonym: "p-block molecular entities" RELATED [ChEBI]
+synonym: "p-block molecular entitiy" RELATED [ChEBI]
+is_a: CHEBI:33579 ! main group molecular entity
+relationship: has_part CHEBI:33560 ! p-block element atom
+
+[Term]
+id: CHEBI:33694
+name: biomacromolecule
+namespace: chebi_ontology
+def: "A macromolecule formed by a living organism." []
+subset: 3_STAR
+synonym: "biomacromolecules" RELATED [ChEBI]
+synonym: "biopolymer" EXACT IUPAC_NAME [IUPAC]
+synonym: "Biopolymere" RELATED [ChEBI]
+synonym: "biopolymers" RELATED [ChEBI]
+is_a: CHEBI:33839 ! macromolecule
+is_a: CHEBI:50860 ! organic molecular entity
+
+[Term]
+id: CHEBI:33695
+name: information biomacromolecule
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "genetically encoded biomacromolecules" RELATED [ChEBI]
+synonym: "genetically encoded biopolymers" RELATED [ChEBI]
+synonym: "information biomacromolecules" RELATED [ChEBI]
+synonym: "information biopolymers" RELATED [ChEBI]
+synonym: "information macromolecule" RELATED [ChEBI]
+synonym: "information macromolecules" RELATED [ChEBI]
+is_a: CHEBI:33694 ! biomacromolecule
+
+[Term]
+id: CHEBI:33696
+name: nucleic acid
+namespace: chebi_ontology
+def: "A macromolecule made up of nucleotide units and hydrolysable into certain pyrimidine or purine bases (usually adenine, cytosine, guanine, thymine, uracil), D-ribose or 2-deoxy-D-ribose and phosphoric acid." []
+subset: 3_STAR
+synonym: "acide nucleique" RELATED [ChEBI]
+synonym: "acides nucleiques" RELATED [ChEBI]
+synonym: "acido nucleico" RELATED [ChEBI]
+synonym: "acidos nucleicos" RELATED [ChEBI]
+synonym: "NA" RELATED [ChEBI]
+synonym: "nucleic acids" EXACT IUPAC_NAME [IUPAC]
+synonym: "Nukleinsaeure" RELATED [ChEBI]
+synonym: "Nukleinsaeuren" RELATED [ChEBI]
+is_a: CHEBI:15986 ! polynucleotide
+relationship: has_part CHEBI:33791 ! canonical nucleoside residue
+relationship: has_part CHEBI:50297 ! canonical nucleotide residue
+
+[Term]
+id: CHEBI:33697
+name: ribonucleic acid
+namespace: chebi_ontology
+def: "High molecular weight, linear polymers, composed of nucleotides containing ribose and linked by phosphodiester bonds; RNA is central to the synthesis of proteins." []
+subset: 3_STAR
+synonym: "pentosenucleic acids" RELATED [ChemIDplus]
+synonym: "ribonucleic acid" EXACT [IUPAC]
+synonym: "ribonucleic acids" EXACT IUPAC_NAME [IUPAC]
+synonym: "ribonucleic acids" RELATED [ChEBI]
+synonym: "Ribonukleinsaeure" RELATED [ChEBI]
+synonym: "ribose nucleic acid" RELATED [ChEBI]
+synonym: "RNA" RELATED [UniProt]
+synonym: "RNA" RELATED [IUPAC]
+synonym: "RNS" RELATED [ChEBI]
+synonym: "yeast nucleic acid" RELATED [ChEBI]
+xref: CAS:63231-63-0 {source="ChemIDplus"}
+is_a: CHEBI:33696 ! nucleic acid
+relationship: has_part CHEBI:33792 ! canonical ribonucleoside residue
+relationship: has_part CHEBI:50299 ! canonical ribonucleotide residue
+
+[Term]
+id: CHEBI:33791
+name: canonical nucleoside residue
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "canonical nucleoside residues" RELATED [ChEBI]
+synonym: "common nucleoside residues" RELATED [CBN]
+synonym: "nucleoside residue" RELATED [CBN]
+synonym: "standard nucleoside residues" RELATED [ChEBI]
+is_a: CHEBI:50320 ! nucleoside residue
+
+[Term]
+id: CHEBI:33792
+name: canonical ribonucleoside residue
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "canonical ribonucleoside residues" RELATED [ChEBI]
+synonym: "common ribonucleoside residue" RELATED [CBN]
+synonym: "common ribonucleoside residues" RELATED [CBN]
+synonym: "N" RELATED [CBN]
+synonym: "Nuc" RELATED [CBN]
+synonym: "standard ribonucleoside residues" RELATED [ChEBI]
+is_a: CHEBI:33791 ! canonical nucleoside residue
+
+[Term]
+id: CHEBI:33832
+name: organic cyclic compound
+namespace: chebi_ontology
+def: "Any organic molecule that consists of atoms connected in the form of a ring." []
+subset: 3_STAR
+synonym: "organic cyclic compounds" RELATED [ChEBI]
+is_a: CHEBI:33595 ! cyclic compound
+is_a: CHEBI:72695 ! organic molecule
+
+[Term]
+id: CHEBI:33833
+name: heteroarene
+namespace: chebi_ontology
+def: "A heterocyclic compound formally derived from an arene by replacement of one or more methine (-C=) and/or vinylene (-CH=CH-) groups by trivalent or divalent heteroatoms, respectively, in such a way as to maintain the continuous pi-electron system characteristic of aromatic systems and a number of out-of-plane pi-electrons corresponding to the Hueckel rule (4n+2)." []
+subset: 3_STAR
+synonym: "hetarenes" RELATED [IUPAC]
+synonym: "heteroarenes" EXACT IUPAC_NAME [IUPAC]
+is_a: CHEBI:24532 ! organic heterocyclic compound
+is_a: CHEBI:33659 ! organic aromatic compound
+
+[Term]
+id: CHEBI:33839
+name: macromolecule
+namespace: chebi_ontology
+def: "A macromolecule is a molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." []
+subset: 3_STAR
+synonym: "macromolecule" EXACT IUPAC_NAME [IUPAC]
+synonym: "macromolecules" RELATED [ChEBI]
+synonym: "polymer" RELATED [ChEBI]
+synonym: "polymer molecule" RELATED [IUPAC]
+synonym: "polymers" RELATED [ChEBI]
+xref: Wikipedia:Macromolecule
+is_a: CHEBI:36357 ! polyatomic entity
+
+[Term]
+id: CHEBI:33937
+name: macronutrient
+namespace: chebi_ontology
+def: "Any nutrient required in large quantities by organisms throughout their life in order to orchestrate a range of physiological functions. Macronutrients are usually chemical elements (carbon, hydrogen, nitrogen, oxygen, phosphorus and sulfur) that humans consume in the largest quantities. Calcium, sodium, magnesium and potassium are sometimes included as macronutrients because they are required in relatively large quantities compared with other vitamins and minerals." []
+subset: 3_STAR
+synonym: "macronutrients" RELATED [ChEBI]
+is_a: CHEBI:33284 ! nutrient
+
+[Term]
+id: CHEBI:35352
+name: organonitrogen compound
+namespace: chebi_ontology
+def: "Any heteroorganic entity containing at least one carbon-nitrogen bond." []
+subset: 3_STAR
+synonym: "organonitrogen compounds" EXACT IUPAC_NAME [IUPAC]
+synonym: "organonitrogens" RELATED [ChEBI]
+is_a: CHEBI:33285 ! heteroorganic entity
+is_a: CHEBI:51143 ! nitrogen molecular entity
+
+[Term]
+id: CHEBI:36338
+name: lepton
+namespace: chebi_ontology
+def: "Lepton is a fermion that does not experience the strong force (strong interaction). The term is derived from the Greek lambdaepsilonpitauomicronsigma (small, thin)." []
+subset: 3_STAR
+synonym: "leptons" RELATED [ChEBI]
+is_a: CHEBI:33233 ! fundamental particle
+is_a: CHEBI:36340 ! fermion
+
+[Term]
+id: CHEBI:36339
+name: baryon
+namespace: chebi_ontology
+def: "Baryon is a fermion that does experience the strong force (strong interaction). The term is derived from the Greek betaalpharhoupsilonsigma (heavy)." []
+subset: 3_STAR
+synonym: "baryons" RELATED [ChEBI]
+is_a: CHEBI:36340 ! fermion
+is_a: CHEBI:36344 ! hadron
+
+[Term]
+id: CHEBI:36340
+name: fermion
+namespace: chebi_ontology
+def: "Particle of half-integer spin quantum number following Fermi-Dirac statistics. Fermions are named after Enrico Fermi." []
+subset: 3_STAR
+synonym: "fermion" EXACT IUPAC_NAME [IUPAC]
+synonym: "fermions" RELATED [ChEBI]
+is_a: CHEBI:36342 ! subatomic particle
+
+[Term]
+id: CHEBI:36342
+name: subatomic particle
+namespace: chebi_ontology
+def: "A particle smaller than an atom." []
+subset: 3_STAR
+synonym: "subatomic particles" RELATED [ChEBI]
+xref: Wikipedia:Subatomic_particle
+
+[Term]
+id: CHEBI:36343
+name: composite particle
+namespace: chebi_ontology
+def: "A subatomic particle known to have substructure (i.e. consisting of smaller particles)." []
+subset: 3_STAR
+synonym: "composite particles" RELATED [ChEBI]
+is_a: CHEBI:36342 ! subatomic particle
+
+[Term]
+id: CHEBI:36344
+name: hadron
+namespace: chebi_ontology
+def: "Hadron is a subatomic particle which experiences the strong force." []
+subset: 3_STAR
+synonym: "hadrons" RELATED [ChEBI]
+is_a: CHEBI:36343 ! composite particle
+
+[Term]
+id: CHEBI:36347
+name: nuclear particle
+namespace: chebi_ontology
+def: "A nucleus or any of its constituents in any of their energy states." []
+subset: 3_STAR
+synonym: "nuclear particle" EXACT IUPAC_NAME [IUPAC]
+is_a: CHEBI:36342 ! subatomic particle
+
+[Term]
+id: CHEBI:36357
+name: polyatomic entity
+namespace: chebi_ontology
+def: "Any molecular entity consisting of more than one atom." []
+subset: 3_STAR
+synonym: "polyatomic entities" RELATED [ChEBI]
+is_a: CHEBI:23367 ! molecular entity
+relationship: has_part CHEBI:24433 ! group
+
+[Term]
+id: CHEBI:38101
+name: organonitrogen heterocyclic compound
+namespace: chebi_ontology
+def: "Any organonitrogen compound containing a cyclic component with nitrogen and at least one other element as ring member atoms." []
+subset: 3_STAR
+synonym: "heterocyclic organonitrogen compounds" RELATED [ChEBI]
+synonym: "organonitrogen heterocyclic compounds" RELATED [ChEBI]
+is_a: CHEBI:24532 ! organic heterocyclic compound
+is_a: CHEBI:35352 ! organonitrogen compound
+
+[Term]
+id: CHEBI:50297
+name: canonical nucleotide residue
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "canonical nucleotide residues" RELATED [ChEBI]
+is_a: CHEBI:50319 ! nucleotide residue
+
+[Term]
+id: CHEBI:50299
+name: canonical ribonucleotide residue
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "canonical ribonucleotide residues" RELATED [ChEBI]
+is_a: CHEBI:50297 ! canonical nucleotide residue
+
+[Term]
+id: CHEBI:50319
+name: nucleotide residue
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "nucleotide residues" RELATED [ChEBI]
+is_a: CHEBI:33247 ! organic group
+
+[Term]
+id: CHEBI:50320
+name: nucleoside residue
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "nucleoside residues" RELATED [ChEBI]
+is_a: CHEBI:33247 ! organic group
+
+[Term]
+id: CHEBI:50860
+name: organic molecular entity
+namespace: chebi_ontology
+alt_id: CHEBI:25700
+alt_id: CHEBI:33244
+def: "Any molecular entity that contains carbon." []
+subset: 3_STAR
+synonym: "organic compounds" RELATED [ChEBI]
+synonym: "organic entity" RELATED [ChEBI]
+synonym: "organic molecular entities" RELATED [ChEBI]
+is_a: CHEBI:33582 ! carbon group molecular entity
+relationship: has_part CHEBI:27594 ! carbon atom
+
+[Term]
 id: CHEBI:50906
 name: role
 namespace: chebi_ontology
 def: "A role is particular behaviour which a material entity may exhibit." []
 subset: 3_STAR
 is_a: BFO:0000023 ! role
+
+[Term]
+id: CHEBI:51143
+name: nitrogen molecular entity
+namespace: chebi_ontology
+alt_id: CHEBI:25556
+alt_id: CHEBI:7594
+subset: 3_STAR
+synonym: "nitrogen compounds" RELATED [ChEBI]
+synonym: "nitrogen molecular entities" RELATED [ChEBI]
+synonym: "Nitrogenous compounds" RELATED [KEGG_COMPOUND]
+xref: KEGG:C06061
+is_a: CHEBI:33302 ! pnictogen molecular entity
+relationship: has_part CHEBI:25555 ! nitrogen atom
+
+[Term]
+id: CHEBI:52211
+name: physiological role
+namespace: chebi_ontology
+subset: 1_STAR
+is_a: CHEBI:24432 ! biological role
+
+[Term]
+id: CHEBI:5686
+name: heterocyclic compound
+namespace: chebi_ontology
+def: "A cyclic compound having as ring members atoms of at least two different elements." []
+subset: 3_STAR
+synonym: "compuesto heterociclico" RELATED [IUPAC]
+synonym: "compuestos heterociclicos" RELATED [IUPAC]
+synonym: "heterocycle" RELATED [ChEBI]
+synonym: "Heterocyclic compound" EXACT [KEGG_COMPOUND]
+synonym: "heterocyclic compounds" RELATED [ChEBI]
+is_a: CHEBI:33595 ! cyclic compound
+
+[Term]
+id: CHEBI:61120
+name: nucleobase-containing molecular entity
+namespace: chebi_ontology
+def: "Any compound that has a nucleobase as a part." []
+subset: 3_STAR
+synonym: "nucleobase-containing compound" RELATED [SUBMITTER]
+synonym: "nucleobase-containing compounds" RELATED [ChEBI]
+synonym: "nucleobase-containing molecular entities" RELATED [ChEBI]
+is_a: CHEBI:33833 ! heteroarene
+is_a: CHEBI:51143 ! nitrogen molecular entity
+relationship: has_functional_parent CHEBI:18282 ! nucleobase
+
+[Term]
+id: CHEBI:72695
+name: organic molecule
+namespace: chebi_ontology
+def: "Any molecule that consists of at least one carbon atom as part of the electrically neutral entity." []
+subset: 3_STAR
+synonym: "organic compound" RELATED [ChEBI]
+synonym: "organic compounds" RELATED [ChEBI]
+synonym: "organic molecules" RELATED [ChEBI]
+is_a: CHEBI:25367 ! molecule
+is_a: CHEBI:50860 ! organic molecular entity
+
+[Term]
+id: CHEBI:78295
+name: food component
+namespace: chebi_ontology
+def: "A physiological role played by any substance that is distributed in foodstuffs. It includes materials derived from plants or animals, such as vitamins or minerals, as well as environmental contaminants." []
+subset: 3_STAR
+synonym: "dietary component" RELATED [ChEBI]
+synonym: "dietary components" RELATED [ChEBI]
+synonym: "food components" RELATED [ChEBI]
+is_a: CHEBI:52211 ! physiological role
+
+[Term]
+id: EFO:0008853
+name: Patch-seq
+def: "Combine whole-cell electrophysiological patch-clamp recordings, single-cell RNA-sequencing, and morphological characterization (Patch-Seq)" []
+xref: PMID:26689543
+is_a: BFO:0000015 ! process
+is_a: OBI:0000070
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0008919
+name: Seq-Well
+def: "Barcoded mRNA capture beads and single cells are sealed in an array of subnanoliter wells." []
+xref: PMID:28192419
+is_a: BFO:0000015 ! process
+is_a: EFO:0010183
+is_a: OBI:0000070
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0008930
+name: Smart-seq
+def: "Switch mechanism at the 5’ end of RNA templates (Smart)." []
+xref: PMID:22820318
+is_a: BFO:0000015 ! process
+is_a: EFO:0010184
+is_a: OBI:0000070
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0008931
+name: Smart-seq2
+def: "Switch mechanism at the 5’ end of RNA templates (Smart). According to the authors, Smart-seq2 transcriptome libraries have improved detection, coverage, bias and accuracy compared to Smart-seq libraries, and are generated with off-the-shelf reagents at lower cost." []
+xref: PMID:24056875
+is_a: BFO:0000015 ! process
+is_a: EFO:0010184
+is_a: OBI:0000070
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0008992
+name: MERFISH
+def: "MERFISH is an image-based approach to single-cell transcriptomics in which RNAs are identified via a combinatorial labeling approach that encodes RNA species with error-robust barcodes followed by sequential rounds of single-molecule fluorescence in situ hybridization (smFISH) to read out these barcodes" []
+synonym: "multiplexed error-robust fluorescence in situ hybridization" EXACT []
+xref: PMID:27625426
+is_a: BFO:0000015 ! process
+is_a: EFO:0009918
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0009899
+name: 10x 3' v2
+def: "10X 3' v2 is the second version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules. In the 3' assay, the polyd(T) sequence is part of the gel bead oligo (which also contains the 10x Barcode, UMI, and partial Illumina Read 1 sequence), with the template switch oligo (TSO) supplied in the RT Primer." []
+synonym: "10X 3' v2" EXACT []
+synonym: "10X 3' v2 sequencing" RELATED []
+synonym: "10x 3' v2 sequencing" RELATED []
+synonym: "10X v2" RELATED []
+synonym: "10x v2" RELATED []
+synonym: "10X v2 sequencing" RELATED []
+synonym: "10x v2 sequencing" RELATED []
+synonym: "10x_v2" RELATED []
+synonym: "10XV2" RELATED []
+is_a: EFO:0030003
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0009901
+name: 10x 3' v1
+def: "10x 3' v1 is the first version of the 10X sequencing technology that sequences from the 3' end of nucleic acid molecules. Differs from 5' v1 in the captured end from the polyadenylated transcript." []
+synonym: "10X 3' v1" EXACT []
+synonym: "10X 3' v1 sequencing" RELATED []
+synonym: "10x 3' v1 sequencing" RELATED []
+synonym: "10X v1" RELATED []
+synonym: "10x v1" RELATED []
+synonym: "10x v1 sequencing" RELATED []
+synonym: "10XV1" RELATED []
+is_a: EFO:0030003
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0009922
+name: 10x 3' v3
+def: "10X 3' v3 is the third version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules." []
+synonym: "10X 3' v3" EXACT []
+synonym: "10x 3' v3 sequencing" RELATED []
+synonym: "10X v3" RELATED []
+synonym: "10x v3" RELATED []
+synonym: "10X v3 sequencing" RELATED []
+synonym: "10x v3 sequencing" RELATED []
+synonym: "10XV3" RELATED []
+is_a: EFO:0030003
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0010961
+name: Visium Spatial Gene Expression
+def: "A spatial transcriptomics method developed by 10x Genomics that measures either the whole transcriptome or a defined set of transcripts in intact tissue sections and maps where gene activity is occurring." [http://orcid.org/0000-0001-7505-5418, https://pages.10xgenomics.com/rs/446-PBO-704/images/10x_LIT059_ProductSheet_VisiumSpatialGeneExpression_Letter_digital.pdf]
+subset: http://www.ebi.ac.uk/efo/added_for_HCA
+synonym: "10X Visium" EXACT []
+synonym: "Visium" EXACT []
+is_a: EFO:0008995
+is_a: EFO:0030005
+property_value: dc-creator "paola" xsd:string
+
+[Term]
+id: EFO:0011025
+name: 10x 5' v1
+def: "10x 5' v1 is the first version of the 10X sequencing technology that sequences from the 5' end of nucleic acid molecules. Differs from 3' v1 in the captured end from the polyadenylated transcript." []
+subset: http://www.ebi.ac.uk/efo/added_for_HCA
+synonym: "10X 5' v1" EXACT []
+synonym: "10x 5' v1" EXACT []
+synonym: "10x 5' v1 sequencing" RELATED []
+synonym: "10X 5' v3" RELATED []
+synonym: "10x 5' v3" RELATED []
+synonym: "10x 5' v3 sequencing" RELATED []
+synonym: "10x v1 5' sequencing" RELATED []
+is_a: EFO:0030004
+property_value: dc-creator "paola" xsd:string
+
+[Term]
+id: EFO:0030019
+name: Seq-Well S3
+def: "Seq-Well with second strand synthesis." [PMID:33053333]
+synonym: "Seq-Well S^3" EXACT []
+is_a: EFO:0008919 ! Seq-Well
+property_value: dc-creator "paola" xsd:string
+
+[Term]
+id: EFO:0030059
+name: 10x multiome
+def: "Simultaneous profiling of gene expression and open chromatin from the same cell." [http://orcid.org/0000-0002-1196-4871]
+synonym: "Chromium Single Cell Multiome ATAC + Gene Expression" EXACT []
+is_a: EFO:0008913
+is_a: EFO:0008995
+is_a: EFO:0010891
+property_value: dc-creator "paola" xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2021-12-13T15:33:28Z xsd:dateTime
+
+[Term]
+id: EFO:0030060
+name: mCT-seq
+def: "A method that can jointly capture cytosine DNA methylome (5mC) and transcriptome profiles from single cells/nuclei by partitioning RNA and DNA molecules through the incorporation of 5’-methyl-dCTP instead of dCTP during reverse transcription of RNA." [http://orcid.org/0000-0002-1196-4871, https://www.biorxiv.org/content/10.1101/434845v1]
+synonym: "methylcytosine and transcriptome sequencing" EXACT []
+is_a: EFO:0001456
+is_a: EFO:0008913
+is_a: EFO:0010183
+property_value: dc-creator "paola" xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2021-12-13T15:37:28Z xsd:dateTime
+
+[Term]
+id: EFO:0700006
+name: ExSeq
+def: "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing." [https://orcid.org/0000-0003-4389-9821, https://www.science.org/doi/10.1126/science.aax2656] {comment="PMID:33509999"}
+synonym: "expansion sequencing" EXACT [PMID:33509999]
+is_a: EFO:0008989
+property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-1773-2692
+property_value: http://purl.org/dc/terms/date 2022-08-24T09:23:12Z xsd:dateTime
+
+[Term]
+id: EFO:0700007
+name: targeted ExSeq
+def: "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode." [https://orcid.org/0000-0003-4389-9821, PMID:33509999]
+is_a: EFO:0700006 ! ExSeq
+property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-1773-2692
+property_value: http://purl.org/dc/terms/date 2022-08-24T09:54:36Z xsd:dateTime
+
+[Term]
+id: EFO:0700008
+name: untargeted ExSeq
+def: "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ." [https://orcid.org/0000-0003-4389-9821, PMID:33509999]
+is_a: EFO:0700006 ! ExSeq
+relationship: has_part EFO:0008990
+property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-1773-2692
+property_value: http://purl.org/dc/terms/date 2022-08-24T10:14:27Z xsd:dateTime
 
 [Term]
 id: GO:0003674
@@ -218,6 +1158,35 @@ xref: EC:2.7.-.-
 is_a: GO:0016740 ! transferase activity
 
 [Term]
+id: GO:0140098
+name: catalytic activity, acting on RNA
+namespace: molecular_function
+def: "Catalytic activity that acts to modify RNA, driven by ATP hydrolysis." [GOC:molecular_function_refactoring, GOC:pdt]
+subset: goslim_generic
+subset: prokaryote_subset
+is_a: GO:0140640 ! catalytic activity, acting on a nucleic acid
+intersection_of: GO:0003824 ! catalytic activity
+intersection_of: has_input CHEBI:33697 ! ribonucleic acid
+relationship: has_input CHEBI:33697 ! ribonucleic acid
+property_value: IAO:0000233 https://github.com/geneontology/go-ontology/issues/14225 xsd:anyURI
+property_value: IAO:0000233 https://github.com/geneontology/go-ontology/issues/21612 xsd:anyURI
+created_by: pg
+creation_date: 2017-09-14T12:05:21Z
+
+[Term]
+id: GO:0140640
+name: catalytic activity, acting on a nucleic acid
+namespace: molecular_function
+def: "Catalytic activity that acts to modify a nucleic acid." [GOC:pg]
+is_a: GO:0003824 ! catalytic activity
+intersection_of: GO:0003824 ! catalytic activity
+intersection_of: has_input CHEBI:33696 ! nucleic acid
+relationship: has_input CHEBI:33696 ! nucleic acid
+property_value: IAO:0000233 https://github.com/geneontology/go-ontology/issues/21402 xsd:anyURI
+created_by: pg
+creation_date: 2021-05-11T06:31:07Z
+
+[Term]
 id: PATO:0000001
 name: quality
 namespace: quality
@@ -225,6 +1194,35 @@ alt_id: PATO:0000072
 def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
 is_a: BFO:0000020 ! specifically dependent continuant
 property_value: IAO:0000589 "quality (PATO)" xsd:string
+
+[Typedef]
+id: BFO:0000054
+name: realized in
+comment: Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+property_value: IAO:0000111 "realized in" xsd:string
+property_value: IAO:0000112 "this disease is realized in this disease course" xsd:string
+property_value: IAO:0000112 "this fragility is realized in this shattering" xsd:string
+property_value: IAO:0000112 "this investigator role is realized in this investigation" xsd:string
+property_value: IAO:0000118 "is realized by" xsd:string
+property_value: IAO:0000118 "realized_in" xsd:string
+property_value: IAO:0000600 "[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+domain: BFO:0000017 ! realizable entity
+range: BFO:0000015 ! process
+inverse_of: BFO:0000055 ! realizes
+
+[Typedef]
+id: BFO:0000055
+name: realizes
+comment: Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+property_value: IAO:0000111 "realizes" xsd:string
+property_value: IAO:0000112 "this disease course realizes this disease" xsd:string
+property_value: IAO:0000112 "this investigation realizes this investigator role" xsd:string
+property_value: IAO:0000112 "this shattering realizes this fragility" xsd:string
+property_value: IAO:0000600 "to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
+domain: BFO:0000015 ! process
+range: BFO:0000017 ! realizable entity
 
 [Typedef]
 id: RO:0000052
@@ -449,6 +1447,7 @@ property_value: RO:0001900 RO:0001901
 [Typedef]
 id: RO:0002327
 name: enables
+def: "c enables p iff c is capable of p and c acts to execute p." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 property_value: IAO:0000112 "a particular instances of akt-2 enables some instance of protein kinase activity" xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
@@ -495,11 +1494,42 @@ is_a: functionally_related_to ! functionally related to
 is_a: has_participant ! has participant
 
 [Typedef]
+id: RO:0002407
+name: indirectly positively regulates
+def: "p indirectly positively regulates q iff p is indirectly causally upstream of q and p positively regulates q." []
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000118 "indirectly activates" xsd:string
+property_value: RO:0002579 RO:0002213
+holds_over_chain: RO:0002409 RO:0002409
+holds_over_chain: RO:0002629 RO:0002407
+holds_over_chain: RO:0002629 RO:0002629
+is_transitive: true
+is_a: positively_regulates ! positively regulates
+is_a: RO:0012012 ! indirectly regulates
+transitive_over: RO:0002629 ! directly positively regulates
+
+[Typedef]
+id: RO:0002409
+name: indirectly negatively regulates
+def: "p indirectly negatively regulates q iff p is indirectly causally upstream of q and p negatively regulates q." []
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000118 "indirectly inhibits" xsd:string
+property_value: RO:0002579 RO:0002212
+holds_over_chain: RO:0002630 RO:0002409
+holds_over_chain: RO:0002630 RO:0002630
+is_transitive: true
+is_a: negatively_regulates ! negatively regulates
+is_a: RO:0012012 ! indirectly regulates
+transitive_over: RO:0002630 ! directly negatively regulates
+
+[Typedef]
 id: RO:0002410
 name: causally related to
+def: "relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause." [https://en.wikipedia.org/wiki/Causality]
 def: "This relation groups causal relations between material entities and causal relations between processes" []
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000116 "This branch of the ontology deals with causal relations between entities. It is divided into two branches: causal relations between occurrents/processes, and causal relations between material entities. We take an 'activity flow-centric approach', with the former as primary, and define causal relations between material entities in terms of causal relations between occurrents.\n\nTo define causal relations in an activity-flow type network, we make use of 3 primitives:\n\n * Temporal: how do the intervals of the two occurrents relate? \n * Is the causal relation regulatory?\n * Is the influence positive or negative\n\nThe first of these can be formalized in terms of the Allen Interval Algebra. Informally, the 3 bins we care about are 'direct', 'indirect' or overlapping. Note that all causal relations should be classified under a RO temporal relation (see the branch under 'temporally related to'). Note that all causal relations are temporal, but not all temporal relations are causal. Two occurrents can be related in time without being causally connected. We take causal influence to be primitive, elucidated as being such that has the upstream changed, some qualities of the donwstream would necessarily be modified.\n\nFor the second, we consider a relationship to be regulatory if the system in which the activities occur is capable of altering the relationship to achieve some objective. This could include changing the rate of production of a molecule.\n\nFor the third, we consider the effect of the upstream process on the output(s) of the downstream process. If the level of output is increased, or the rate of production of the output is increased, then the direction is increased. Direction can be positive, negative or neutral or capable of either direction. Two positives in succession yield a positive, two negatives in succession yield a positive, otherwise the default assumption is that the net effect is canceled and the influence is neutral.\n\nEach of these 3 primitives can be composed to yield a cross-product of different relation types." xsd:string
+property_value: IAO:0000116 "This branch of the ontology deals with causal relations between entities. It is divided into two branches: causal relations between occurrents/processes, and causal relations between material entities. We take an 'activity flow-centric approach', with the former as primary, and define causal relations between material entities in terms of causal relations between occurrents.\n\nTo define causal relations in an activity-flow type network, we make use of 3 primitives:\n\n * Temporal: how do the intervals of the two occurrents relate? \n * Is the causal relation regulatory?\n * Is the influence positive or negative?\n\nThe first of these can be formalized in terms of the Allen Interval Algebra. Informally, the 3 bins we care about are 'direct', 'indirect' or overlapping. Note that all causal relations should be classified under a RO temporal relation (see the branch under 'temporally related to'). Note that all causal relations are temporal, but not all temporal relations are causal. Two occurrents can be related in time without being causally connected. We take causal influence to be primitive, elucidated as being such that has the upstream changed, some qualities of the donwstream would necessarily be modified.\n\nFor the second, we consider a relationship to be regulatory if the system in which the activities occur is capable of altering the relationship to achieve some objective. This could include changing the rate of production of a molecule.\n\nFor the third, we consider the effect of the upstream process on the output(s) of the downstream process. If the level of output is increased, or the rate of production of the output is increased, then the direction is increased. Direction can be positive, negative or neutral or capable of either direction. Two positives in succession yield a positive, two negatives in succession yield a positive, otherwise the default assumption is that the net effect is canceled and the influence is neutral.\n\nEach of these 3 primitives can be composed to yield a cross-product of different relation types." xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
 
@@ -640,6 +1670,7 @@ inverse_of: process_has_causal_agent ! process has causal agent
 id: RO:0002501
 name: causal relation between processes
 def: "p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q." []
+def: "p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one where the execution of p influences the execution of q. p may be upstream, downstream, part of, or a container of q." []
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
@@ -702,6 +1733,7 @@ is_a: RO:0002506 ! causal relation between entities
 [Typedef]
 id: RO:0002578
 name: directly regulates
+def: "p directly regulates q iff p is immediately causally upstream of q and p regulates q." []
 def: "Process(P1) directly regulates process(P2) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
@@ -763,6 +1795,7 @@ is_a: RO:0002596 ! capable of regulating
 [Typedef]
 id: RO:0002629
 name: directly positively regulates
+def: "p directly positively regulates q iff p is immediately causally upstream of q, and p positively regulates q." []
 def: "Process(P1) directly postively regulates process(P2) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P1 directly positively regulates P2." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
@@ -776,6 +1809,7 @@ is_a: RO:0002578 ! directly regulates
 [Typedef]
 id: RO:0002630
 name: directly negatively regulates
+def: "p directly negatively regulates q iff p is immediately causally upstream of q, and p negatively regulates q." []
 def: "Process(P1) directly negatively regulates process(P2) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P1 directly negatively regulates P2." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
@@ -785,6 +1819,17 @@ property_value: IAO:0000589 "directly negatively regulates (process to process)"
 property_value: RO:0004050 RO:0002578
 is_a: negatively_regulates ! negatively regulates
 is_a: RO:0002578 ! directly regulates
+
+[Typedef]
+id: RO:0004028
+name: realized in response to stimulus
+def: "A relationship between a realizable entity R (e.g. function or disposition) and a material entity M where R is realized in response to a process that has an input stimulus of M." []
+domain: BFO:0000017 ! realizable entity
+range: BFO:0000040 ! material entity
+holds_over_chain: RO:0009501 has_input
+is_a: RO:0002410 ! causally related to
+created_by: cjm
+creation_date: 2017-12-26T19:45:49Z
 
 [Typedef]
 id: RO:0004031
@@ -859,6 +1904,24 @@ created_by: cjm
 creation_date: 2018-03-13T23:55:19Z
 
 [Typedef]
+id: RO:0009501
+name: realized in response to
+def: "r 'realized in response to' s iff, r is a realizable (e.g. a plant trait such as responsivity to drought), s is an environmental stimulus (a process), and s directly causes the realization of r." []
+synonym: "triggered by process" EXACT [RO:cjm]
+property_value: http://purl.org/dc/terms/contributor "Austin Meier" xsd:string
+property_value: http://purl.org/dc/terms/contributor "Chris Mungall" xsd:string
+property_value: http://purl.org/dc/terms/contributor "David Osumi-Sutherland" xsd:string
+property_value: http://purl.org/dc/terms/contributor "Marie Angelique Laporte" xsd:string
+property_value: IAO:0000112 "A drought sensitivity trait that inheres in a whole plant is realized in a systemic response process in response to exposure to drought conditions." xsd:string
+property_value: IAO:0000112 "An inflammatory disease that is realized in response to an inflammatory process occurring in the gut (which is itself the realization of a process realized in response to harmful stimuli in the mucosal lining of th gut)" xsd:string
+property_value: IAO:0000112 "Environmental polymorphism in butterflies: These butterflies have a 'responsivity to day length trait' that is realized in response to the duration of the day, and is realized in developmental processes that lead to increased or decreased pigmentation in the adult morph." xsd:string
+property_value: seeAlso https://docs.google.com/document/d/1KWhZxVBhIPkV6_daHta0h6UyHbjY2eIrnON1WIRGgdY/edit xsd:anyURI
+domain: BFO:0000017 ! realizable entity
+range: BFO:0000015 ! process
+holds_over_chain: BFO:0000054 causally_downstream_of
+is_a: RO:0002410 ! causally related to
+
+[Typedef]
 id: RO:0011002
 name: regulates activity of
 def: "The entity A has an activity that regulates an activity of the entity B. For example, A and B are gene products where the catalytic activity of A regulates the kinase activity of B." []
@@ -866,6 +1929,23 @@ property_value: IAO:0000117 "Vasundra Touré" xsd:string
 domain: BFO:0000040 ! material entity
 range: BFO:0000040 ! material entity
 is_a: RO:0002566 ! causally influences
+
+[Typedef]
+id: RO:0012011
+name: indirectly causally upstream of
+def: "p is indirectly causally upstream of q iff p is causally upstream of q and there exists some process r such that p is causally upstream of r and r is causally upstream of q." []
+is_a: causally_upstream_of ! causally upstream of
+created_by: pg
+creation_date: 2022-09-26T06:07:17Z
+
+[Typedef]
+id: RO:0012012
+name: indirectly regulates
+def: "p indirectly regulates q iff p is indirectly causally upstream of q and p regulates q." []
+is_a: regulates ! regulates
+is_a: RO:0012011 ! indirectly causally upstream of
+created_by: pg
+creation_date: 2022-09-26T06:08:01Z
 
 [Typedef]
 id: RO:0017001
@@ -960,6 +2040,7 @@ id: causally_upstream_of
 name: causally upstream of
 namespace: external
 def: "p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain" []
+def: "p is causally upstream of q iff p is causally related to q, the end of p precedes the end of q, and p is not an occurrent part of q." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 xref: RO:0002411
@@ -973,7 +2054,10 @@ is_a: precedes ! precedes
 id: causally_upstream_of,_negative_effect
 name: causally upstream of, negative effect
 namespace: external
+def: "p is causally upstream of, negative effect q iff p is casually upstream of q, and the execution of p decreases the execution of q." []
 comment: holds between x and y if and only if x is causally upstream of y and the progression of x decreases the frequency, rate or extent of y
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 xref: RO:0002305
 property_value: http://purl.org/dc/terms/creator "cjm" xsd:string
 property_value: RO:0004050 RO:0002411
@@ -984,6 +2068,7 @@ is_a: RO:0004046 ! causally upstream of or within, negative effect
 id: causally_upstream_of,_positive_effect
 name: causally upstream of, positive effect
 namespace: external
+def: "p is causally upstream of, positive effect q iff p is casually upstream of q, and the execution of p is required for the execution of q." []
 comment: holds between x and y if and only if x is causally upstream of y and the progression of x increases the frequency, rate or extent of y
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
@@ -998,6 +2083,7 @@ id: causally_upstream_of_or_within
 name: causally upstream of or within
 namespace: external
 def: "p 'causally upstream or within' q iff (1) the end of p is before the end of q and (2) the execution of p exerts some causal influence over the outputs of q; i.e. if p was abolished or the outputs of p were to be modified, this would necessarily affect q." []
+def: "p is 'causally upstream or within' q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q." []
 synonym: "affects" RELATED []
 xref: RO:0002418
 property_value: IAO:0000116 "We would like to make this disjoint with 'preceded by', but this is prohibited in OWL2" xsd:string
@@ -1006,6 +2092,13 @@ property_value: IAO:0000118 "influences (processual)" xsd:string
 is_transitive: true
 is_a: RO:0002501 ! causal relation between processes
 inverse_of: causally_downstream_of_or_within ! causally downstream of or within
+
+[Typedef]
+id: dc-creator
+name: creator
+namespace: uberon
+xref: http://purl.org/dc/elements/1.1/creator
+is_metadata_tag: true
 
 [Typedef]
 id: functionally_related_to
@@ -1140,6 +2233,7 @@ id: immediately_causally_upstream_of
 name: immediately causally upstream of
 namespace: external
 def: "p is immediately causally upstream of q iff both (a) p immediately precedes q and (b) p is causally upstream of q. In addition, the output of p  must be an input of q." []
+def: "p is immediately causally upstream of q iff p is causally upstream of q, and the end of p is coincident with the beginning of q." []
 xref: RO:0002412
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "Chris Mungall" xsd:string
@@ -1200,6 +2294,7 @@ is_a: regulated_by ! regulated by
 id: negatively_regulates
 name: negatively regulates
 namespace: external
+def: "p negatively regulates q iff p regulates q, and p decreases the rate or magnitude of execution of q." []
 def: "Process(P1) negatively regulates process(P2) iff: P1 terminates P2, or P1 descreases the the frequency of initiation of P2 or the magnitude or rate of output of P2." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
@@ -1311,6 +2406,7 @@ is_a: regulated_by ! regulated by
 id: positively_regulates
 name: positively regulates
 namespace: external
+def: "p positively regulates q iff p regulates q, and p increases the rate or magnitude of execution of q." []
 def: "Process(P1) postively regulates process(P2) iff: P1 initiates P2, or P1 increases the the frequency of initiation of P2 or the magnitude or rate of output of P2." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
@@ -1398,6 +2494,7 @@ is_a: causally_downstream_of_or_within ! causally downstream of or within
 id: regulates
 name: regulates
 namespace: external
+def: "p regulates q iff p is causally upstream of q, the execution of p is not constant and varies according to specific conditions, and p influences the rate or magnitude of execution of q due to an effect either on some enabler of q or some enabler of a part of q." []
 def: "process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
