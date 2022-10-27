@@ -1,6 +1,133 @@
 {
   "graphs": [
     {
+      "edges": [
+        {
+          "obj": "http://purl.obolibrary.org/obo/EFO_0700006",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/EFO_0700007"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/EFO_0700006",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/EFO_0700008"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000070",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008853"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000070",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008919"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000070",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008930"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000070",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008931"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0001456",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030060"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0008913",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030059"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0008913",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030060"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0008919",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030019"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0008989",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/EFO_0700006"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0008990",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/EFO_0700008"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0008995",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0010961"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0008995",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030059"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0009918",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008992"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0010183",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008919"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0010183",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030060"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0010184",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008930"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0010184",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008931"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0010891",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030059"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0030003",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0009899"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0030003",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0009901"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0030003",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0009922"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0030004",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0011025"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0030005",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0010961"
+        }
+      ],
       "id": "http://purl.obolibrary.org/obo/capo/capo-base.json",
       "meta": {
         "basicPropertyValues": [
@@ -22,12 +149,516 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-07-28"
+            "val": "2022-10-27"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/capo/releases/2022-07-28/capo-base.json"
+        "version": "http://purl.obolibrary.org/obo/capo/releases/2022-10-27/capo-base.json"
       },
       "nodes": [
+        {
+          "id": "http://purl.obolibrary.org/obo/EFO_0700006",
+          "lbl": "ExSeq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "https://orcid.org/0000-0002-1773-2692"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/date",
+                "val": "2022-08-24T09:23:12Z"
+              }
+            ],
+            "definition": {
+              "val": "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.",
+              "xrefs": [
+                "https://orcid.org/0000-0003-4389-9821",
+                "https://www.science.org/doi/10.1126/science.aax2656"
+              ]
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "expansion sequencing",
+                "xrefs": [
+                  "PMID:33509999"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/EFO_0700007",
+          "lbl": "targeted ExSeq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "https://orcid.org/0000-0002-1773-2692"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/date",
+                "val": "2022-08-24T09:54:36Z"
+              }
+            ],
+            "definition": {
+              "val": "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode.",
+              "xrefs": [
+                "PMID:33509999",
+                "https://orcid.org/0000-0003-4389-9821"
+              ]
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/EFO_0700008",
+          "lbl": "untargeted ExSeq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "https://orcid.org/0000-0002-1773-2692"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/date",
+                "val": "2022-08-24T10:14:27Z"
+              }
+            ],
+            "definition": {
+              "val": "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ.",
+              "xrefs": [
+                "PMID:33509999",
+                "https://orcid.org/0000-0003-4389-9821"
+              ]
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008853",
+          "lbl": "Patch-seq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "Combine whole-cell electrophysiological patch-clamp recordings, single-cell RNA-sequencing, and morphological characterization (Patch-Seq)"
+            },
+            "xrefs": [
+              {
+                "val": "PMID:26689543"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008919",
+          "lbl": "Seq-Well",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "Barcoded mRNA capture beads and single cells are sealed in an array of subnanoliter wells."
+            },
+            "xrefs": [
+              {
+                "val": "PMID:28192419"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008930",
+          "lbl": "Smart-seq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "Switch mechanism at the 5’ end of RNA templates (Smart)."
+            },
+            "xrefs": [
+              {
+                "val": "PMID:22820318"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008931",
+          "lbl": "Smart-seq2",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "Switch mechanism at the 5’ end of RNA templates (Smart). According to the authors, Smart-seq2 transcriptome libraries have improved detection, coverage, bias and accuracy compared to Smart-seq libraries, and are generated with off-the-shelf reagents at lower cost."
+            },
+            "xrefs": [
+              {
+                "val": "PMID:24056875"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008992",
+          "lbl": "MERFISH",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "MERFISH is an image-based approach to single-cell transcriptomics in which RNAs are identified via a combinatorial labeling approach that encodes RNA species with error-robust barcodes followed by sequential rounds of single-molecule fluorescence in situ hybridization (smFISH) to read out these barcodes"
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "multiplexed error-robust fluorescence in situ hybridization"
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "PMID:27625426"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0009899",
+          "lbl": "10x 3' v2",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "10X 3' v2 is the second version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules. In the 3' assay, the polyd(T) sequence is part of the gel bead oligo (which also contains the 10x Barcode, UMI, and partial Illumina Read 1 sequence), with the template switch oligo (TSO) supplied in the RT Primer."
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "10X 3' v2"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X 3' v2 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X v2"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X v2 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10XV2"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x 3' v2 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x v2"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x v2 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x_v2"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0009901",
+          "lbl": "10x 3' v1",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "10x 3' v1 is the first version of the 10X sequencing technology that sequences from the 3' end of nucleic acid molecules. Differs from 5' v1 in the captured end from the polyadenylated transcript."
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "10X 3' v1"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X 3' v1 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X v1"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10XV1"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x 3' v1 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x v1"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x v1 sequencing"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0009922",
+          "lbl": "10x 3' v3",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "10X 3' v3 is the third version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules."
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "10X 3' v3"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X v3"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X v3 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10XV3"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x 3' v3 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x v3"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x v3 sequencing"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0010961",
+          "lbl": "Visium Spatial Gene Expression",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/creator",
+                "val": "paola"
+              }
+            ],
+            "definition": {
+              "val": "A spatial transcriptomics method developed by 10x Genomics that measures either the whole transcriptome or a defined set of transcripts in intact tissue sections and maps where gene activity is occurring.",
+              "xrefs": [
+                "http://orcid.org/0000-0001-7505-5418",
+                "https://pages.10xgenomics.com/rs/446-PBO-704/images/10x_LIT059_ProductSheet_VisiumSpatialGeneExpression_Letter_digital.pdf"
+              ]
+            },
+            "subsets": [
+              "http://www.ebi.ac.uk/efo/added_for_HCA"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "10X Visium"
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "Visium"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0011025",
+          "lbl": "10x 5' v1",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/creator",
+                "val": "paola"
+              }
+            ],
+            "definition": {
+              "val": "10x 5' v1 is the first version of the 10X sequencing technology that sequences from the 5' end of nucleic acid molecules. Differs from 3' v1 in the captured end from the polyadenylated transcript."
+            },
+            "subsets": [
+              "http://www.ebi.ac.uk/efo/added_for_HCA"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "10X 5' v1"
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "10x 5' v1"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X 5' v3"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x 5' v1 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x 5' v3"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x 5' v3 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x v1 5' sequencing"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0030019",
+          "lbl": "Seq-Well S3",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/creator",
+                "val": "paola"
+              }
+            ],
+            "definition": {
+              "val": "Seq-Well with second strand synthesis.",
+              "xrefs": [
+                "PMID:33053333"
+              ]
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "Seq-Well S^3"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0030059",
+          "lbl": "10x multiome",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/creator",
+                "val": "paola"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/date",
+                "val": "2021-12-13T15:33:28Z"
+              }
+            ],
+            "definition": {
+              "val": "Simultaneous profiling of gene expression and open chromatin from the same cell.",
+              "xrefs": [
+                "http://orcid.org/0000-0002-1196-4871"
+              ]
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "Chromium Single Cell Multiome ATAC + Gene Expression"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0030060",
+          "lbl": "mCT-seq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/creator",
+                "val": "paola"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/date",
+                "val": "2021-12-13T15:37:28Z"
+              }
+            ],
+            "definition": {
+              "val": "A method that can jointly capture cytosine DNA methylome (5mC) and transcriptome profiles from single cells/nuclei by partitioning RNA and DNA molecules through the incorporation of 5’-methyl-dCTP instead of dCTP during reverse transcription of RNA.",
+              "xrefs": [
+                "http://orcid.org/0000-0002-1196-4871",
+                "https://www.biorxiv.org/content/10.1101/434845v1"
+              ]
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "methylcytosine and transcriptome sequencing"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
         {
           "id": "http://purl.obolibrary.org/obo/CAPO_0000000",
           "lbl": "root node",

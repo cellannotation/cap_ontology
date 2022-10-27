@@ -17,7 +17,8 @@ import_group:
   products: 
     - id: ro
     - id: pato
-    - id: efo
-      module_type: filter
 robot_java_args: '-Xmx16G'
+components:
+  products:
+    - filename: efo_cap.owl
 

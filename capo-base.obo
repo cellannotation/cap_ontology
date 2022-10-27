@@ -1,13 +1,183 @@
 format-version: 1.2
-data-version: capo/releases/2022-07-28/capo-base.owl
+data-version: capo/releases/2022-10-27/capo-base.owl
 ontology: capo/capo-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "CAP Ontology" xsd:string
-property_value: owl:versionInfo "2022-07-28" xsd:string
+property_value: owl:versionInfo "2022-10-27" xsd:string
 
 [Term]
 id: CAPO:0000000
 name: root node
+
+[Term]
+id: EFO:0008853
+name: Patch-seq
+def: "Combine whole-cell electrophysiological patch-clamp recordings, single-cell RNA-sequencing, and morphological characterization (Patch-Seq)" []
+xref: PMID:26689543
+is_a: OBI:0000070
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0008919
+name: Seq-Well
+def: "Barcoded mRNA capture beads and single cells are sealed in an array of subnanoliter wells." []
+xref: PMID:28192419
+is_a: EFO:0010183
+is_a: OBI:0000070
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0008930
+name: Smart-seq
+def: "Switch mechanism at the 5’ end of RNA templates (Smart)." []
+xref: PMID:22820318
+is_a: EFO:0010184
+is_a: OBI:0000070
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0008931
+name: Smart-seq2
+def: "Switch mechanism at the 5’ end of RNA templates (Smart). According to the authors, Smart-seq2 transcriptome libraries have improved detection, coverage, bias and accuracy compared to Smart-seq libraries, and are generated with off-the-shelf reagents at lower cost." []
+xref: PMID:24056875
+is_a: EFO:0010184
+is_a: OBI:0000070
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0008992
+name: MERFISH
+def: "MERFISH is an image-based approach to single-cell transcriptomics in which RNAs are identified via a combinatorial labeling approach that encodes RNA species with error-robust barcodes followed by sequential rounds of single-molecule fluorescence in situ hybridization (smFISH) to read out these barcodes" []
+synonym: "multiplexed error-robust fluorescence in situ hybridization" EXACT []
+xref: PMID:27625426
+is_a: EFO:0009918
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0009899
+name: 10x 3' v2
+def: "10X 3' v2 is the second version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules. In the 3' assay, the polyd(T) sequence is part of the gel bead oligo (which also contains the 10x Barcode, UMI, and partial Illumina Read 1 sequence), with the template switch oligo (TSO) supplied in the RT Primer." []
+synonym: "10X 3' v2" EXACT []
+synonym: "10X 3' v2 sequencing" RELATED []
+synonym: "10x 3' v2 sequencing" RELATED []
+synonym: "10X v2" RELATED []
+synonym: "10x v2" RELATED []
+synonym: "10X v2 sequencing" RELATED []
+synonym: "10x v2 sequencing" RELATED []
+synonym: "10x_v2" RELATED []
+synonym: "10XV2" RELATED []
+is_a: EFO:0030003
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0009901
+name: 10x 3' v1
+def: "10x 3' v1 is the first version of the 10X sequencing technology that sequences from the 3' end of nucleic acid molecules. Differs from 5' v1 in the captured end from the polyadenylated transcript." []
+synonym: "10X 3' v1" EXACT []
+synonym: "10X 3' v1 sequencing" RELATED []
+synonym: "10x 3' v1 sequencing" RELATED []
+synonym: "10X v1" RELATED []
+synonym: "10x v1" RELATED []
+synonym: "10x v1 sequencing" RELATED []
+synonym: "10XV1" RELATED []
+is_a: EFO:0030003
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0009922
+name: 10x 3' v3
+def: "10X 3' v3 is the third version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules." []
+synonym: "10X 3' v3" EXACT []
+synonym: "10x 3' v3 sequencing" RELATED []
+synonym: "10X v3" RELATED []
+synonym: "10x v3" RELATED []
+synonym: "10X v3 sequencing" RELATED []
+synonym: "10x v3 sequencing" RELATED []
+synonym: "10XV3" RELATED []
+is_a: EFO:0030003
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0010961
+name: Visium Spatial Gene Expression
+def: "A spatial transcriptomics method developed by 10x Genomics that measures either the whole transcriptome or a defined set of transcripts in intact tissue sections and maps where gene activity is occurring." [http://orcid.org/0000-0001-7505-5418, https://pages.10xgenomics.com/rs/446-PBO-704/images/10x_LIT059_ProductSheet_VisiumSpatialGeneExpression_Letter_digital.pdf]
+subset: http://www.ebi.ac.uk/efo/added_for_HCA
+synonym: "10X Visium" EXACT []
+synonym: "Visium" EXACT []
+is_a: EFO:0008995
+is_a: EFO:0030005
+property_value: http://purl.org/dc/elements/1.1/creator "paola" xsd:string
+
+[Term]
+id: EFO:0011025
+name: 10x 5' v1
+def: "10x 5' v1 is the first version of the 10X sequencing technology that sequences from the 5' end of nucleic acid molecules. Differs from 3' v1 in the captured end from the polyadenylated transcript." []
+subset: http://www.ebi.ac.uk/efo/added_for_HCA
+synonym: "10X 5' v1" EXACT []
+synonym: "10x 5' v1" EXACT []
+synonym: "10x 5' v1 sequencing" RELATED []
+synonym: "10X 5' v3" RELATED []
+synonym: "10x 5' v3" RELATED []
+synonym: "10x 5' v3 sequencing" RELATED []
+synonym: "10x v1 5' sequencing" RELATED []
+is_a: EFO:0030004
+property_value: http://purl.org/dc/elements/1.1/creator "paola" xsd:string
+
+[Term]
+id: EFO:0030019
+name: Seq-Well S3
+def: "Seq-Well with second strand synthesis." [PMID:33053333]
+synonym: "Seq-Well S^3" EXACT []
+is_a: EFO:0008919 ! Seq-Well
+property_value: http://purl.org/dc/elements/1.1/creator "paola" xsd:string
+
+[Term]
+id: EFO:0030059
+name: 10x multiome
+def: "Simultaneous profiling of gene expression and open chromatin from the same cell." [http://orcid.org/0000-0002-1196-4871]
+synonym: "Chromium Single Cell Multiome ATAC + Gene Expression" EXACT []
+is_a: EFO:0008913
+is_a: EFO:0008995
+is_a: EFO:0010891
+property_value: http://purl.org/dc/elements/1.1/creator "paola" xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2021-12-13T15:33:28Z xsd:dateTime
+
+[Term]
+id: EFO:0030060
+name: mCT-seq
+def: "A method that can jointly capture cytosine DNA methylome (5mC) and transcriptome profiles from single cells/nuclei by partitioning RNA and DNA molecules through the incorporation of 5’-methyl-dCTP instead of dCTP during reverse transcription of RNA." [http://orcid.org/0000-0002-1196-4871, https://www.biorxiv.org/content/10.1101/434845v1]
+synonym: "methylcytosine and transcriptome sequencing" EXACT []
+is_a: EFO:0001456
+is_a: EFO:0008913
+is_a: EFO:0010183
+property_value: http://purl.org/dc/elements/1.1/creator "paola" xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2021-12-13T15:37:28Z xsd:dateTime
+
+[Term]
+id: EFO:0700006
+name: ExSeq
+def: "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing." [https://orcid.org/0000-0003-4389-9821, https://www.science.org/doi/10.1126/science.aax2656] {comment="PMID:33509999"}
+synonym: "expansion sequencing" EXACT [PMID:33509999]
+is_a: EFO:0008989
+property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-1773-2692
+property_value: http://purl.org/dc/terms/date 2022-08-24T09:23:12Z xsd:dateTime
+
+[Term]
+id: EFO:0700007
+name: targeted ExSeq
+def: "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode." [https://orcid.org/0000-0003-4389-9821, PMID:33509999]
+is_a: EFO:0700006 ! ExSeq
+property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-1773-2692
+property_value: http://purl.org/dc/terms/date 2022-08-24T09:54:36Z xsd:dateTime
+
+[Term]
+id: EFO:0700008
+name: untargeted ExSeq
+def: "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ." [https://orcid.org/0000-0003-4389-9821, PMID:33509999]
+is_a: EFO:0700006 ! ExSeq
+relationship: BFO:0000051 EFO:0008990
+property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-1773-2692
+property_value: http://purl.org/dc/terms/date 2022-08-24T10:14:27Z xsd:dateTime
 

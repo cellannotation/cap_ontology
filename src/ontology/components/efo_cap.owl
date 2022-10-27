@@ -10,7 +10,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/capo/imports/efo_import.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/capo/components/efo_cap.owl">
+       <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/capo/releases/2022-10-27/components/efo_cap.owl"/>
+    </owl:Ontology>
     
 
 

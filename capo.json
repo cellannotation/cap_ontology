@@ -161,6 +161,15 @@
           "domainClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000015"
           ],
+          "predicateId": "http://purl.obolibrary.org/obo/BFO_0000055",
+          "rangeClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000017"
+          ]
+        },
+        {
+          "domainClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000015"
+          ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002018",
           "rangeClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000015"
@@ -191,6 +200,33 @@
           "predicateId": "http://purl.obolibrary.org/obo/RO_0019000",
           "rangeClassIds": [
             "http://purl.obolibrary.org/obo/PATO_0000001"
+          ]
+        },
+        {
+          "domainClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000017"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/BFO_0000054",
+          "rangeClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000015"
+          ]
+        },
+        {
+          "domainClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000017"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0004028",
+          "rangeClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000040"
+          ]
+        },
+        {
+          "domainClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000017"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0009501",
+          "rangeClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000015"
           ]
         },
         {
@@ -292,6 +328,31 @@
           "sub": "http://purl.obolibrary.org/obo/GO_0008150"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008853"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008919"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008930"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008931"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008992"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000016",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/BFO_0000034"
@@ -319,7 +380,17 @@
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_24432"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_50906"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_24431"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000051",
@@ -330,6 +401,11 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000051",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002180"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000055",
+          "pred": "inverseOf",
+          "sub": "http://purl.obolibrary.org/obo/BFO_0000054"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000062",
@@ -357,9 +433,504 @@
           "sub": "http://purl.obolibrary.org/obo/RO_0002411"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_10545",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33250"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_15986",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33696"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_18282",
+          "pred": "http://purl.obolibrary.org/obo/chebi#has_functional_parent",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_61120"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_23367",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33579"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_23367",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_36357"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_24431",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_23367"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_24431",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_24433"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_24431",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33250"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_24432",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_52211"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_24433",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_36357"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_24433",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33247"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_24532",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33833"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_24532",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_38101"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_25367",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33595"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_25367",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_72695"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_25555",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_51143"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_25585",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_25555"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_25585",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_27594"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_27594",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_50860"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33233",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_36338"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33247",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_50319"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33247",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_50320"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33250",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_24433"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33250",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_25585"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33250",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33318"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33252",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33250"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33253",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33252"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33284",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33937"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33285",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_24532"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33285",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_35352"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33300",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33302"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33300",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_25555"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33302",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_51143"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33306",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33582"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33306",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_27594"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33318",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33579"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33318",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33560"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33560",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33675"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33560",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33300"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33560",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33306"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33579",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33675"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33582",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_50860"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33595",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33655"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33595",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33832"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33595",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_5686"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33655",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33659"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33659",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33833"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33675",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33302"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33675",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33582"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33694",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33695"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33695",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_15986"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33696",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002233",
+          "sub": "http://purl.obolibrary.org/obo/GO_0140640"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33696",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33697"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33697",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002233",
+          "sub": "http://purl.obolibrary.org/obo/GO_0140098"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33791",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33696"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33791",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33792"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33792",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33697"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33832",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_24532"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33832",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33659"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33833",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_61120"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33839",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33694"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33937",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000087",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_25555"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33937",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000087",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_27594"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_35352",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_38101"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_36338",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_10545"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_36339",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33253"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_36340",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_36338"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_36340",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_36339"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_36342",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33233"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_36342",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_36340"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_36342",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_36343"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_36342",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_36347"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_36343",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_36344"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_36344",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_36339"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_36347",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33252"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_36347",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33253"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_36357",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_25367"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_36357",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33839"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_38101",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_18282"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_50297",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33696"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_50297",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_50299"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_50299",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33697"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_50319",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_15986"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_50319",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_50297"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_50320",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33791"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_50860",
+          "pred": "http://purl.obolibrary.org/obo/chebi#is_substituent_group_from",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33247"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_50860",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33285"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_50860",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33694"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_50860",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_72695"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_50906",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/BFO_0000023"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_50906",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_24432"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_51143",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_35352"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_51143",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_61120"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_52211",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_78295"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_5686",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_24532"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_61120",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_15986"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_72695",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33832"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_78295",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33284"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/EFO_0700006",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/EFO_0700007"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/EFO_0700006",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/EFO_0700008"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/GO_0003674",
@@ -372,6 +943,11 @@
           "sub": "http://purl.obolibrary.org/obo/GO_0016740"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/GO_0003824",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/GO_0140640"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/GO_0016740",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/GO_0016772"
@@ -380,6 +956,31 @@
           "obj": "http://purl.obolibrary.org/obo/GO_0016772",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/GO_0016301"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/GO_0140640",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/GO_0140098"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000070",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008853"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000070",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008919"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000070",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008930"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000070",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008931"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0000052",
@@ -557,9 +1158,24 @@
           "sub": "http://purl.obolibrary.org/obo/RO_0002578"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002211",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0012012"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002212",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0002409"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/RO_0002212",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002630"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002213",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0002407"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0002213",
@@ -764,6 +1380,16 @@
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0002410",
           "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0004028"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002410",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0009501"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002410",
+          "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0019000"
         },
         {
@@ -790,6 +1416,11 @@
           "obj": "http://purl.obolibrary.org/obo/RO_0002411",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002412"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002411",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0012011"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0002412",
@@ -1022,6 +1653,21 @@
           "sub": "http://purl.obolibrary.org/obo/RO_0002448"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/RO_0012011",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0012012"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0012012",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0002407"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0012012",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0002409"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/RO_0019000",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0019001"
@@ -1030,6 +1676,101 @@
           "obj": "http://purl.obolibrary.org/obo/RO_0019000",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0019002"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0001456",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030060"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0008913",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030059"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0008913",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030060"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0008919",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030019"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0008989",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/EFO_0700006"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0008990",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/EFO_0700008"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0008995",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0010961"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0008995",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030059"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0009918",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008992"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0010183",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008919"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0010183",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030060"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0010184",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008930"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0010184",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008931"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0010891",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030059"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0030003",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0009899"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0030003",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0009901"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0030003",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0009922"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0030004",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0011025"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0030005",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0010961"
         }
       ],
       "equivalentNodesSets": [
@@ -1042,6 +1783,32 @@
         }
       ],
       "id": "http://purl.obolibrary.org/obo/capo.json",
+      "logicalDefinitionAxioms": [
+        {
+          "definedClassId": "http://purl.obolibrary.org/obo/GO_0140098",
+          "genusIds": [
+            "http://purl.obolibrary.org/obo/GO_0003824"
+          ],
+          "restrictions": [
+            {
+              "fillerId": "http://purl.obolibrary.org/obo/CHEBI_33697",
+              "propertyId": "http://purl.obolibrary.org/obo/RO_0002233"
+            }
+          ]
+        },
+        {
+          "definedClassId": "http://purl.obolibrary.org/obo/GO_0140640",
+          "genusIds": [
+            "http://purl.obolibrary.org/obo/GO_0003824"
+          ],
+          "restrictions": [
+            {
+              "fillerId": "http://purl.obolibrary.org/obo/CHEBI_33696",
+              "propertyId": "http://purl.obolibrary.org/obo/RO_0002233"
+            }
+          ]
+        }
+      ],
       "meta": {
         "basicPropertyValues": [
           {
@@ -1058,10 +1825,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-07-28"
+            "val": "2022-10-27"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/capo/releases/2022-07-28/capo.json"
+        "version": "http://purl.obolibrary.org/obo/capo/releases/2022-10-27/capo.json"
       },
       "nodes": [
         {
@@ -1334,6 +2101,86 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/BFO_0000054",
+          "lbl": "realized in",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "realized in"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "this disease is realized in this disease course"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "this fragility is realized in this shattering"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "this investigator role is realized in this investigation"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "is realized by"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "realized_in"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
+                "val": "[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.obolibrary.org/obo/bfo.owl"
+              }
+            ],
+            "comments": [
+              "Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process"
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/BFO_0000055",
+          "lbl": "realizes",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "realizes"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "this disease course realizes this disease"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "this investigation realizes this investigator role"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "this shattering realizes this fragility"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
+                "val": "to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.obolibrary.org/obo/iao.owl"
+              }
+            ],
+            "comments": [
+              "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process"
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/BFO_0000062",
           "lbl": "preceded by",
           "meta": {
@@ -1422,6 +2269,2657 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_10545",
+          "lbl": "electron",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/charge",
+                "val": "-1"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/mass",
+                "val": "0.000548579903"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
+                "val": "0.0"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Elementary particle not affected by the strong force having a spin 1/2, a negative elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "electron",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "electron",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "electron",
+                "xrefs": [
+                  "KEGG_COMPOUND"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Elektron",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "beta",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "beta(-)",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "beta-particle",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "e",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "e(-)",
+                "xrefs": [
+                  "UniProt"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "e-",
+                "xrefs": [
+                  "KEGG_COMPOUND"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "negatron",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "KEGG:C05359"
+              },
+              {
+                "val": "PMID:21614077"
+              },
+              {
+                "val": "Wikipedia:Electron"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_15986",
+          "lbl": "polynucleotide",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/charge",
+                "val": "0"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/formula",
+                "val": "(C5H8O6PR)n.C10H17O10PR2"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:13672"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:14859"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:8312"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A nucleobase-containing molecular entity with a polymeric structure comprised of a linear sequence of 13 or more nucleotide residues."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "Polynucleotide",
+                "xrefs": [
+                  "KEGG_COMPOUND"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "polynucleotides",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "KEGG:C00419"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_18282",
+          "lbl": "nucleobase",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:13873"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:25598"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:2995"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "That part of DNA or RNA that may be involved in pairing."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Base",
+                "xrefs": [
+                  "KEGG_COMPOUND"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nucleobases",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "KEGG:C00701"
+              },
+              {
+                "val": "Wikipedia:Nucleobase"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_23367",
+          "lbl": "molecular entity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "molecular entity",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "entidad molecular",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "entidades moleculares",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "entite moleculaire",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "molecular entities",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "molekulare Entitaet",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_24431",
+          "lbl": "chemical entity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "chemical entity",
+                "xrefs": [
+                  "UniProt"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_24432",
+          "lbl": "biological role",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A role played by the molecular entity or part thereof within a biological context."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "biological function",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_24433",
+          "lbl": "group",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A defined linked collection of atoms or a single atom within a molecular entity."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "group",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Gruppe",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Rest",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "groupe",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "grupo",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "grupos",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_24532",
+          "lbl": "organic heterocyclic compound",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A cyclic compound having as ring members atoms of carbon and at least of one other element."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "organic heterocycle",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "organic heterocyclic compounds",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_25367",
+          "lbl": "molecule",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any polyatomic entity that is an electrically neutral entity consisting of more than one atom."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "molecule",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Molekuel",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "molecula",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "molecules",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "neutral molecular compounds",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_25555",
+          "lbl": "nitrogen atom",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/charge",
+                "val": "0"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/formula",
+                "val": "N"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/mass",
+                "val": "14.007"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
+                "val": "14.00307"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "nitrogen",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "7N",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "N",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Stickstoff",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "azote",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nitrogen",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nitrogeno",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "WebElements:N"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_25585",
+          "lbl": "nonmetal atom",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "nonmetal",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Nichtmetall",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Nichtmetalle",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "no metal",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "no metales",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "non-metal",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "non-metaux",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nonmetal",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nonmetals",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_27594",
+          "lbl": "carbon atom",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/charge",
+                "val": "0"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/formula",
+                "val": "C"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/inchi",
+                "val": "InChI=1S/C"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/inchikey",
+                "val": "OKTJSMMVPCPJKN-UHFFFAOYSA-N"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/mass",
+                "val": "12.01070"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
+                "val": "12.00000"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/smiles",
+                "val": "[C]"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:23009"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:3399"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "carbon",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "6C",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "C",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "C",
+                "xrefs": [
+                  "KEGG_COMPOUND"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Carbon",
+                "xrefs": [
+                  "KEGG_COMPOUND"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Kohlenstoff",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "carbon",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "carbone",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "carbonium",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "carbono",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "CAS:7440-44-0"
+              },
+              {
+                "val": "CAS:7440-44-0"
+              },
+              {
+                "val": "KEGG:C06265"
+              },
+              {
+                "val": "WebElements:C"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33233",
+          "lbl": "fundamental particle",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A particle not known to have substructure."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "elementary particle",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "elementary particles",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33247",
+          "lbl": "organic group",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any substituent group or skeleton containing carbon."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "organic groups",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33250",
+          "lbl": "atom",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:22671"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:23907"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A chemical entity constituting the smallest component of an element having the chemical properties of the element."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "atom",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "atome",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "atomo",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "atoms",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "atomus",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "element",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "elements",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33252",
+          "lbl": "atomic nucleus",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A nucleus is the positively charged central portion of an atom, excluding the orbital electrons."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "nucleus",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Atomkern",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Kern",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "noyau",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "noyau atomique",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nuclei",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nucleo",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nucleo atomico",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nucleus atomi",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33253",
+          "lbl": "nucleon",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Heavy nuclear particle: proton or neutron."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "nucleon",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "nucleon",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Nukleon",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Nukleonen",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nucleons",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33284",
+          "lbl": "nutrient",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A nutrient is a food component that an organism uses to survive and grow."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nutrients",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33285",
+          "lbl": "heteroorganic entity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A heteroorganic entity is an organic molecular entity in which carbon atoms or organic groups are bonded directly to one or more heteroatoms."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "heteroorganic entities",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "organoelement compounds",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33300",
+          "lbl": "pnictogen",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any p-block element atom that is in group 15 of the periodic table: nitrogen, phosphorus, arsenic, antimony and bismuth."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "pnictogens",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "group 15 elements",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "group V elements",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nitrogenoideos",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nitrogenoides",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "pnictogene",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "pnictogenes",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33302",
+          "lbl": "pnictogen molecular entity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A p-block molecular entity containing any pnictogen."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "pnictogen molecular entity",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "pnictogen molecular entities",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33306",
+          "lbl": "carbon group element atom",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "group 14 elements",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "carbon group element",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "carbon group elements",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "carbonoides",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "cristallogene",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "cristallogenes",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "group IV elements",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33318",
+          "lbl": "main group element atom",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "An atom belonging to one of the main groups (found in the s- and p- blocks) of the periodic table."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "main group elements",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Hauptgruppenelement",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Hauptgruppenelemente",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "main group element",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33560",
+          "lbl": "p-block element atom",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any main group element atom belonging to the p-block of the periodic table."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "p-block element",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "p-block elements",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33579",
+          "lbl": "main group molecular entity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A molecular entity containing one or more atoms from any of groups 1, 2, 13, 14, 15, 16, 17, and 18 of the periodic table."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "main group compounds",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "main group molecular entities",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33582",
+          "lbl": "carbon group molecular entity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "carbon group molecular entity",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "carbon group molecular entities",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33595",
+          "lbl": "cyclic compound",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any molecule that consists of a series of atoms joined together to form a ring."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "cyclic compounds",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "Wikipedia:Cyclic_compound"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33655",
+          "lbl": "aromatic compound",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A cyclically conjugated molecular entity with a stability (due to delocalization) significantly greater than that of a hypothetical localized structure (e.g. Kekule structure) is said to possess aromatic character."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "aromatic compounds",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "aromatic molecular entity",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "aromatics",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "aromatische Verbindungen",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33659",
+          "lbl": "organic aromatic compound",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "organic aromatic compounds",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33675",
+          "lbl": "p-block molecular entity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A main group molecular entity that contains one or more atoms of a p-block element."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "p-block compounds",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "p-block molecular entities",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "p-block molecular entitiy",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33694",
+          "lbl": "biomacromolecule",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A macromolecule formed by a living organism."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "biopolymer",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Biopolymere",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "biomacromolecules",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "biopolymers",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33695",
+          "lbl": "information biomacromolecule",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "genetically encoded biomacromolecules",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "genetically encoded biopolymers",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "information biomacromolecules",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "information biopolymers",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "information macromolecule",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "information macromolecules",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33696",
+          "lbl": "nucleic acid",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A macromolecule made up of nucleotide units and hydrolysable into certain pyrimidine or purine bases (usually adenine, cytosine, guanine, thymine, uracil), D-ribose or 2-deoxy-D-ribose and phosphoric acid."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "nucleic acids",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "NA",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Nukleinsaeure",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Nukleinsaeuren",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "acide nucleique",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "acides nucleiques",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "acido nucleico",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "acidos nucleicos",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33697",
+          "lbl": "ribonucleic acid",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "High molecular weight, linear polymers, composed of nucleotides containing ribose and linked by phosphodiester bonds; RNA is central to the synthesis of proteins."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "ribonucleic acids",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "ribonucleic acid",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "RNA",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "RNA",
+                "xrefs": [
+                  "UniProt"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "RNS",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Ribonukleinsaeure",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "pentosenucleic acids",
+                "xrefs": [
+                  "ChemIDplus"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "ribonucleic acids",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "ribose nucleic acid",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "yeast nucleic acid",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "CAS:63231-63-0"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33791",
+          "lbl": "canonical nucleoside residue",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "canonical nucleoside residues",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "common nucleoside residues",
+                "xrefs": [
+                  "CBN"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nucleoside residue",
+                "xrefs": [
+                  "CBN"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "standard nucleoside residues",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33792",
+          "lbl": "canonical ribonucleoside residue",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "N",
+                "xrefs": [
+                  "CBN"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Nuc",
+                "xrefs": [
+                  "CBN"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "canonical ribonucleoside residues",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "common ribonucleoside residue",
+                "xrefs": [
+                  "CBN"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "common ribonucleoside residues",
+                "xrefs": [
+                  "CBN"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "standard ribonucleoside residues",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33832",
+          "lbl": "organic cyclic compound",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any organic molecule that consists of atoms connected in the form of a ring."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "organic cyclic compounds",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33833",
+          "lbl": "heteroarene",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A heterocyclic compound formally derived from an arene by replacement of one or more methine (-C=) and/or vinylene (-CH=CH-) groups by trivalent or divalent heteroatoms, respectively, in such a way as to maintain the continuous pi-electron system characteristic of aromatic systems and a number of out-of-plane pi-electrons corresponding to the Hueckel rule (4n+2)."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "heteroarenes",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "hetarenes",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33839",
+          "lbl": "macromolecule",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A macromolecule is a molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "macromolecule",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "macromolecules",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "polymer",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "polymer molecule",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "polymers",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "Wikipedia:Macromolecule"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33937",
+          "lbl": "macronutrient",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any nutrient required in large quantities by organisms throughout their life in order to orchestrate a range of physiological functions. Macronutrients are usually chemical elements (carbon, hydrogen, nitrogen, oxygen, phosphorus and sulfur) that humans consume in the largest quantities. Calcium, sodium, magnesium and potassium are sometimes included as macronutrients because they are required in relatively large quantities compared with other vitamins and minerals."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "macronutrients",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_35352",
+          "lbl": "organonitrogen compound",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any heteroorganic entity containing at least one carbon-nitrogen bond."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "organonitrogen compounds",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "organonitrogens",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_36338",
+          "lbl": "lepton",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Lepton is a fermion that does not experience the strong force (strong interaction). The term is derived from the Greek lambdaepsilonpitauomicronsigma (small, thin)."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "leptons",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_36339",
+          "lbl": "baryon",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Baryon is a fermion that does experience the strong force (strong interaction). The term is derived from the Greek betaalpharhoupsilonsigma (heavy)."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "baryons",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_36340",
+          "lbl": "fermion",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Particle of half-integer spin quantum number following Fermi-Dirac statistics. Fermions are named after Enrico Fermi."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "fermion",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "fermions",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_36342",
+          "lbl": "subatomic particle",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A particle smaller than an atom."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "subatomic particles",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "Wikipedia:Subatomic_particle"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_36343",
+          "lbl": "composite particle",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A subatomic particle known to have substructure (i.e. consisting of smaller particles)."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "composite particles",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_36344",
+          "lbl": "hadron",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Hadron is a subatomic particle which experiences the strong force."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "hadrons",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_36347",
+          "lbl": "nuclear particle",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A nucleus or any of its constituents in any of their energy states."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "nuclear particle",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_36357",
+          "lbl": "polyatomic entity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any molecular entity consisting of more than one atom."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "polyatomic entities",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_38101",
+          "lbl": "organonitrogen heterocyclic compound",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any organonitrogen compound containing a cyclic component with nitrogen and at least one other element as ring member atoms."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "heterocyclic organonitrogen compounds",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "organonitrogen heterocyclic compounds",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_50297",
+          "lbl": "canonical nucleotide residue",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "canonical nucleotide residues",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_50299",
+          "lbl": "canonical ribonucleotide residue",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "canonical ribonucleotide residues",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_50319",
+          "lbl": "nucleotide residue",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nucleotide residues",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_50320",
+          "lbl": "nucleoside residue",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nucleoside residues",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_50860",
+          "lbl": "organic molecular entity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:25700"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:33244"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any molecular entity that contains carbon."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "organic compounds",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "organic entity",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "organic molecular entities",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/CHEBI_50906",
           "lbl": "role",
           "meta": {
@@ -1437,6 +4935,337 @@
             "subsets": [
               "http://purl.obolibrary.org/obo/chebi#3_STAR"
             ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_51143",
+          "lbl": "nitrogen molecular entity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:25556"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:7594"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Nitrogenous compounds",
+                "xrefs": [
+                  "KEGG_COMPOUND"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nitrogen compounds",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nitrogen molecular entities",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "KEGG:C06061"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_52211",
+          "lbl": "physiological role",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#1_STAR"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_5686",
+          "lbl": "heterocyclic compound",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A cyclic compound having as ring members atoms of at least two different elements."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "Heterocyclic compound",
+                "xrefs": [
+                  "KEGG_COMPOUND"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "compuesto heterociclico",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "compuestos heterociclicos",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "heterocycle",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "heterocyclic compounds",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_61120",
+          "lbl": "nucleobase-containing molecular entity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any compound that has a nucleobase as a part."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nucleobase-containing compound",
+                "xrefs": [
+                  "SUBMITTER"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nucleobase-containing compounds",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "nucleobase-containing molecular entities",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_72695",
+          "lbl": "organic molecule",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any molecule that consists of at least one carbon atom as part of the electrically neutral entity."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "organic compound",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "organic compounds",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "organic molecules",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_78295",
+          "lbl": "food component",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A physiological role played by any substance that is distributed in foodstuffs. It includes materials derived from plants or animals, such as vitamins or minerals, as well as environmental contaminants."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "dietary component",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "dietary components",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "food components",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/EFO_0700006",
+          "lbl": "ExSeq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "https://orcid.org/0000-0002-1773-2692"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/date",
+                "val": "2022-08-24T09:23:12Z"
+              }
+            ],
+            "definition": {
+              "val": "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.",
+              "xrefs": [
+                "https://orcid.org/0000-0003-4389-9821",
+                "https://www.science.org/doi/10.1126/science.aax2656"
+              ]
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "expansion sequencing",
+                "xrefs": [
+                  "PMID:33509999"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/EFO_0700007",
+          "lbl": "targeted ExSeq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "https://orcid.org/0000-0002-1773-2692"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/date",
+                "val": "2022-08-24T09:54:36Z"
+              }
+            ],
+            "definition": {
+              "val": "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode.",
+              "xrefs": [
+                "PMID:33509999",
+                "https://orcid.org/0000-0003-4389-9821"
+              ]
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/EFO_0700008",
+          "lbl": "untargeted ExSeq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "https://orcid.org/0000-0002-1773-2692"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/date",
+                "val": "2022-08-24T10:14:27Z"
+              }
+            ],
+            "definition": {
+              "val": "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ.",
+              "xrefs": [
+                "PMID:33509999",
+                "https://orcid.org/0000-0003-4389-9821"
+              ]
+            }
           },
           "type": "CLASS"
         },
@@ -1723,6 +5552,103 @@
             ]
           },
           "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/GO_0140098",
+          "lbl": "catalytic activity, acting on RNA",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/geneontology/go-ontology/issues/14225"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/geneontology/go-ontology/issues/21612"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "pg"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2017-09-14T12:05:21Z"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "molecular_function"
+              }
+            ],
+            "definition": {
+              "val": "Catalytic activity that acts to modify RNA, driven by ATP hydrolysis.",
+              "xrefs": [
+                "GOC:molecular_function_refactoring",
+                "GOC:pdt"
+              ]
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/go#goslim_generic",
+              "http://purl.obolibrary.org/obo/go#prokaryote_subset"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/GO_0140640",
+          "lbl": "catalytic activity, acting on a nucleic acid",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/geneontology/go-ontology/issues/21402"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "pg"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-05-11T06:31:07Z"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "molecular_function"
+              }
+            ],
+            "definition": {
+              "val": "Catalytic activity that acts to modify a nucleic acid.",
+              "xrefs": [
+                "GOC:pg"
+              ]
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000115",
+          "lbl": "definition",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000122"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000117",
+          "lbl": "term editor",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000122"
+              }
+            ]
+          },
+          "type": "PROPERTY"
         },
         {
           "id": "http://purl.obolibrary.org/obo/PATO_0000001",
@@ -2668,7 +6594,7 @@
               }
             ],
             "definition": {
-              "val": "Process(P1) negatively regulates process(P2) iff: P1 terminates P2, or P1 descreases the the frequency of initiation of P2 or the magnitude or rate of output of P2."
+              "val": "p negatively regulates q iff p regulates q, and p decreases the rate or magnitude of execution of q."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -2714,7 +6640,7 @@
               }
             ],
             "definition": {
-              "val": "Process(P1) postively regulates process(P2) iff: P1 initiates P2, or P1 increases the the frequency of initiation of P2 or the magnitude or rate of output of P2."
+              "val": "p positively regulates q iff p regulates q, and p increases the rate or magnitude of execution of q."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -2985,6 +6911,9 @@
             "comments": [
               "holds between x and y if and only if x is causally upstream of y and the progression of x increases the frequency, rate or extent of y"
             ],
+            "definition": {
+              "val": "p is causally upstream of, positive effect q iff p is casually upstream of q, and the execution of p is required for the execution of q."
+            },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
               "http://purl.obolibrary.org/obo/valid_for_gocam"
@@ -3021,6 +6950,13 @@
             ],
             "comments": [
               "holds between x and y if and only if x is causally upstream of y and the progression of x decreases the frequency, rate or extent of y"
+            ],
+            "definition": {
+              "val": "p is causally upstream of, negative effect q iff p is casually upstream of q, and the execution of p decreases the execution of q."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
+              "http://purl.obolibrary.org/obo/valid_for_gocam"
             ],
             "xrefs": [
               {
@@ -3128,6 +7064,9 @@
                 "val": "This relation differs from the parent relation 'capable of' in that the parent is weaker and only expresses a capability that may not be actually realized, whereas this relation is always realized."
               }
             ],
+            "definition": {
+              "val": "c enables p iff c is capable of p and c acts to execute p."
+            },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_gp2term"
             ]
@@ -3431,6 +7370,54 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/RO_0002407",
+          "lbl": "indirectly positively regulates",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Chris Mungall"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "indirectly activates"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002579",
+                "val": "http://purl.obolibrary.org/obo/RO_0002213"
+              }
+            ],
+            "definition": {
+              "val": "p indirectly positively regulates q iff p is indirectly causally upstream of q and p positively regulates q."
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0002409",
+          "lbl": "indirectly negatively regulates",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Chris Mungall"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "indirectly inhibits"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002579",
+                "val": "http://purl.obolibrary.org/obo/RO_0002212"
+              }
+            ],
+            "definition": {
+              "val": "p indirectly negatively regulates q iff p is indirectly causally upstream of q and p negatively regulates q."
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/RO_0002410",
           "lbl": "causally related to",
           "meta": {
@@ -3444,6 +7431,10 @@
                 "val": "This branch of the ontology deals with causal relations between entities. It is divided into two branches: causal relations between occurrents/processes, and causal relations between material entities. We take an 'activity flow-centric approach', with the former as primary, and define causal relations between material entities in terms of causal relations between occurrents.\n\nTo define causal relations in an activity-flow type network, we make use of 3 primitives:\n\n * Temporal: how do the intervals of the two occurrents relate? \n * Is the causal relation regulatory?\n * Is the influence positive or negative\n\nThe first of these can be formalized in terms of the Allen Interval Algebra. Informally, the 3 bins we care about are 'direct', 'indirect' or overlapping. Note that all causal relations should be classified under a RO temporal relation (see the branch under 'temporally related to'). Note that all causal relations are temporal, but not all temporal relations are causal. Two occurrents can be related in time without being causally connected. We take causal influence to be primitive, elucidated as being such that has the upstream changed, some qualities of the donwstream would necessarily be modified.\n\nFor the second, we consider a relationship to be regulatory if the system in which the activities occur is capable of altering the relationship to achieve some objective. This could include changing the rate of production of a molecule.\n\nFor the third, we consider the effect of the upstream process on the output(s) of the downstream process. If the level of output is increased, or the rate of production of the output is increased, then the direction is increased. Direction can be positive, negative or neutral or capable of either direction. Two positives in succession yield a positive, two negatives in succession yield a positive, otherwise the default assumption is that the net effect is canceled and the influence is neutral.\n\nEach of these 3 primitives can be composed to yield a cross-product of different relation types."
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "This branch of the ontology deals with causal relations between entities. It is divided into two branches: causal relations between occurrents/processes, and causal relations between material entities. We take an 'activity flow-centric approach', with the former as primary, and define causal relations between material entities in terms of causal relations between occurrents.\n\nTo define causal relations in an activity-flow type network, we make use of 3 primitives:\n\n * Temporal: how do the intervals of the two occurrents relate? \n * Is the causal relation regulatory?\n * Is the influence positive or negative?\n\nThe first of these can be formalized in terms of the Allen Interval Algebra. Informally, the 3 bins we care about are 'direct', 'indirect' or overlapping. Note that all causal relations should be classified under a RO temporal relation (see the branch under 'temporally related to'). Note that all causal relations are temporal, but not all temporal relations are causal. Two occurrents can be related in time without being causally connected. We take causal influence to be primitive, elucidated as being such that has the upstream changed, some qualities of the donwstream would necessarily be modified.\n\nFor the second, we consider a relationship to be regulatory if the system in which the activities occur is capable of altering the relationship to achieve some objective. This could include changing the rate of production of a molecule.\n\nFor the third, we consider the effect of the upstream process on the output(s) of the downstream process. If the level of output is increased, or the rate of production of the output is increased, then the direction is increased. Direction can be positive, negative or neutral or capable of either direction. Two positives in succession yield a positive, two negatives in succession yield a positive, otherwise the default assumption is that the net effect is canceled and the influence is neutral.\n\nEach of these 3 primitives can be composed to yield a cross-product of different relation types."
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Chris Mungall"
               },
@@ -3453,7 +7444,10 @@
               }
             ],
             "definition": {
-              "val": "This relation groups causal relations between material entities and causal relations between processes"
+              "val": "relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.",
+              "xrefs": [
+                "https://en.wikipedia.org/wiki/Causality"
+              ]
             }
           },
           "type": "PROPERTY"
@@ -3481,7 +7475,7 @@
               }
             ],
             "definition": {
-              "val": "p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain"
+              "val": "p is causally upstream of q iff p is causally related to q, the end of p precedes the end of q, and p is not an occurrent part of q."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -3522,7 +7516,7 @@
               }
             ],
             "definition": {
-              "val": "p is immediately causally upstream of q iff both (a) p immediately precedes q and (b) p is causally upstream of q. In addition, the output of p  must be an input of q."
+              "val": "p is immediately causally upstream of q iff p is causally upstream of q, and the end of p is coincident with the beginning of q."
             },
             "xrefs": [
               {
@@ -3559,7 +7553,7 @@
               }
             ],
             "definition": {
-              "val": "p 'causally upstream or within' q iff (1) the end of p is before the end of q and (2) the execution of p exerts some causal influence over the outputs of q; i.e. if p was abolished or the outputs of p were to be modified, this would necessarily affect q."
+              "val": "p is 'causally upstream or within' q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q."
             },
             "synonyms": [
               {
@@ -3940,7 +7934,7 @@
               }
             ],
             "definition": {
-              "val": "p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q."
+              "val": "p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one where the execution of p influences the execution of q. p may be upstream, downstream, part of, or a container of q."
             }
           },
           "type": "PROPERTY"
@@ -4093,7 +8087,7 @@
               }
             ],
             "definition": {
-              "val": "Process(P1) directly regulates process(P2) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2."
+              "val": "p directly regulates q iff p is immediately causally upstream of q and p regulates q."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -4271,7 +8265,7 @@
               }
             ],
             "definition": {
-              "val": "Process(P1) directly postively regulates process(P2) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P1 directly positively regulates P2."
+              "val": "p directly positively regulates q iff p is immediately causally upstream of q, and p positively regulates q."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -4300,13 +8294,33 @@
               }
             ],
             "definition": {
-              "val": "Process(P1) directly negatively regulates process(P2) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P1 directly negatively regulates P2."
+              "val": "p directly negatively regulates q iff p is immediately causally upstream of q, and p negatively regulates q."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
               "http://purl.obolibrary.org/obo/valid_for_go_ontology",
               "http://purl.obolibrary.org/obo/valid_for_gocam"
             ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0004028",
+          "lbl": "realized in response to stimulus",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "cjm"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2017-12-26T19:45:49Z"
+              }
+            ],
+            "definition": {
+              "val": "A relationship between a realizable entity R (e.g. function or disposition) and a material entity M where R is realized in response to a process that has an input stimulus of M."
+            }
           },
           "type": "PROPERTY"
         },
@@ -4487,6 +8501,59 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/RO_0009501",
+          "lbl": "realized in response to",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "A drought sensitivity trait that inheres in a whole plant is realized in a systemic response process in response to exposure to drought conditions."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "An inflammatory disease that is realized in response to an inflammatory process occurring in the gut (which is itself the realization of a process realized in response to harmful stimuli in the mucosal lining of th gut)"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "Environmental polymorphism in butterflies: These butterflies have a 'responsivity to day length trait' that is realized in response to the duration of the day, and is realized in developmental processes that lead to increased or decreased pigmentation in the adult morph."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "Austin Meier"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "Chris Mungall"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "David Osumi-Sutherland"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "Marie Angelique Laporte"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "https://docs.google.com/document/d/1KWhZxVBhIPkV6_daHta0h6UyHbjY2eIrnON1WIRGgdY/edit"
+              }
+            ],
+            "definition": {
+              "val": "r 'realized in response to' s iff, r is a realizable (e.g. a plant trait such as responsivity to drought), s is an environmental stimulus (a process), and s directly causes the realization of r."
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "triggered by process",
+                "xrefs": [
+                  "RO:cjm"
+                ]
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/RO_0011002",
           "lbl": "regulates activity of",
           "meta": {
@@ -4498,6 +8565,46 @@
             ],
             "definition": {
               "val": "The entity A has an activity that regulates an activity of the entity B. For example, A and B are gene products where the catalytic activity of A regulates the kinase activity of B."
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0012011",
+          "lbl": "indirectly causally upstream of",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "pg"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-09-26T06:07:17Z"
+              }
+            ],
+            "definition": {
+              "val": "p is indirectly causally upstream of q iff p is causally upstream of q and there exists some process r such that p is causally upstream of r and r is causally upstream of q."
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0012012",
+          "lbl": "indirectly regulates",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "pg"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-09-26T06:08:01Z"
+              }
+            ],
+            "definition": {
+              "val": "p indirectly regulates q iff p is indirectly causally upstream of q and p regulates q."
             }
           },
           "type": "PROPERTY"
@@ -4632,6 +8739,455 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.org/dc/elements/1.1/creator",
+          "lbl": "creator",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "dc-creator"
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "http://purl.org/dc/elements/1.1/creator"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008853",
+          "lbl": "Patch-seq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "Combine whole-cell electrophysiological patch-clamp recordings, single-cell RNA-sequencing, and morphological characterization (Patch-Seq)"
+            },
+            "xrefs": [
+              {
+                "val": "PMID:26689543"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008919",
+          "lbl": "Seq-Well",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "Barcoded mRNA capture beads and single cells are sealed in an array of subnanoliter wells."
+            },
+            "xrefs": [
+              {
+                "val": "PMID:28192419"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008930",
+          "lbl": "Smart-seq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "Switch mechanism at the 5’ end of RNA templates (Smart)."
+            },
+            "xrefs": [
+              {
+                "val": "PMID:22820318"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008931",
+          "lbl": "Smart-seq2",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "Switch mechanism at the 5’ end of RNA templates (Smart). According to the authors, Smart-seq2 transcriptome libraries have improved detection, coverage, bias and accuracy compared to Smart-seq libraries, and are generated with off-the-shelf reagents at lower cost."
+            },
+            "xrefs": [
+              {
+                "val": "PMID:24056875"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008992",
+          "lbl": "MERFISH",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "MERFISH is an image-based approach to single-cell transcriptomics in which RNAs are identified via a combinatorial labeling approach that encodes RNA species with error-robust barcodes followed by sequential rounds of single-molecule fluorescence in situ hybridization (smFISH) to read out these barcodes"
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "multiplexed error-robust fluorescence in situ hybridization"
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "PMID:27625426"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0009899",
+          "lbl": "10x 3' v2",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "10X 3' v2 is the second version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules. In the 3' assay, the polyd(T) sequence is part of the gel bead oligo (which also contains the 10x Barcode, UMI, and partial Illumina Read 1 sequence), with the template switch oligo (TSO) supplied in the RT Primer."
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "10X 3' v2"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X 3' v2 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X v2"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X v2 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10XV2"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x 3' v2 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x v2"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x v2 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x_v2"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0009901",
+          "lbl": "10x 3' v1",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "10x 3' v1 is the first version of the 10X sequencing technology that sequences from the 3' end of nucleic acid molecules. Differs from 5' v1 in the captured end from the polyadenylated transcript."
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "10X 3' v1"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X 3' v1 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X v1"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10XV1"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x 3' v1 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x v1"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x v1 sequencing"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0009922",
+          "lbl": "10x 3' v3",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "10X 3' v3 is the third version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules."
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "10X 3' v3"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X v3"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X v3 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10XV3"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x 3' v3 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x v3"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x v3 sequencing"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0010961",
+          "lbl": "Visium Spatial Gene Expression",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/creator",
+                "val": "paola"
+              }
+            ],
+            "definition": {
+              "val": "A spatial transcriptomics method developed by 10x Genomics that measures either the whole transcriptome or a defined set of transcripts in intact tissue sections and maps where gene activity is occurring.",
+              "xrefs": [
+                "http://orcid.org/0000-0001-7505-5418",
+                "https://pages.10xgenomics.com/rs/446-PBO-704/images/10x_LIT059_ProductSheet_VisiumSpatialGeneExpression_Letter_digital.pdf"
+              ]
+            },
+            "subsets": [
+              "http://www.ebi.ac.uk/efo/added_for_HCA"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "10X Visium"
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "Visium"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0011025",
+          "lbl": "10x 5' v1",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/creator",
+                "val": "paola"
+              }
+            ],
+            "definition": {
+              "val": "10x 5' v1 is the first version of the 10X sequencing technology that sequences from the 5' end of nucleic acid molecules. Differs from 3' v1 in the captured end from the polyadenylated transcript."
+            },
+            "subsets": [
+              "http://www.ebi.ac.uk/efo/added_for_HCA"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "10X 5' v1"
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "10x 5' v1"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X 5' v3"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x 5' v1 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x 5' v3"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x 5' v3 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x v1 5' sequencing"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0030019",
+          "lbl": "Seq-Well S3",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/creator",
+                "val": "paola"
+              }
+            ],
+            "definition": {
+              "val": "Seq-Well with second strand synthesis.",
+              "xrefs": [
+                "PMID:33053333"
+              ]
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "Seq-Well S^3"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0030059",
+          "lbl": "10x multiome",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/creator",
+                "val": "paola"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/date",
+                "val": "2021-12-13T15:33:28Z"
+              }
+            ],
+            "definition": {
+              "val": "Simultaneous profiling of gene expression and open chromatin from the same cell.",
+              "xrefs": [
+                "http://orcid.org/0000-0002-1196-4871"
+              ]
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "Chromium Single Cell Multiome ATAC + Gene Expression"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0030060",
+          "lbl": "mCT-seq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/creator",
+                "val": "paola"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/date",
+                "val": "2021-12-13T15:37:28Z"
+              }
+            ],
+            "definition": {
+              "val": "A method that can jointly capture cytosine DNA methylome (5mC) and transcriptome profiles from single cells/nuclei by partitioning RNA and DNA molecules through the incorporation of 5’-methyl-dCTP instead of dCTP during reverse transcription of RNA.",
+              "xrefs": [
+                "http://orcid.org/0000-0002-1196-4871",
+                "https://www.biorxiv.org/content/10.1101/434845v1"
+              ]
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "methylcytosine and transcriptome sequencing"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/BFO_0000016",
           "lbl": "disposition",
           "type": "CLASS"
@@ -4664,6 +9220,26 @@
         {
           "id": "http://purl.org/dc/terms/title",
           "lbl": "title",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+          "lbl": "database_cross_reference",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+          "lbl": "has_exact_synonym",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
+          "lbl": "has_related_synonym",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#inSubset",
+          "lbl": "in_subset",
           "type": "PROPERTY"
         }
       ],
@@ -4748,6 +9324,14 @@
         {
           "chainPredicateIds": [
             "http://purl.obolibrary.org/obo/BFO_0000051",
+            "http://purl.obolibrary.org/obo/BFO_0000055",
+            "http://purl.obolibrary.org/obo/RO_0000052"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0000057"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000051",
             "http://purl.obolibrary.org/obo/RO_0000057"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0000057"
@@ -4779,6 +9363,13 @@
             "http://purl.obolibrary.org/obo/RO_0002327"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0004031"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000054",
+            "http://purl.obolibrary.org/obo/RO_0002404"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0009501"
         },
         {
           "chainPredicateIds": [
@@ -4917,6 +9508,13 @@
         },
         {
           "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002233",
+            "http://purl.obolibrary.org/obo/RO_0009501"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0004028"
+        },
+        {
+          "chainPredicateIds": [
             "http://purl.obolibrary.org/obo/RO_0002304",
             "http://purl.obolibrary.org/obo/RO_0002327"
           ],
@@ -4983,10 +9581,59 @@
         },
         {
           "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002407",
+            "http://purl.obolibrary.org/obo/RO_0002629"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002407"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002407",
+            "http://purl.obolibrary.org/obo/RO_0002629"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002407"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002409",
+            "http://purl.obolibrary.org/obo/RO_0002409"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002407"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002409",
+            "http://purl.obolibrary.org/obo/RO_0002630"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002409"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002409",
+            "http://purl.obolibrary.org/obo/RO_0002630"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002409"
+        },
+        {
+          "chainPredicateIds": [
             "http://purl.obolibrary.org/obo/RO_0002578",
             "http://purl.obolibrary.org/obo/RO_0002578"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002211"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002629",
+            "http://purl.obolibrary.org/obo/RO_0002629"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002407"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002630",
+            "http://purl.obolibrary.org/obo/RO_0002630"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002409"
         }
       ]
     }
