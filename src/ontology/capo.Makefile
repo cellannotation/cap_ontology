@@ -11,6 +11,6 @@ TEMPLATES=$(patsubst %.tsv, $(TEMPLATESDIR)/%.owl, $(notdir $(wildcard $(TEMPLAT
 templates: $(TEMPLATES)
 
 $(TEMPLATESDIR)/%.owl: $(TEMPLATESDIR)/%.tsv $(SRC)
-	$(ROBOT) -vvv merge -i $(SRC) template --template $< --prefix "EFO: http://www.ebi.ac.uk/efo/EFO_" --output $(COMPONENTSDIR)/$*.owl && \
+	$(ROBOT) -vvv merge -i $(SRC) template --template $< --output $(COMPONENTSDIR)/$*.owl && \
 	$(ROBOT) -vvv annotate --input $(COMPONENTSDIR)/$*.owl --ontology-iri $(ONTBASE)/components/$*.owl -o $(COMPONENTSDIR)/$*.owl
 
