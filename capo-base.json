@@ -137,11 +137,11 @@
           },
           {
             "pred": "http://purl.org/dc/terms/description",
-            "val": "None"
+            "val": "An ontology that contains CAP related ontology terms gathered from different ontologies "
           },
           {
             "pred": "http://purl.org/dc/terms/license",
-            "val": "https://creativecommons.org/licenses/unspecified"
+            "val": "http://creativecommons.org/licenses/by/4.0/"
           },
           {
             "pred": "http://purl.org/dc/terms/title",
@@ -149,10 +149,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-10-27"
+            "val": "2022-11-15"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/capo/releases/2022-10-27/capo-base.json"
+        "version": "http://purl.obolibrary.org/obo/capo/releases/2022-11-15/capo-base.json"
       },
       "nodes": [
         {
@@ -678,6 +678,717 @@
           "id": "http://purl.org/dc/terms/title",
           "lbl": "title",
           "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CL_0000010",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000002",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000004",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000007",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000043",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000056",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000057",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000059",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000160",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000165",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000178",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000310",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000473",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000945",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000948",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000955",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000970",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000982",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000989",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000992",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000995",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000996",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000997",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000998",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001000",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001013",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001021",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001043",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001044",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001052",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001103",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001132",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001134",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001154",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001245",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001264",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001300",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001474",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001637",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001638",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001690",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001705",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001723",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001737",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001898",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001905",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001911",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001981",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001982",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001987",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002046",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002048",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002073",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002095",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002097",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002106",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002107",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002108",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002110",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002113",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002240",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002366",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002367",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002369",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002370",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002372",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002411",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002465",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0003126",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0003672",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0003889",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0005160",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0005169",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0006562",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0008846",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0012168",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0015143",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0018707",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_3011048",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
         }
       ]
     }

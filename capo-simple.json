@@ -6,11 +6,11 @@
         "basicPropertyValues": [
           {
             "pred": "http://purl.org/dc/terms/description",
-            "val": "None"
+            "val": "An ontology that contains CAP related ontology terms gathered from different ontologies "
           },
           {
             "pred": "http://purl.org/dc/terms/license",
-            "val": "https://creativecommons.org/licenses/unspecified"
+            "val": "http://creativecommons.org/licenses/by/4.0/"
           },
           {
             "pred": "http://purl.org/dc/terms/title",
@@ -18,10 +18,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-10-27"
+            "val": "2022-11-15"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/capo/releases/2022-10-27/capo-simple.json"
+        "version": "http://purl.obolibrary.org/obo/capo/releases/2022-11-15/capo-simple.json"
       },
       "nodes": [
         {
