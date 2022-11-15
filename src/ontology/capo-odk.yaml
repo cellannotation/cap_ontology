@@ -21,4 +21,5 @@ robot_java_args: '-Xmx16G'
 components:
   products:
     - filename: efo_cap.owl
+    - filename: cap_organ_slim.owl
 
