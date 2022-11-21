@@ -13,12 +13,9 @@ export_formats:
   - owl
   - obo
   - json
-import_group:
-  products: 
-    - id: ro
-    - id: pato
 robot_java_args: '-Xmx16G'
 components:
   products:
     - filename: efo_cap.owl
+    - filename: cap_organ_slim.owl
 

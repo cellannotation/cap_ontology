@@ -1,15 +1,19 @@
 format-version: 1.2
-data-version: capo/releases/2022-10-27/capo-base.owl
+data-version: capo/releases/2022-11-21/capo-base.owl
 ontology: capo/capo-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
-property_value: http://purl.org/dc/terms/description "None" xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: http://purl.org/dc/terms/description "An ontology that contains CAP related ontology terms gathered from different ontologies " xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
 property_value: http://purl.org/dc/terms/title "CAP Ontology" xsd:string
-property_value: owl:versionInfo "2022-10-27" xsd:string
+property_value: owl:versionInfo "2022-11-21" xsd:string
 
 [Term]
 id: CAPO:0000000
 name: root node
+
+[Term]
+id: CL:0000010
+subset: cap_organ_slim
 
 [Term]
 id: EFO:0008853
@@ -180,4 +184,316 @@ is_a: EFO:0700006 ! ExSeq
 relationship: BFO:0000051 EFO:0008990
 property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-1773-2692
 property_value: http://purl.org/dc/terms/date 2022-08-24T10:14:27Z xsd:dateTime
+
+[Term]
+id: UBERON:0000002
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000004
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000007
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000043
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000056
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000057
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000059
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000160
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000165
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000178
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000310
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000473
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000945
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000948
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000955
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000970
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000982
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000989
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000992
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000995
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000996
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000997
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0000998
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001000
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001013
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001021
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001043
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001044
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001052
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001103
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001132
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001134
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001154
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001245
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001264
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001300
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001474
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001637
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001638
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001690
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001705
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001723
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001737
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001898
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001905
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001911
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001981
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001982
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0001987
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002046
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002048
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002073
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002095
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002097
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002106
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002107
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002108
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002110
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002113
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002240
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002366
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002367
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002369
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002370
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002372
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002411
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0002465
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0003126
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0003672
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0003889
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0005160
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0005169
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0006562
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0008846
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0012168
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0015143
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:0018707
+subset: cap_organ_slim
+
+[Term]
+id: UBERON:3011048
+subset: cap_organ_slim
 

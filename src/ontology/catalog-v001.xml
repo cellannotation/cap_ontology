@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri name="http://purl.obolibrary.org/obo/capo/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/capo/imports/pato_import.owl" uri="imports/pato_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/capo/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
     <uri name="http://purl.obolibrary.org/obo/capo/components/efo_cap.owl" uri="components/efo_cap.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/capo/components/cap_organ_slim.owl" uri="components/cap_organ_slim.owl"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>
