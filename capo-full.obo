@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: capo/releases/2022-11-15/capo-full.owl
+data-version: capo/releases/2022-11-21/capo-full.owl
 ontology: capo/capo-full
 property_value: http://purl.org/dc/terms/description "An ontology that contains CAP related ontology terms gathered from different ontologies " xsd:string
-property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
 property_value: http://purl.org/dc/terms/title "CAP Ontology" xsd:string
-property_value: owl:versionInfo "2022-11-15" xsd:string
+property_value: owl:versionInfo "2022-11-21" xsd:string
 
 [Term]
 id: CAPO:0000000

@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/capo/patterns/definitions.owl>
-<http://purl.obolibrary.org/obo/capo/releases/2022-11-15/patterns/definitions.owl>
-Annotation(owl:versionInfo "2022-11-15"^^xsd:string)
+<http://purl.obolibrary.org/obo/capo/releases/2022-11-21/patterns/definitions.owl>
+Annotation(owl:versionInfo "2022-11-21"^^xsd:string)
 
 
 )

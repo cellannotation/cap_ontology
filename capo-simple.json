@@ -10,7 +10,7 @@
           },
           {
             "pred": "http://purl.org/dc/terms/license",
-            "val": "http://creativecommons.org/licenses/by/4.0/"
+            "val": "https://creativecommons.org/licenses/by/4.0/"
           },
           {
             "pred": "http://purl.org/dc/terms/title",
@@ -18,10 +18,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-11-15"
+            "val": "2022-11-21"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/capo/releases/2022-11-15/capo-simple.json"
+        "version": "http://purl.obolibrary.org/obo/capo/releases/2022-11-21/capo-simple.json"
       },
       "nodes": [
         {
