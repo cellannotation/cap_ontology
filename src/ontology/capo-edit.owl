@@ -9,14 +9,16 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/capo.owl>
-Import(<http://purl.obolibrary.org/obo/capo/patterns/definitions.owl>)
-Import(<http://purl.obolibrary.org/obo/capo/components/efo_cap.owl>)
 Import(<http://purl.obolibrary.org/obo/capo/components/cap_organ_slim.owl>)
+Import(<http://purl.obolibrary.org/obo/capo/components/efo_cap.owl>)
+Import(<http://purl.obolibrary.org/obo/capo/patterns/definitions.owl>)
 Annotation(dcterms:description "An ontology that contains CAP related ontology terms gathered from different ontologies ")
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "CAP Ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CAPO_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAPO_1000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAPO_1000001>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -45,6 +47,18 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 # Class: <http://purl.obolibrary.org/obo/CAPO_0000000> (root node)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAPO_0000000> "root node"@en)
+
+# Class: <http://purl.obolibrary.org/obo/CAPO_1000000> (doublet)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CAPO_1000000> "A Cell Annotation Platform (CAP) term used to identify a row in a “cell by gene” table that appears to contain combined data from a pair of cells rather than data from one cell and should therefore be discarded.")
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CAPO_1000000> "2023-10-13T09:28:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAPO_1000000> "doublet")
+
+# Class: <http://purl.obolibrary.org/obo/CAPO_1000001> (junk)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CAPO_1000001> "A Cell Annotation Platform (CAP) term used to identify a row in a “cell by gene” table that appears to contain non-cellular data rather than data from one cell and should therefore be discarded.")
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CAPO_1000001> "2023-10-13T09:30:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAPO_1000001> "junk")
 
 
 )
