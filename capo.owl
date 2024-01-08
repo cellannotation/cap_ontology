@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/capo.owl#"
      xml:base="http://purl.obolibrary.org/obo/capo.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dce="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/capo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/capo/releases/2022-11-21/capo.owl"/>
-        <terms:description>An ontology that contains CAP related ontology terms gathered from different ontologies </terms:description>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:title>CAP Ontology</terms:title>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-21</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/capo/releases/2024-01-08/capo.owl"/>
+        <dcterms:description>An ontology that contains CAP related ontology terms gathered from different ontologies </dcterms:description>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:title>CAP Ontology</dcterms:title>
+        <owl:versionInfo>2024-01-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -163,6 +163,26 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CAPO_1000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CAPO_1000000">
+        <obo:IAO_0000115>A Cell Annotation Platform (CAP) term used to identify a row in a “cell by gene” table that appears to contain combined data from a pair of cells rather than data from one cell and should therefore be discarded.</obo:IAO_0000115>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-13T09:28:29Z</dcterms:date>
+        <rdfs:label>doublet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CAPO_1000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CAPO_1000001">
+        <obo:IAO_0000115>A Cell Annotation Platform (CAP) term used to identify a row in a “cell by gene” table that appears to contain non-cellular data rather than data from one cell and should therefore be discarded.</obo:IAO_0000115>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-13T09:30:25Z</dcterms:date>
+        <rdfs:label>junk</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_33697 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33697"/>
@@ -181,25 +201,25 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0700006">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008989"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.</obo:IAO_0000115>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
-        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T09:23:12Z</terms:date>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">expansion sequencing</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.</obo:IAO_0000115>
+        <dce:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T09:23:12Z</dcterms:date>
+        <oboInOwl:hasExactSynonym>expansion sequencing</oboInOwl:hasExactSynonym>
         <rdfs:label>ExSeq</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EFO_0700006"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.</owl:annotatedTarget>
+        <owl:annotatedTarget>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4389-9821"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.science.org/doi/10.1126/science.aax2656</oboInOwl:hasDbXref>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:33509999</rdfs:comment>
+        <oboInOwl:hasDbXref>https://www.science.org/doi/10.1126/science.aax2656</oboInOwl:hasDbXref>
+        <rdfs:comment>PMID:33509999</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EFO_0700006"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">expansion sequencing</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:33509999</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>expansion sequencing</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:33509999</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -208,17 +228,17 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0700007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EFO_0700006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode.</obo:IAO_0000115>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
-        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T09:54:36Z</terms:date>
+        <obo:IAO_0000115>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode.</obo:IAO_0000115>
+        <dce:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T09:54:36Z</dcterms:date>
         <rdfs:label>targeted ExSeq</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EFO_0700007"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode.</owl:annotatedTarget>
+        <owl:annotatedTarget>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4389-9821"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:33509999</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:33509999</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -233,17 +253,17 @@
                 <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008990"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ.</obo:IAO_0000115>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
-        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T10:14:27Z</terms:date>
+        <obo:IAO_0000115>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ.</obo:IAO_0000115>
+        <dce:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T10:14:27Z</dcterms:date>
         <rdfs:label>untargeted ExSeq</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EFO_0700008"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ.</owl:annotatedTarget>
+        <owl:annotatedTarget>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4389-9821"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:33509999</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:33509999</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -910,10 +930,10 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Combine whole-cell electrophysiological patch-clamp recordings, single-cell RNA-sequencing, and morphological characterization (Patch-Seq)</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dani Welter</obo:IAO_0000117>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:26689543</oboInOwl:hasDbXref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patch-seq</rdfs:label>
+        <obo:IAO_0000115>Combine whole-cell electrophysiological patch-clamp recordings, single-cell RNA-sequencing, and morphological characterization (Patch-Seq)</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>PMID:26689543</oboInOwl:hasDbXref>
+        <rdfs:label>Patch-seq</rdfs:label>
     </owl:Class>
     
 
@@ -945,10 +965,10 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barcoded mRNA capture beads and single cells are sealed in an array of subnanoliter wells.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dani Welter</obo:IAO_0000117>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:28192419</oboInOwl:hasDbXref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seq-Well</rdfs:label>
+        <obo:IAO_0000115>Barcoded mRNA capture beads and single cells are sealed in an array of subnanoliter wells.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>PMID:28192419</oboInOwl:hasDbXref>
+        <rdfs:label>Seq-Well</rdfs:label>
     </owl:Class>
     
 
@@ -974,10 +994,10 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Switch mechanism at the 5’ end of RNA templates (Smart).</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dani Welter</obo:IAO_0000117>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:22820318</oboInOwl:hasDbXref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smart-seq</rdfs:label>
+        <obo:IAO_0000115>Switch mechanism at the 5’ end of RNA templates (Smart).</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>PMID:22820318</oboInOwl:hasDbXref>
+        <rdfs:label>Smart-seq</rdfs:label>
     </owl:Class>
     
 
@@ -1003,10 +1023,10 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Switch mechanism at the 5’ end of RNA templates (Smart). According to the authors, Smart-seq2 transcriptome libraries have improved detection, coverage, bias and accuracy compared to Smart-seq libraries, and are generated with off-the-shelf reagents at lower cost.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dani Welter</obo:IAO_0000117>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:24056875</oboInOwl:hasDbXref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smart-seq2</rdfs:label>
+        <obo:IAO_0000115>Switch mechanism at the 5’ end of RNA templates (Smart). According to the authors, Smart-seq2 transcriptome libraries have improved detection, coverage, bias and accuracy compared to Smart-seq libraries, and are generated with off-the-shelf reagents at lower cost.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>PMID:24056875</oboInOwl:hasDbXref>
+        <rdfs:label>Smart-seq2</rdfs:label>
     </owl:Class>
     
 
@@ -1043,11 +1063,11 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MERFISH is an image-based approach to single-cell transcriptomics in which RNAs are identified via a combinatorial labeling approach that encodes RNA species with error-robust barcodes followed by sequential rounds of single-molecule fluorescence in situ hybridization (smFISH) to read out these barcodes</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dani Welter</obo:IAO_0000117>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:27625426</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiplexed error-robust fluorescence in situ hybridization</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MERFISH</rdfs:label>
+        <obo:IAO_0000115>MERFISH is an image-based approach to single-cell transcriptomics in which RNAs are identified via a combinatorial labeling approach that encodes RNA species with error-robust barcodes followed by sequential rounds of single-molecule fluorescence in situ hybridization (smFISH) to read out these barcodes</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>PMID:27625426</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>multiplexed error-robust fluorescence in situ hybridization</oboInOwl:hasExactSynonym>
+        <rdfs:label>MERFISH</rdfs:label>
     </owl:Class>
     
 
@@ -1062,10 +1082,10 @@
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0009899">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10X 3&apos; v2 is the second version of the 10x sequencing technology that sequences from the 3&apos; end of nucleic acid molecules. In the 3&apos; assay, the polyd(T) sequence is part of the gel bead oligo (which also contains the 10x Barcode, UMI, and partial Illumina Read 1 sequence), with the template switch oligo (TSO) supplied in the RT Primer.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dani Welter</obo:IAO_0000117>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10X 3&apos; v2</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10X 3&apos; v2 sequencing</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115>10X 3&apos; v2 is the second version of the 10x sequencing technology that sequences from the 3&apos; end of nucleic acid molecules. In the 3&apos; assay, the polyd(T) sequence is part of the gel bead oligo (which also contains the 10x Barcode, UMI, and partial Illumina Read 1 sequence), with the template switch oligo (TSO) supplied in the RT Primer.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym>10X 3&apos; v2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>10X 3&apos; v2 sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10X v2</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10X v2 sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10XV2</oboInOwl:hasRelatedSynonym>
@@ -1082,10 +1102,10 @@
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0009901">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10x 3&apos; v1 is the first version of the 10X sequencing technology that sequences from the 3&apos; end of nucleic acid molecules. Differs from 5&apos; v1 in the captured end from the polyadenylated transcript.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dani Welter</obo:IAO_0000117>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10X 3&apos; v1</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10X 3&apos; v1 sequencing</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115>10x 3&apos; v1 is the first version of the 10X sequencing technology that sequences from the 3&apos; end of nucleic acid molecules. Differs from 5&apos; v1 in the captured end from the polyadenylated transcript.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym>10X 3&apos; v1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>10X 3&apos; v1 sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10X v1</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10XV1</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10x 3&apos; v1 sequencing</oboInOwl:hasRelatedSynonym>
@@ -1106,13 +1126,13 @@
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0009922">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10X 3&apos; v3 is the third version of the 10x sequencing technology that sequences from the 3&apos; end of nucleic acid molecules.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dani Welter</obo:IAO_0000117>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10X 3&apos; v3</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>10X 3&apos; v3 is the third version of the 10x sequencing technology that sequences from the 3&apos; end of nucleic acid molecules.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym>10X 3&apos; v3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>10X v3</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10X v3 sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10XV3</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10x 3&apos; v3 sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x 3&apos; v3 sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10x v3</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10x v3 sequencing</oboInOwl:hasRelatedSynonym>
         <rdfs:label>10x 3&apos; v3</rdfs:label>
@@ -1144,7 +1164,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008995"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030005"/>
         <obo:IAO_0000115>A spatial transcriptomics method developed by 10x Genomics that measures either the whole transcriptome or a defined set of transcripts in intact tissue sections and maps where gene activity is occurring.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paola</dc:creator>
+        <dce:creator>paola</dce:creator>
         <oboInOwl:hasExactSynonym>10X Visium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Visium</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://www.ebi.ac.uk/efo/added_for_HCA"/>
@@ -1165,7 +1185,7 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0011025">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030004"/>
         <obo:IAO_0000115>10x 5&apos; v1 is the first version of the 10X sequencing technology that sequences from the 5&apos; end of nucleic acid molecules. Differs from 3&apos; v1 in the captured end from the polyadenylated transcript.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paola</dc:creator>
+        <dce:creator>paola</dce:creator>
         <oboInOwl:hasExactSynonym>10X 5&apos; v1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>10x 5&apos; v1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>10X 5&apos; v3</oboInOwl:hasRelatedSynonym>
@@ -1202,7 +1222,7 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030019">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008919"/>
         <obo:IAO_0000115>Seq-Well with second strand synthesis.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paola</dc:creator>
+        <dce:creator>paola</dce:creator>
         <oboInOwl:hasExactSynonym>Seq-Well S^3</oboInOwl:hasExactSynonym>
         <rdfs:label>Seq-Well S3</rdfs:label>
     </owl:Class>
@@ -1222,8 +1242,8 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008995"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0010891"/>
         <obo:IAO_0000115>Simultaneous profiling of gene expression and open chromatin from the same cell.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paola</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-13T15:33:28Z</dc:date>
+        <dce:creator>paola</dce:creator>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-13T15:33:28Z</dce:date>
         <oboInOwl:hasExactSynonym>Chromium Single Cell Multiome ATAC + Gene Expression</oboInOwl:hasExactSynonym>
         <rdfs:label>10x multiome</rdfs:label>
     </owl:Class>
@@ -1243,8 +1263,8 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008913"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0010183"/>
         <obo:IAO_0000115>A method that can jointly capture cytosine DNA methylome (5mC) and transcriptome profiles from single cells/nuclei by partitioning RNA and DNA molecules through the incorporation of 5’-methyl-dCTP instead of dCTP during reverse transcription of RNA.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paola</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-13T15:37:28Z</dc:date>
+        <dce:creator>paola</dce:creator>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-13T15:37:28Z</dce:date>
         <oboInOwl:hasExactSynonym>methylcytosine and transcriptome sequencing</oboInOwl:hasExactSynonym>
         <rdfs:label>mCT-seq</rdfs:label>
     </owl:Class>
@@ -1259,5 +1279,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
 

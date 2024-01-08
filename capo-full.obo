@@ -1,14 +1,26 @@
 format-version: 1.2
-data-version: capo/releases/2022-11-21/capo-full.owl
+data-version: capo/releases/2024-01-08/capo-full.owl
 ontology: capo/capo-full
 property_value: http://purl.org/dc/terms/description "An ontology that contains CAP related ontology terms gathered from different ontologies " xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
 property_value: http://purl.org/dc/terms/title "CAP Ontology" xsd:string
-property_value: owl:versionInfo "2022-11-21" xsd:string
+property_value: owl:versionInfo "2024-01-08" xsd:string
 
 [Term]
 id: CAPO:0000000
 name: root node
+
+[Term]
+id: CAPO:1000000
+name: doublet
+def: "A Cell Annotation Platform (CAP) term used to identify a row in a “cell by gene” table that appears to contain combined data from a pair of cells rather than data from one cell and should therefore be discarded." []
+property_value: http://purl.org/dc/terms/date "2023-10-13T09:28:29Z" xsd:dateTime
+
+[Term]
+id: CAPO:1000001
+name: junk
+def: "A Cell Annotation Platform (CAP) term used to identify a row in a “cell by gene” table that appears to contain non-cellular data rather than data from one cell and should therefore be discarded." []
+property_value: http://purl.org/dc/terms/date "2023-10-13T09:30:25Z" xsd:dateTime
 
 [Term]
 id: CL:0000010
@@ -145,7 +157,7 @@ is_a: EFO:0008913
 is_a: EFO:0008995
 is_a: EFO:0010891
 property_value: http://purl.org/dc/elements/1.1/creator "paola" xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2021-12-13T15:33:28Z xsd:dateTime
+property_value: http://purl.org/dc/elements/1.1/date "2021-12-13T15:33:28Z" xsd:dateTime
 
 [Term]
 id: EFO:0030060
@@ -156,7 +168,7 @@ is_a: EFO:0001456
 is_a: EFO:0008913
 is_a: EFO:0010183
 property_value: http://purl.org/dc/elements/1.1/creator "paola" xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2021-12-13T15:37:28Z xsd:dateTime
+property_value: http://purl.org/dc/elements/1.1/date "2021-12-13T15:37:28Z" xsd:dateTime
 
 [Term]
 id: EFO:0700006
@@ -165,7 +177,7 @@ def: "A spatial transcriptomics assay that involves physically expanding specime
 synonym: "expansion sequencing" EXACT [PMID:33509999]
 is_a: EFO:0008989
 property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-1773-2692
-property_value: http://purl.org/dc/terms/date 2022-08-24T09:23:12Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2022-08-24T09:23:12Z" xsd:dateTime
 
 [Term]
 id: EFO:0700007
@@ -173,7 +185,7 @@ name: targeted ExSeq
 def: "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode." [https://orcid.org/0000-0003-4389-9821, PMID:33509999]
 is_a: EFO:0700006 ! ExSeq
 property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-1773-2692
-property_value: http://purl.org/dc/terms/date 2022-08-24T09:54:36Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2022-08-24T09:54:36Z" xsd:dateTime
 
 [Term]
 id: EFO:0700008
@@ -182,7 +194,7 @@ def: "A spatial transcriptomics assay that involves physically expanding specime
 is_a: EFO:0700006 ! ExSeq
 relationship: BFO:0000051 EFO:0008990
 property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-1773-2692
-property_value: http://purl.org/dc/terms/date 2022-08-24T10:14:27Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2022-08-24T10:14:27Z" xsd:dateTime
 
 [Term]
 id: UBERON:0000002
