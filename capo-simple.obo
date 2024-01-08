@@ -1,12 +1,24 @@
 format-version: 1.2
-data-version: capo/releases/2022-11-21/capo-simple.owl
+data-version: capo/releases/2024-01-08/capo-simple.owl
 ontology: capo/capo-simple
 property_value: http://purl.org/dc/terms/description "An ontology that contains CAP related ontology terms gathered from different ontologies " xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
 property_value: http://purl.org/dc/terms/title "CAP Ontology" xsd:string
-property_value: owl:versionInfo "2022-11-21" xsd:string
+property_value: owl:versionInfo "2024-01-08" xsd:string
 
 [Term]
 id: CAPO:0000000
 name: root node
+
+[Term]
+id: CAPO:1000000
+name: doublet
+def: "A Cell Annotation Platform (CAP) term used to identify a row in a “cell by gene” table that appears to contain combined data from a pair of cells rather than data from one cell and should therefore be discarded." []
+property_value: http://purl.org/dc/terms/date "2023-10-13T09:28:29Z" xsd:dateTime
+
+[Term]
+id: CAPO:1000001
+name: junk
+def: "A Cell Annotation Platform (CAP) term used to identify a row in a “cell by gene” table that appears to contain non-cellular data rather than data from one cell and should therefore be discarded." []
+property_value: http://purl.org/dc/terms/date "2023-10-13T09:30:25Z" xsd:dateTime
 

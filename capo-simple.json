@@ -18,12 +18,44 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-11-21"
+            "val": "2024-01-08"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/capo/releases/2022-11-21/capo-simple.json"
+        "version": "http://purl.obolibrary.org/obo/capo/releases/2024-01-08/capo-simple.json"
       },
       "nodes": [
+        {
+          "id": "http://purl.obolibrary.org/obo/CAPO_1000000",
+          "lbl": "doublet",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/date",
+                "val": "2023-10-13T09:28:29Z"
+              }
+            ],
+            "definition": {
+              "val": "A Cell Annotation Platform (CAP) term used to identify a row in a “cell by gene” table that appears to contain combined data from a pair of cells rather than data from one cell and should therefore be discarded."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CAPO_1000001",
+          "lbl": "junk",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/date",
+                "val": "2023-10-13T09:30:25Z"
+              }
+            ],
+            "definition": {
+              "val": "A Cell Annotation Platform (CAP) term used to identify a row in a “cell by gene” table that appears to contain non-cellular data rather than data from one cell and should therefore be discarded."
+            }
+          },
+          "type": "CLASS"
+        },
         {
           "id": "http://purl.obolibrary.org/obo/CAPO_0000000",
           "lbl": "root node",
