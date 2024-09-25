@@ -18,10 +18,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2024-01-08"
+            "val": "2024-09-25"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/capo/releases/2024-01-08/capo-simple.json"
+        "version": "http://purl.obolibrary.org/obo/capo/releases/2024-09-25/capo-simple.json"
       },
       "nodes": [
         {
@@ -57,23 +57,91 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/CAPO_0000000",
-          "lbl": "root node",
-          "type": "CLASS"
-        },
-        {
           "id": "http://purl.org/dc/terms/description",
           "lbl": "description",
+          "propertyType": "ANNOTATION",
           "type": "PROPERTY"
         },
         {
           "id": "http://purl.org/dc/terms/license",
           "lbl": "license",
+          "propertyType": "ANNOTATION",
           "type": "PROPERTY"
         },
         {
           "id": "http://purl.org/dc/terms/title",
           "lbl": "title",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CAPO_0000000",
+          "lbl": "root node",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "propertyType": "OBJECT",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/BFO_0000055",
+          "propertyType": "OBJECT",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000115",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000117",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0000081",
+          "propertyType": "OBJECT",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/elements/1.1/contributor",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/elements/1.1/creator",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/elements/1.1/date",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/date",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#inSubset",
+          "propertyType": "ANNOTATION",
           "type": "PROPERTY"
         }
       ]

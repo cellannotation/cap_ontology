@@ -120,6 +120,11 @@
         {
           "obj": "http://www.ebi.ac.uk/efo/EFO_0030004",
           "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0009900"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0030004",
+          "pred": "is_a",
           "sub": "http://www.ebi.ac.uk/efo/EFO_0011025"
         },
         {
@@ -149,10 +154,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2024-01-08"
+            "val": "2024-09-25"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/capo/releases/2024-01-08/capo-base.json"
+        "version": "http://purl.obolibrary.org/obo/capo/releases/2024-09-25/capo-base.json"
       },
       "nodes": [
         {
@@ -434,6 +439,36 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0009900",
+          "lbl": "10x 5' v2",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "10X 5' v2 is the second version of the 10x sequencing technology that sequences from the 5' end of nucleic acid molecules. In the 5' assay, the polyd(T) is supplied in the RT Primer, and the template switch oligo (TSO) is part of the gel bead oligo."
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "10X 5' v2"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10X 5' v2 sequencing"
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "10x 5' v2 sequencing"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://www.ebi.ac.uk/efo/EFO_0009901",
           "lbl": "10x 3' v1",
           "meta": {
@@ -692,24 +727,27 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/CAPO_0000000",
-          "lbl": "root node",
-          "type": "CLASS"
-        },
-        {
           "id": "http://purl.org/dc/terms/description",
           "lbl": "description",
+          "propertyType": "ANNOTATION",
           "type": "PROPERTY"
         },
         {
           "id": "http://purl.org/dc/terms/license",
           "lbl": "license",
+          "propertyType": "ANNOTATION",
           "type": "PROPERTY"
         },
         {
           "id": "http://purl.org/dc/terms/title",
           "lbl": "title",
+          "propertyType": "ANNOTATION",
           "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CAPO_0000000",
+          "lbl": "root node",
+          "type": "CLASS"
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_0000010",
@@ -1420,6 +1458,136 @@
               "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
             ]
           },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "propertyType": "OBJECT",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/BFO_0000055",
+          "propertyType": "OBJECT",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000115",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000117",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0000081",
+          "propertyType": "OBJECT",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/elements/1.1/contributor",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/elements/1.1/creator",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/elements/1.1/date",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/elements/1.1/type",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/date",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#inSubset",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33697",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OBI_0000070",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OBI_0000275",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0001456",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008913",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008989",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008990",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008995",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0009918",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0010183",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0010184",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0010891",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0030003",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0030004",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0030005",
           "type": "CLASS"
         }
       ]
