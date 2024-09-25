@@ -1,11 +1,14 @@
 format-version: 1.2
-data-version: capo/releases/2024-01-08/capo-base.owl
+data-version: capo/releases/2024-09-25/capo-base.owl
+idspace: dce http://purl.org/dc/elements/1.1/ 
+idspace: dcterms http://purl.org/dc/terms/ 
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 ontology: capo/capo-base
-property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
-property_value: http://purl.org/dc/terms/description "An ontology that contains CAP related ontology terms gathered from different ontologies " xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: http://purl.org/dc/terms/title "CAP Ontology" xsd:string
-property_value: owl:versionInfo "2024-01-08" xsd:string
+property_value: dce:type IAO:8000001
+property_value: dcterms:description "An ontology that contains CAP related ontology terms gathered from different ontologies " xsd:string
+property_value: dcterms:license https://creativecommons.org/licenses/by/4.0/
+property_value: dcterms:title "CAP Ontology" xsd:string
+property_value: owl:versionInfo "2024-09-25" xsd:string
 
 [Term]
 id: CAPO:0000000
@@ -15,13 +18,13 @@ name: root node
 id: CAPO:1000000
 name: doublet
 def: "A Cell Annotation Platform (CAP) term used to identify a row in a “cell by gene” table that appears to contain combined data from a pair of cells rather than data from one cell and should therefore be discarded." []
-property_value: http://purl.org/dc/terms/date "2023-10-13T09:28:29Z" xsd:dateTime
+property_value: dcterms:date "2023-10-13T09:28:29Z" xsd:dateTime
 
 [Term]
 id: CAPO:1000001
 name: junk
 def: "A Cell Annotation Platform (CAP) term used to identify a row in a “cell by gene” table that appears to contain non-cellular data rather than data from one cell and should therefore be discarded." []
-property_value: http://purl.org/dc/terms/date "2023-10-13T09:30:25Z" xsd:dateTime
+property_value: dcterms:date "2023-10-13T09:30:25Z" xsd:dateTime
 
 [Term]
 id: CL:0000010
@@ -88,6 +91,16 @@ is_a: EFO:0030003
 property_value: IAO:0000117 "Dani Welter" xsd:string
 
 [Term]
+id: EFO:0009900
+name: 10x 5' v2
+def: "10X 5' v2 is the second version of the 10x sequencing technology that sequences from the 5' end of nucleic acid molecules. In the 5' assay, the polyd(T) is supplied in the RT Primer, and the template switch oligo (TSO) is part of the gel bead oligo." []
+synonym: "10X 5' v2" EXACT []
+synonym: "10X 5' v2 sequencing" RELATED []
+synonym: "10x 5' v2 sequencing" RELATED []
+is_a: EFO:0030004
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
 id: EFO:0009901
 name: 10x 3' v1
 def: "10x 3' v1 is the first version of the 10X sequencing technology that sequences from the 3' end of nucleic acid molecules. Differs from 5' v1 in the captured end from the polyadenylated transcript." []
@@ -124,7 +137,7 @@ synonym: "10X Visium" EXACT []
 synonym: "Visium" EXACT []
 is_a: EFO:0008995
 is_a: EFO:0030005
-property_value: http://purl.org/dc/elements/1.1/creator "paola" xsd:string
+property_value: dce:creator "paola" xsd:string
 
 [Term]
 id: EFO:0011025
@@ -139,7 +152,7 @@ synonym: "10x 5' v3" RELATED []
 synonym: "10x 5' v3 sequencing" RELATED []
 synonym: "10x v1 5' sequencing" RELATED []
 is_a: EFO:0030004
-property_value: http://purl.org/dc/elements/1.1/creator "paola" xsd:string
+property_value: dce:creator "paola" xsd:string
 
 [Term]
 id: EFO:0030019
@@ -147,7 +160,7 @@ name: Seq-Well S3
 def: "Seq-Well with second strand synthesis." [PMID:33053333]
 synonym: "Seq-Well S^3" EXACT []
 is_a: EFO:0008919 ! Seq-Well
-property_value: http://purl.org/dc/elements/1.1/creator "paola" xsd:string
+property_value: dce:creator "paola" xsd:string
 
 [Term]
 id: EFO:0030059
@@ -157,8 +170,8 @@ synonym: "Chromium Single Cell Multiome ATAC + Gene Expression" EXACT []
 is_a: EFO:0008913
 is_a: EFO:0008995
 is_a: EFO:0010891
-property_value: http://purl.org/dc/elements/1.1/creator "paola" xsd:string
-property_value: http://purl.org/dc/elements/1.1/date "2021-12-13T15:33:28Z" xsd:dateTime
+property_value: dce:creator "paola" xsd:string
+property_value: dce:date "2021-12-13T15:33:28Z" xsd:dateTime
 
 [Term]
 id: EFO:0030060
@@ -168,8 +181,8 @@ synonym: "methylcytosine and transcriptome sequencing" EXACT []
 is_a: EFO:0001456
 is_a: EFO:0008913
 is_a: EFO:0010183
-property_value: http://purl.org/dc/elements/1.1/creator "paola" xsd:string
-property_value: http://purl.org/dc/elements/1.1/date "2021-12-13T15:37:28Z" xsd:dateTime
+property_value: dce:creator "paola" xsd:string
+property_value: dce:date "2021-12-13T15:37:28Z" xsd:dateTime
 
 [Term]
 id: EFO:0700006
@@ -177,16 +190,16 @@ name: ExSeq
 def: "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing." [https://orcid.org/0000-0003-4389-9821, https://www.science.org/doi/10.1126/science.aax2656] {comment="PMID:33509999"}
 synonym: "expansion sequencing" EXACT [PMID:33509999]
 is_a: EFO:0008989
-property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-1773-2692
-property_value: http://purl.org/dc/terms/date "2022-08-24T09:23:12Z" xsd:dateTime
+property_value: dce:contributor https://orcid.org/0000-0002-1773-2692
+property_value: dcterms:date "2022-08-24T09:23:12Z" xsd:dateTime
 
 [Term]
 id: EFO:0700007
 name: targeted ExSeq
 def: "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode." [https://orcid.org/0000-0003-4389-9821, PMID:33509999]
 is_a: EFO:0700006 ! ExSeq
-property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-1773-2692
-property_value: http://purl.org/dc/terms/date "2022-08-24T09:54:36Z" xsd:dateTime
+property_value: dce:contributor https://orcid.org/0000-0002-1773-2692
+property_value: dcterms:date "2022-08-24T09:54:36Z" xsd:dateTime
 
 [Term]
 id: EFO:0700008
@@ -194,8 +207,8 @@ name: untargeted ExSeq
 def: "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ." [https://orcid.org/0000-0003-4389-9821, PMID:33509999]
 is_a: EFO:0700006 ! ExSeq
 relationship: BFO:0000051 EFO:0008990
-property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-1773-2692
-property_value: http://purl.org/dc/terms/date "2022-08-24T10:14:27Z" xsd:dateTime
+property_value: dce:contributor https://orcid.org/0000-0002-1773-2692
+property_value: dcterms:date "2022-08-24T10:14:27Z" xsd:dateTime
 
 [Term]
 id: UBERON:0000002
