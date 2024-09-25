@@ -508,6 +508,20 @@
         <oboInOwl:inSubset rdf:resource="http://www.ebi.ac.uk/efo/added_for_HCA"/>
         <rdfs:label>10x 5&apos; v1</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0009900 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0009900">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030004"/>
+        <obo:IAO_0000115>10X 5&apos; v2 is the second version of the 10x sequencing technology that sequences from the 5&apos; end of nucleic acid molecules. In the 5&apos; assay, the polyd(T) is supplied in the RT Primer, and the template switch oligo (TSO) is part of the gel bead oligo.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym>10X 5&apos; v2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>10X 5&apos; v2 sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x 5&apos; v2 sequencing</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>10x 5&apos; v2</rdfs:label>
+    </owl:Class>
     
 
 
