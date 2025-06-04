@@ -11,11 +11,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/capo/capo-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/capo/releases/2024-09-25/capo-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/capo/releases/2025-06-04/capo-full.owl"/>
         <dcterms:description>An ontology that contains CAP related ontology terms gathered from different ontologies </dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>CAP Ontology</dcterms:title>
-        <owl:versionInfo>2024-09-25</owl:versionInfo>
+        <owl:versionInfo>2025-06-04</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1215,13 +1215,35 @@
 
     <!-- http://www.ebi.ac.uk/efo/EFO_0030003 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030003"/>
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030003">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030080"/>
+        <obo:IAO_0000115>10x 3&apos; transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 3&apos; end.</obo:IAO_0000115>
+        <dce:creator>paola</dce:creator>
+        <rdfs:label>10x 3&apos; transcription profiling</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030003"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>10x 3&apos; transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 3&apos; end.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-8674-0039</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
     <!-- http://www.ebi.ac.uk/efo/EFO_0030004 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030004"/>
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030004">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030080"/>
+        <obo:IAO_0000115>10x 5&apos; transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 5&apos; end.</obo:IAO_0000115>
+        <dce:creator>paola</dce:creator>
+        <rdfs:label>10x 5&apos; transcription profiling</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>10x 5&apos; transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 5&apos; end.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-8674-0039</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -1289,6 +1311,12 @@
         <oboInOwl:hasDbXref>http://orcid.org/0000-0002-1196-4871</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://www.biorxiv.org/content/10.1101/434845v1</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0030080 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030080"/>
 </rdf:RDF>
 
 
