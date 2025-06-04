@@ -131,6 +131,16 @@
           "obj": "http://www.ebi.ac.uk/efo/EFO_0030005",
           "pred": "is_a",
           "sub": "http://www.ebi.ac.uk/efo/EFO_0010961"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0030080",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030003"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0030080",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0030004"
         }
       ],
       "id": "http://purl.obolibrary.org/obo/capo/capo-base.json",
@@ -154,10 +164,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2024-09-25"
+            "val": "2025-06-04"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/capo/releases/2024-09-25/capo-base.json"
+        "version": "http://purl.obolibrary.org/obo/capo/releases/2025-06-04/capo-base.json"
       },
       "nodes": [
         {
@@ -639,6 +649,44 @@
                 "val": "10x v1 5' sequencing"
               }
             ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0030003",
+          "lbl": "10x 3' transcription profiling",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/creator",
+                "val": "paola"
+              }
+            ],
+            "definition": {
+              "val": "10x 3' transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 3' end.",
+              "xrefs": [
+                "https://orcid.org/0000-0002-8674-0039"
+              ]
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0030004",
+          "lbl": "10x 5' transcription profiling",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/creator",
+                "val": "paola"
+              }
+            ],
+            "definition": {
+              "val": "10x 5' transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 5' end.",
+              "xrefs": [
+                "https://orcid.org/0000-0002-8674-0039"
+              ]
+            }
           },
           "type": "CLASS"
         },
@@ -1579,15 +1627,11 @@
           "type": "CLASS"
         },
         {
-          "id": "http://www.ebi.ac.uk/efo/EFO_0030003",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.ebi.ac.uk/efo/EFO_0030004",
-          "type": "CLASS"
-        },
-        {
           "id": "http://www.ebi.ac.uk/efo/EFO_0030005",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0030080",
           "type": "CLASS"
         }
       ]

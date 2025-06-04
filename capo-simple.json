@@ -18,10 +18,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2024-09-25"
+            "val": "2025-06-04"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/capo/releases/2024-09-25/capo-simple.json"
+        "version": "http://purl.obolibrary.org/obo/capo/releases/2025-06-04/capo-simple.json"
       },
       "nodes": [
         {
