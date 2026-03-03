@@ -11,12 +11,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/capo/capo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/capo/releases/2025-06-04/capo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/capo/releases/2026-03-03/capo-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>An ontology that contains CAP related ontology terms gathered from different ontologies </dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>CAP Ontology</dcterms:title>
-        <owl:versionInfo>2025-06-04</owl:versionInfo>
+        <owl:versionInfo>2026-03-03</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -201,77 +201,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000010">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon#cap_organ_slim"/>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/EFO_0700006 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0700006">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008989"/>
-        <obo:IAO_0000115>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.</obo:IAO_0000115>
-        <dce:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T09:23:12Z</dcterms:date>
-        <oboInOwl:hasExactSynonym>expansion sequencing</oboInOwl:hasExactSynonym>
-        <rdfs:label>ExSeq</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EFO_0700006"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4389-9821"/>
-        <oboInOwl:hasDbXref>https://www.science.org/doi/10.1126/science.aax2656</oboInOwl:hasDbXref>
-        <rdfs:comment>PMID:33509999</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EFO_0700006"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>expansion sequencing</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:33509999</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/EFO_0700007 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0700007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EFO_0700006"/>
-        <obo:IAO_0000115>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode.</obo:IAO_0000115>
-        <dce:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T09:54:36Z</dcterms:date>
-        <rdfs:label>targeted ExSeq</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EFO_0700007"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4389-9821"/>
-        <oboInOwl:hasDbXref>PMID:33509999</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/EFO_0700008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0700008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EFO_0700006"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008990"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ.</obo:IAO_0000115>
-        <dce:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T10:14:27Z</dcterms:date>
-        <rdfs:label>untargeted ExSeq</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EFO_0700008"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4389-9821"/>
-        <oboInOwl:hasDbXref>PMID:33509999</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -1220,6 +1149,21 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/EFO_0022605 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0022605">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030004"/>
+        <obo:IAO_0000115>10X 5&apos; v3 is the third version of the 10x sequencing technology that sequences from the 5&apos; end of nucleic acid molecules. In the 5&apos; assay, the polyd(T) is supplied in the RT Primer, and the template switch oligo (TSO) is part of the gel bead oligo.</obo:IAO_0000115>
+        <dce:creator>Zoe May Pendlington</dce:creator>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-23T10:46:59Z</dce:date>
+        <oboInOwl:hasExactSynonym>10X 5&apos; v3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>10X 5&apos; v3 sequencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>10x 5&apos; v3 sequencing</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">10x 5&apos; v3</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/EFO_0030003 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030003">
@@ -1324,6 +1268,77 @@
     <!-- http://www.ebi.ac.uk/efo/EFO_0030080 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030080"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0700006 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0700006">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008989"/>
+        <obo:IAO_0000115>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.</obo:IAO_0000115>
+        <dce:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T09:23:12Z</dcterms:date>
+        <oboInOwl:hasExactSynonym>expansion sequencing</oboInOwl:hasExactSynonym>
+        <rdfs:label>ExSeq</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0700006"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4389-9821"/>
+        <oboInOwl:hasDbXref>https://www.science.org/doi/10.1126/science.aax2656</oboInOwl:hasDbXref>
+        <rdfs:comment>PMID:33509999</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0700006"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>expansion sequencing</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:33509999</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0700007 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0700007">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0700006"/>
+        <obo:IAO_0000115>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode.</obo:IAO_0000115>
+        <dce:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T09:54:36Z</dcterms:date>
+        <rdfs:label>targeted ExSeq</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0700007"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4389-9821"/>
+        <oboInOwl:hasDbXref>PMID:33509999</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0700008 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0700008">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0700006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008990"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ.</obo:IAO_0000115>
+        <dce:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T10:14:27Z</dcterms:date>
+        <rdfs:label>untargeted ExSeq</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0700008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4389-9821"/>
+        <oboInOwl:hasDbXref>PMID:33509999</oboInOwl:hasDbXref>
+    </owl:Axiom>
 </rdf:RDF>
 
 

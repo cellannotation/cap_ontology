@@ -3,16 +3,6 @@
     {
       "edges": [
         {
-          "obj": "http://purl.obolibrary.org/obo/EFO_0700006",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/EFO_0700007"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/EFO_0700006",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/EFO_0700008"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000070",
           "pred": "is_a",
           "sub": "http://www.ebi.ac.uk/efo/EFO_0008853"
@@ -55,12 +45,12 @@
         {
           "obj": "http://www.ebi.ac.uk/efo/EFO_0008989",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/EFO_0700006"
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0700006"
         },
         {
           "obj": "http://www.ebi.ac.uk/efo/EFO_0008990",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/EFO_0700008"
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0700008"
         },
         {
           "obj": "http://www.ebi.ac.uk/efo/EFO_0008995",
@@ -128,6 +118,11 @@
           "sub": "http://www.ebi.ac.uk/efo/EFO_0011025"
         },
         {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0030004",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0022605"
+        },
+        {
           "obj": "http://www.ebi.ac.uk/efo/EFO_0030005",
           "pred": "is_a",
           "sub": "http://www.ebi.ac.uk/efo/EFO_0010961"
@@ -141,6 +136,16 @@
           "obj": "http://www.ebi.ac.uk/efo/EFO_0030080",
           "pred": "is_a",
           "sub": "http://www.ebi.ac.uk/efo/EFO_0030004"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0700006",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0700007"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0700006",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0700008"
         }
       ],
       "id": "http://purl.obolibrary.org/obo/capo/capo-full.json",
@@ -160,10 +165,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2025-06-04"
+            "val": "2026-03-03"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/capo/releases/2025-06-04/capo-full.json"
+        "version": "http://purl.obolibrary.org/obo/capo/releases/2026-03-03/capo-full.json"
       },
       "nodes": [
         {
@@ -194,87 +199,6 @@
             ],
             "definition": {
               "val": "A Cell Annotation Platform (CAP) term used to identify a row in a “cell by gene” table that appears to contain non-cellular data rather than data from one cell and should therefore be discarded."
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/EFO_0700006",
-          "lbl": "ExSeq",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.org/dc/elements/1.1/contributor",
-                "val": "https://orcid.org/0000-0002-1773-2692"
-              },
-              {
-                "pred": "http://purl.org/dc/terms/date",
-                "val": "2022-08-24T09:23:12Z"
-              }
-            ],
-            "definition": {
-              "val": "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.",
-              "xrefs": [
-                "https://orcid.org/0000-0003-4389-9821",
-                "https://www.science.org/doi/10.1126/science.aax2656"
-              ]
-            },
-            "synonyms": [
-              {
-                "pred": "hasExactSynonym",
-                "val": "expansion sequencing",
-                "xrefs": [
-                  "PMID:33509999"
-                ]
-              }
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/EFO_0700007",
-          "lbl": "targeted ExSeq",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.org/dc/elements/1.1/contributor",
-                "val": "https://orcid.org/0000-0002-1773-2692"
-              },
-              {
-                "pred": "http://purl.org/dc/terms/date",
-                "val": "2022-08-24T09:54:36Z"
-              }
-            ],
-            "definition": {
-              "val": "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode.",
-              "xrefs": [
-                "PMID:33509999",
-                "https://orcid.org/0000-0003-4389-9821"
-              ]
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/EFO_0700008",
-          "lbl": "untargeted ExSeq",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.org/dc/elements/1.1/contributor",
-                "val": "https://orcid.org/0000-0002-1773-2692"
-              },
-              {
-                "pred": "http://purl.org/dc/terms/date",
-                "val": "2022-08-24T10:14:27Z"
-              }
-            ],
-            "definition": {
-              "val": "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ.",
-              "xrefs": [
-                "PMID:33509999",
-                "https://orcid.org/0000-0003-4389-9821"
-              ]
             }
           },
           "type": "CLASS"
@@ -649,6 +573,40 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0022605",
+          "lbl": "10x 5' v3",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/creator",
+                "val": "Zoe May Pendlington"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/date",
+                "val": "2024-04-23T10:46:59Z"
+              }
+            ],
+            "definition": {
+              "val": "10X 5' v3 is the third version of the 10x sequencing technology that sequences from the 5' end of nucleic acid molecules. In the 5' assay, the polyd(T) is supplied in the RT Primer, and the template switch oligo (TSO) is part of the gel bead oligo."
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "10X 5' v3"
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "10X 5' v3 sequencing"
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "10x 5' v3 sequencing"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://www.ebi.ac.uk/efo/EFO_0030003",
           "lbl": "10x 3' transcription profiling",
           "meta": {
@@ -767,6 +725,87 @@
                 "val": "methylcytosine and transcriptome sequencing"
               }
             ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0700006",
+          "lbl": "ExSeq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "https://orcid.org/0000-0002-1773-2692"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/date",
+                "val": "2022-08-24T09:23:12Z"
+              }
+            ],
+            "definition": {
+              "val": "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.",
+              "xrefs": [
+                "https://orcid.org/0000-0003-4389-9821",
+                "https://www.science.org/doi/10.1126/science.aax2656"
+              ]
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "expansion sequencing",
+                "xrefs": [
+                  "PMID:33509999"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0700007",
+          "lbl": "targeted ExSeq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "https://orcid.org/0000-0002-1773-2692"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/date",
+                "val": "2022-08-24T09:54:36Z"
+              }
+            ],
+            "definition": {
+              "val": "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode.",
+              "xrefs": [
+                "PMID:33509999",
+                "https://orcid.org/0000-0003-4389-9821"
+              ]
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0700008",
+          "lbl": "untargeted ExSeq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "https://orcid.org/0000-0002-1773-2692"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/date",
+                "val": "2022-08-24T10:14:27Z"
+              }
+            ],
+            "definition": {
+              "val": "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ.",
+              "xrefs": [
+                "PMID:33509999",
+                "https://orcid.org/0000-0003-4389-9821"
+              ]
+            }
           },
           "type": "CLASS"
         },
