@@ -133,9 +133,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/EFO_0700006 -->
+    <!-- http://www.ebi.ac.uk/efo/EFO_0700006 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0700006">
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0700006">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008989"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
@@ -144,7 +144,7 @@
         <rdfs:label>ExSeq</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EFO_0700006"/>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0700006"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4389-9821"/>
@@ -152,7 +152,7 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:33509999</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EFO_0700006"/>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0700006"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">expansion sequencing</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:33509999</oboInOwl:hasDbXref>
@@ -160,17 +160,17 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/EFO_0700007 -->
+    <!-- http://www.ebi.ac.uk/efo/EFO_0700007 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0700007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EFO_0700006"/>
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0700007">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0700006"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T09:54:36Z</terms:date>
         <rdfs:label>targeted ExSeq</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EFO_0700007"/>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0700007"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4389-9821"/>
@@ -179,10 +179,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/EFO_0700008 -->
+    <!-- http://www.ebi.ac.uk/efo/EFO_0700008 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0700008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EFO_0700006"/>
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0700008">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0700006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -195,7 +195,7 @@
         <rdfs:label>untargeted ExSeq</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EFO_0700008"/>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0700008"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4389-9821"/>
@@ -507,6 +507,21 @@
         <oboInOwl:hasRelatedSynonym>10x v1 5&apos; sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://www.ebi.ac.uk/efo/added_for_HCA"/>
         <rdfs:label>10x 5&apos; v1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0022605 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0022605">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030004"/>
+        <obo:IAO_0000115>10X 5&apos; v3 is the third version of the 10x sequencing technology that sequences from the 5&apos; end of nucleic acid molecules. In the 5&apos; assay, the polyd(T) is supplied in the RT Primer, and the template switch oligo (TSO) is part of the gel bead oligo.</obo:IAO_0000115>
+        <dc:creator>Zoe May Pendlington</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-23T10:46:59Z</dc:date>
+        <oboInOwl:hasExactSynonym>10X 5&apos; v3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>10X 5&apos; v3 sequencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>10x 5&apos; v3 sequencing</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">10x 5&apos; v3</rdfs:label>
     </owl:Class>
 
 
