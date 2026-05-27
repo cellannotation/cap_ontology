@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: capo/releases/2026-03-03/capo-base.owl
+data-version: capo/releases/2026-05-27/capo-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
@@ -8,7 +8,7 @@ property_value: dce:type IAO:8000001
 property_value: dcterms:description "An ontology that contains CAP related ontology terms gathered from different ontologies " xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/by/4.0/
 property_value: dcterms:title "CAP Ontology" xsd:string
-property_value: owl:versionInfo "2026-03-03" xsd:string
+property_value: owl:versionInfo "2026-05-27" xsd:string
 
 [Term]
 id: CAPO:0000000
@@ -153,6 +153,17 @@ synonym: "10x 5' v3 sequencing" RELATED []
 synonym: "10x v1 5' sequencing" RELATED []
 is_a: EFO:0030004 ! 10x 5' transcription profiling
 property_value: dce:creator "paola" xsd:string
+
+[Term]
+id: EFO:0022604
+name: 10x 3' v4
+def: "10X 3' v4 is the fourth version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules." []
+synonym: "10X 3' v4" EXACT []
+synonym: "10X 3' v4 sequencing" EXACT []
+synonym: "10x 3' v4 sequencing" EXACT []
+is_a: EFO:0030003 ! 10x 3' transcription profiling
+property_value: dce:creator "Zoe May Pendlington" xsd:string
+property_value: dce:date "2024-04-23T10:45:45Z" xsd:dateTime
 
 [Term]
 id: EFO:0022605

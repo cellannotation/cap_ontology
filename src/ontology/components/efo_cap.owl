@@ -511,6 +511,21 @@
 
 
 
+    <!-- http://www.ebi.ac.uk/efo/EFO_0022604 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0022604">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030003"/>
+        <obo:IAO_0000115>10X 3&apos; v4 is the fourth version of the 10x sequencing technology that sequences from the 3&apos; end of nucleic acid molecules.</obo:IAO_0000115>
+        <dc:creator>Zoe May Pendlington</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-23T10:45:45Z</dc:date>
+        <oboInOwl:hasExactSynonym>10X 3&apos; v4</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>10X 3&apos; v4 sequencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>10x 3&apos; v4 sequencing</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">10x 3&apos; v4</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://www.ebi.ac.uk/efo/EFO_0022605 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0022605">

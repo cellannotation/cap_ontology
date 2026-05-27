@@ -11,11 +11,11 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/capo/capo-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/capo/releases/2026-03-03/capo-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/capo/releases/2026-05-27/capo-simple.owl"/>
         <terms:description>An ontology that contains CAP related ontology terms gathered from different ontologies </terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>CAP Ontology</terms:title>
-        <owl:versionInfo>2026-03-03</owl:versionInfo>
+        <owl:versionInfo>2026-05-27</owl:versionInfo>
     </owl:Ontology>
     
 
