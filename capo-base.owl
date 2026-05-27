@@ -11,12 +11,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/capo/capo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/capo/releases/2026-03-03/capo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/capo/releases/2026-05-27/capo-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>An ontology that contains CAP related ontology terms gathered from different ontologies </dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>CAP Ontology</dcterms:title>
-        <owl:versionInfo>2026-03-03</owl:versionInfo>
+        <owl:versionInfo>2026-05-27</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1145,6 +1145,21 @@
         <oboInOwl:hasRelatedSynonym>10x v1 5&apos; sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://www.ebi.ac.uk/efo/added_for_HCA"/>
         <rdfs:label>10x 5&apos; v1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0022604 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0022604">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030003"/>
+        <obo:IAO_0000115>10X 3&apos; v4 is the fourth version of the 10x sequencing technology that sequences from the 3&apos; end of nucleic acid molecules.</obo:IAO_0000115>
+        <dce:creator>Zoe May Pendlington</dce:creator>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-23T10:45:45Z</dce:date>
+        <oboInOwl:hasExactSynonym>10X 3&apos; v4</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>10X 3&apos; v4 sequencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>10x 3&apos; v4 sequencing</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">10x 3&apos; v4</rdfs:label>
     </owl:Class>
     
 

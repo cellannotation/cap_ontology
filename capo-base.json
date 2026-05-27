@@ -108,6 +108,11 @@
           "sub": "http://www.ebi.ac.uk/efo/EFO_0009922"
         },
         {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0030003",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0022604"
+        },
+        {
           "obj": "http://www.ebi.ac.uk/efo/EFO_0030004",
           "pred": "is_a",
           "sub": "http://www.ebi.ac.uk/efo/EFO_0009900"
@@ -169,10 +174,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2026-03-03"
+            "val": "2026-05-27"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/capo/releases/2026-03-03/capo-base.json"
+        "version": "http://purl.obolibrary.org/obo/capo/releases/2026-05-27/capo-base.json"
       },
       "nodes": [
         {
@@ -577,6 +582,40 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0022604",
+          "lbl": "10x 3' v4",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/creator",
+                "val": "Zoe May Pendlington"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/date",
+                "val": "2024-04-23T10:45:45Z"
+              }
+            ],
+            "definition": {
+              "val": "10X 3' v4 is the fourth version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules."
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "10X 3' v4"
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "10X 3' v4 sequencing"
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "10x 3' v4 sequencing"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://www.ebi.ac.uk/efo/EFO_0022605",
           "lbl": "10x 5' v3",
           "meta": {
@@ -747,6 +786,14 @@
               }
             ],
             "definition": {
+              "meta": {
+                "basicPropertyValues": [
+                  {
+                    "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
+                    "val": "PMID:33509999"
+                  }
+                ]
+              },
               "val": "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.",
               "xrefs": [
                 "https://orcid.org/0000-0003-4389-9821",
