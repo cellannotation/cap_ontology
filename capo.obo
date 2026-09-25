@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2026-05-27
+data-version: releases/2026-09-25
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
@@ -7,7 +7,7 @@ ontology: capo
 property_value: dcterms:description "An ontology that contains CAP related ontology terms gathered from different ontologies " xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/by/4.0/
 property_value: dcterms:title "CAP Ontology" xsd:string
-property_value: owl:versionInfo "2026-05-27" xsd:string
+property_value: owl:versionInfo "2026-09-25" xsd:string
 
 [Term]
 id: CAPO:0000000
@@ -28,6 +28,15 @@ property_value: dcterms:date "2023-10-13T09:30:25Z" xsd:dateTime
 [Term]
 id: CL:0000010
 subset: cap_organ_slim
+
+[Term]
+id: EFO:0005684
+name: RNA-seq of coding RNA from single cells
+def: "An assay in which sequencing technology (e.g. Illumina) is used to generate RNA sequence, from the presumed coding transcibed regions of the genome, or analyse these or to quantitate transcript abundance in individual cells instead of a population of cells." []
+is_a: EFO:0003738
+is_a: EFO:0008913
+relationship: OBI:0000293 EFO:0007831
+property_value: IAO:0000117 "Dani Welter" xsd:string
 
 [Term]
 id: EFO:0008853

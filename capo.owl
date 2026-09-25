@@ -11,11 +11,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/capo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/capo/releases/2026-05-27/capo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/capo/releases/2026-09-25/capo.owl"/>
         <dcterms:description>An ontology that contains CAP related ontology terms gathered from different ontologies </dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>CAP Ontology</dcterms:title>
-        <owl:versionInfo>2026-05-27</owl:versionInfo>
+        <owl:versionInfo>2026-09-25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -135,6 +135,12 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
     
 
 
@@ -836,6 +842,36 @@
     <!-- http://www.ebi.ac.uk/efo/EFO_0001456 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001456"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003738 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003738"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0005684 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0005684">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003738"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008913"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0007831"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An assay in which sequencing technology (e.g. Illumina) is used to generate RNA sequence, from the presumed coding transcibed regions of the genome, or analyse these or to quantitate transcript abundance in individual cells instead of a population of cells.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <rdfs:label>RNA-seq of coding RNA from single cells</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0007831 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0007831"/>
     
 
 

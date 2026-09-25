@@ -313,6 +313,22 @@
     </owl:Class>
     
 
+    <!-- http://www.ebi.ac.uk/efo/EFO_0005684 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0005684">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003738"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008913"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0007831"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An assay in which sequencing technology (e.g. Illumina) is used to generate RNA sequence, from the presumed coding transcibed regions of the genome, or analyse these or to quantitate transcript abundance in individual cells instead of a population of cells.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <rdfs:label>RNA-seq of coding RNA from single cells</rdfs:label>
+    </owl:Class>
+    
 
     <!-- http://www.ebi.ac.uk/efo/EFO_0008931 -->
 
