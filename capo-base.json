@@ -28,6 +28,21 @@
           "sub": "http://www.ebi.ac.uk/efo/EFO_0030060"
         },
         {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0003738",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0005684"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0007831",
+          "pred": "http://purl.obolibrary.org/obo/OBI_0000293",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0005684"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0008913",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0005684"
+        },
+        {
           "obj": "http://www.ebi.ac.uk/efo/EFO_0008913",
           "pred": "is_a",
           "sub": "http://www.ebi.ac.uk/efo/EFO_0030059"
@@ -174,10 +189,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2026-05-27"
+            "val": "2026-09-25"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/capo/releases/2026-05-27/capo-base.json"
+        "version": "http://purl.obolibrary.org/obo/capo/releases/2026-09-25/capo-base.json"
       },
       "nodes": [
         {
@@ -208,6 +223,22 @@
             ],
             "definition": {
               "val": "A Cell Annotation Platform (CAP) term used to identify a row in a “cell by gene” table that appears to contain non-cellular data rather than data from one cell and should therefore be discarded."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0005684",
+          "lbl": "RNA-seq of coding RNA from single cells",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "An assay in which sequencing technology (e.g. Illumina) is used to generate RNA sequence, from the presumed coding transcibed regions of the genome, or analyse these or to quantitate transcript abundance in individual cells instead of a population of cells."
             }
           },
           "type": "CLASS"
@@ -1615,6 +1646,11 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/OBI_0000293",
+          "propertyType": "OBJECT",
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/RO_0000081",
           "propertyType": "OBJECT",
           "type": "PROPERTY"
@@ -1678,6 +1714,14 @@
         },
         {
           "id": "http://www.ebi.ac.uk/efo/EFO_0001456",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0003738",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0007831",
           "type": "CLASS"
         },
         {
