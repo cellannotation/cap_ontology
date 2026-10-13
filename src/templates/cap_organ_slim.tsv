@@ -13,6 +13,7 @@ UBERON:0000955	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	brain
 UBERON:0000310	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	breast
 UBERON:0002366	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	bulbo-urethral gland
 UBERON:0001982	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	capillary
+UBERON:0001017	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	central nervous system
 CL:0000010	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	cultured cell
 UBERON:0000002	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	uterine cervix
 UBERON:0002411	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	clitoris
@@ -57,6 +58,7 @@ UBERON:0001052	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	rectum
 UBERON:0001044	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	saliva-secreting gland
 UBERON:0001300	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	scrotum
 UBERON:0000998	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	seminal vesicle
+UBERON:0014892	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	skeletal muscle organ, vertebrate
 UBERON:0001134	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	skeletal muscle tissue
 UBERON:0002097	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	skin of body
 UBERON:0002108	http://purl.obolibrary.org/obo/uberon#cap_organ_slim	small intestine
