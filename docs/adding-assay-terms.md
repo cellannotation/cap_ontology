@@ -51,6 +51,12 @@ as an Assay, the same way `construct_Organ.sparql` uses an organ subset.
    3. runs the QC checks;
    4. opens a PR and links it in an issue comment.
 
+   If GitHub doesn't allow the workflow to open PRs, the comment links a
+   **Create pull request** page instead, with the title and description
+   already filled in. Click it and submit. This happens when the
+   `CAPO_BOT_TOKEN` secret is missing or lacks pull request access, and the
+   org doesn't let Actions create PRs.
+
    If something is wrong, the comment explains it instead (unknown ID, obsolete
    term, already present).
 3. Review the PR. The PR description lists:
