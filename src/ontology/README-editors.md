@@ -78,6 +78,11 @@ The CAP organ slim is generated from [../templates/cap_organ_slim.tsv](../templa
 Editing the TSV does not update the release. See [Updating the CAP organ slim](../../docs/updating-cap-organ-slim.md)
 for when and how to edit it and how to make the follow-up release PR.
 
+## Assay terms (EFO component)
+
+Assay terms are EFO classes in [components/efo_cap.owl](components/efo_cap.owl). Don't edit it by hand:
+use the issue form or `sh run.sh make add-efo-terms EFO_TERMS="EFO:..."`. See [Adding assay terms](../../docs/adding-assay-terms.md).
+
 ## Design patterns
 
 You can automate (class) term generation from design patterns by placing DOSDP

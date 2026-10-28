@@ -87,6 +87,12 @@ If you have never editted this ontology before, first follow a [general tutorial
 To add or remove CAP tissue/organ groups, edit `src/templates/cap_organ_slim.tsv` rather than `capo-edit.owl`.
 Follow [Updating the CAP organ slim](docs/updating-cap-organ-slim.md). The template change and the release are two separate PRs.
 
+### Adding assay terms
+
+Assay terms are EFO classes in `src/ontology/components/efo_cap.owl`. Open an
+[Add assay term](https://github.com/cellannotation/cap_ontology/issues/new?template=add-assay-term.yml) issue and a bot opens the PR.
+See [Adding assay terms](docs/adding-assay-terms.md). A release is still needed afterwards.
+
 ## Best Practices
 
 <a id="great-issues"></a>

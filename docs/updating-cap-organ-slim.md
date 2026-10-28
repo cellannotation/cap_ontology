@@ -58,7 +58,8 @@ Do **not** edit the template for:
 - Changes to the UBERON/CL terms themselves (labels, hierarchy). Raise those
   upstream in [UBERON](https://github.com/obophenotype/uberon/issues) or
   [CL](https://github.com/obophenotype/cell-ontology/issues).
-- EFO-derived terms. Those live in `components/efo_cap.owl`.
+- EFO-derived terms. Those live in `components/efo_cap.owl`; see
+  [Adding assay terms](adding-assay-terms.md).
 
 ## How to edit the template
 
