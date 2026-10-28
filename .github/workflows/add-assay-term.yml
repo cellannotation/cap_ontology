@@ -96,6 +96,7 @@ jobs:
         run: |
           {
             cat src/ontology/tmp/efo_report.md
+            echo
             echo "Source: EFO ${{ steps.efo.outputs.result }}"
             echo
             echo "After merging, the terms reach \`capo.owl\` only after a release. See [docs/adding-assay-terms.md](${{ github.server_url }}/${{ github.repository }}/blob/main/docs/adding-assay-terms.md#release-step-after-adding-terms)."
