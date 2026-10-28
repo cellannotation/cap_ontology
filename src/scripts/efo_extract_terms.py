@@ -7,6 +7,9 @@ triples whose subject is a term (following blank nodes such as restrictions), th
 owl:Axiom annotations on them, and declarations of the properties they use. That is
 what used to be copied by hand from efo.owl.
 
+Added terms are tagged `oboInOwl:inSubset capo:cap_assay`; the CAP pipeline
+(cap-pipeline-config construct_Assay.sparql) labels exactly those terms as Assay.
+
 It also writes a markdown report and fails if a term is missing or obsolete.
 
 usage: efo_extract_terms.py FILTERED_OWL COMPONENT_OWL OUT_OWL REPORT_MD EFO:0000001 [...]
@@ -17,6 +20,8 @@ from rdflib import BNode, Graph, Literal, URIRef
 from rdflib.namespace import OWL, RDF, RDFS
 
 EFO = "http://www.ebi.ac.uk/efo/EFO_"
+IN_SUBSET = URIRef("http://www.geneontology.org/formats/oboInOwl#inSubset")
+CAP_ASSAY = URIRef("http://purl.obolibrary.org/obo/capo#cap_assay")
 PROPERTY_TYPES = {OWL.AnnotationProperty, OWL.ObjectProperty, OWL.DatatypeProperty}
 
 
@@ -55,6 +60,7 @@ def main(filtered, component, out, report, terms):
             copy_node(src, new, iri)
             for ax in src.subjects(OWL.annotatedSource, iri):
                 copy_node(src, new, ax)
+            new.add((iri, IN_SUBSET, CAP_ASSAY))
             added.append((term, str(label)))
 
     # declare the properties used, so OWLAPI parses restrictions/annotations correctly

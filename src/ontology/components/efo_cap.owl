@@ -7,6 +7,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:capo="http://purl.obolibrary.org/obo/capo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
@@ -39,6 +40,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/capo#cap_assay -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/capo#cap_assay">
+        <rdfs:label>CAP assay</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
@@ -60,6 +70,12 @@
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     
 
 
@@ -176,6 +192,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115>An assay in which sequencing technology (e.g. Illumina) is used to generate RNA sequence, from the presumed coding transcibed regions of the genome, or analyse these or to quantitate transcript abundance in individual cells instead of a population of cells.</obo:IAO_0000115>
         <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>RNA-seq of coding RNA from single cells</rdfs:label>
     </owl:Class>
     
@@ -210,6 +227,7 @@
         <obo:IAO_0000115>Combine whole-cell electrophysiological patch-clamp recordings, single-cell RNA-sequencing, and morphological characterization (Patch-Seq)</obo:IAO_0000115>
         <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
         <oboInOwl:hasDbXref>PMID:26689543</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>Patch-seq</rdfs:label>
     </owl:Class>
     
@@ -245,6 +263,7 @@
         <obo:IAO_0000115>Barcoded mRNA capture beads and single cells are sealed in an array of subnanoliter wells.</obo:IAO_0000115>
         <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
         <oboInOwl:hasDbXref>PMID:28192419</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>Seq-Well</rdfs:label>
     </owl:Class>
     
@@ -274,6 +293,7 @@
         <obo:IAO_0000115>Switch mechanism at the 5’ end of RNA templates (Smart).</obo:IAO_0000115>
         <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
         <oboInOwl:hasDbXref>PMID:22820318</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>Smart-seq</rdfs:label>
     </owl:Class>
     
@@ -303,6 +323,7 @@
         <obo:IAO_0000115>Switch mechanism at the 5’ end of RNA templates (Smart). According to the authors, Smart-seq2 transcriptome libraries have improved detection, coverage, bias and accuracy compared to Smart-seq libraries, and are generated with off-the-shelf reagents at lower cost.</obo:IAO_0000115>
         <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
         <oboInOwl:hasDbXref>PMID:24056875</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>Smart-seq2</rdfs:label>
     </owl:Class>
     
@@ -344,6 +365,7 @@
         <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
         <oboInOwl:hasDbXref>PMID:27625426</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>multiplexed error-robust fluorescence in situ hybridization</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>MERFISH</rdfs:label>
     </owl:Class>
     
@@ -362,6 +384,7 @@
         <obo:IAO_0000115>10X 3&apos; v2 is the second version of the 10x sequencing technology that sequences from the 3&apos; end of nucleic acid molecules. In the 3&apos; assay, the polyd(T) sequence is part of the gel bead oligo (which also contains the 10x Barcode, UMI, and partial Illumina Read 1 sequence), with the template switch oligo (TSO) supplied in the RT Primer.</obo:IAO_0000115>
         <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
         <oboInOwl:hasExactSynonym>10X 3&apos; v2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>10X 3&apos; v2 sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10X v2</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10X v2 sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10XV2</oboInOwl:hasRelatedSynonym>
@@ -369,7 +392,7 @@
         <oboInOwl:hasRelatedSynonym>10x v2</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10x v2 sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10x_v2</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>10X 3&apos; v2 sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>10x 3&apos; v2</rdfs:label>
     </owl:Class>
     
@@ -384,6 +407,7 @@
         <oboInOwl:hasExactSynonym>10X 5&apos; v2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>10X 5&apos; v2 sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10x 5&apos; v2 sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>10x 5&apos; v2</rdfs:label>
     </owl:Class>
     
@@ -396,12 +420,13 @@
         <obo:IAO_0000115>10x 3&apos; v1 is the first version of the 10X sequencing technology that sequences from the 3&apos; end of nucleic acid molecules. Differs from 5&apos; v1 in the captured end from the polyadenylated transcript.</obo:IAO_0000115>
         <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
         <oboInOwl:hasExactSynonym>10X 3&apos; v1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>10X 3&apos; v1 sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10X v1</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10XV1</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10x 3&apos; v1 sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10x v1</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10x v1 sequencing</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>10X 3&apos; v1 sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>10x 3&apos; v1</rdfs:label>
     </owl:Class>
     
@@ -423,9 +448,10 @@
         <oboInOwl:hasRelatedSynonym>10X v3</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10X v3 sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10XV3</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x 3&apos; v3 sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10x v3</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10x v3 sequencing</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>10x 3&apos; v3 sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>10x 3&apos; v3</rdfs:label>
     </owl:Class>
     
@@ -458,6 +484,7 @@
         <dc:creator>paola</dc:creator>
         <oboInOwl:hasExactSynonym>10X Visium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Visium</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <oboInOwl:inSubset rdf:resource="http://www.ebi.ac.uk/efo/added_for_HCA"/>
         <rdfs:label>Visium Spatial Gene Expression</rdfs:label>
     </owl:Class>
@@ -484,6 +511,7 @@
         <oboInOwl:hasRelatedSynonym>10x 5&apos; v3</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10x 5&apos; v3 sequencing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>10x v1 5&apos; sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <oboInOwl:inSubset rdf:resource="http://www.ebi.ac.uk/efo/added_for_HCA"/>
         <rdfs:label>10x 5&apos; v1</rdfs:label>
     </owl:Class>
@@ -500,6 +528,7 @@
         <oboInOwl:hasExactSynonym>10X 3&apos; v4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>10X 3&apos; v4 sequencing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>10x 3&apos; v4 sequencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label xml:lang="en">10x 3&apos; v4</rdfs:label>
     </owl:Class>
     
@@ -515,6 +544,7 @@
         <oboInOwl:hasExactSynonym>10X 5&apos; v3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>10X 5&apos; v3 sequencing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>10x 5&apos; v3 sequencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label xml:lang="en">10x 5&apos; v3</rdfs:label>
     </owl:Class>
     
@@ -526,6 +556,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030080"/>
         <obo:IAO_0000115>10x 3&apos; transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 3&apos; end.</obo:IAO_0000115>
         <dc:creator>paola</dc:creator>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>10x 3&apos; transcription profiling</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -543,6 +574,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030080"/>
         <obo:IAO_0000115>10x 5&apos; transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 5&apos; end.</obo:IAO_0000115>
         <dc:creator>paola</dc:creator>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>10x 5&apos; transcription profiling</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -567,6 +599,7 @@
         <obo:IAO_0000115>Seq-Well with second strand synthesis.</obo:IAO_0000115>
         <dc:creator>paola</dc:creator>
         <oboInOwl:hasExactSynonym>Seq-Well S^3</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>Seq-Well S3</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -588,6 +621,7 @@
         <dc:creator>paola</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-13T15:33:28Z</dc:date>
         <oboInOwl:hasExactSynonym>Chromium Single Cell Multiome ATAC + Gene Expression</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>10x multiome</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -609,6 +643,7 @@
         <dc:creator>paola</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-13T15:37:28Z</dc:date>
         <oboInOwl:hasExactSynonym>methylcytosine and transcriptome sequencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>mCT-seq</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -635,6 +670,7 @@
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T09:23:12Z</terms:date>
         <oboInOwl:hasExactSynonym>expansion sequencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>ExSeq</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -661,6 +697,7 @@
         <obo:IAO_0000115>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by targeted padlock probe hybridization, amplification, and in situ sequencing of padlock barcode.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T09:54:36Z</terms:date>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>targeted ExSeq</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -686,6 +723,7 @@
         <obo:IAO_0000115>A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by reverse transcription, amplification, and in situ sequencing of untargeted RNA using FISSEQ.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-24T10:14:27Z</terms:date>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/capo#cap_assay"/>
         <rdfs:label>untargeted ExSeq</rdfs:label>
     </owl:Class>
     <owl:Axiom>

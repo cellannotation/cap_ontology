@@ -12,6 +12,21 @@ That component is imported by `capo-edit.owl` and included in every release.
 **Adding a term to `efo_cap.owl` does not change the release.** CAP only sees
 the term after the [release step](#release-step-after-adding-terms).
 
+### Used by the CAP pipeline
+
+Each assay term is tagged
+`oboInOwl:inSubset <http://purl.obolibrary.org/obo/capo#cap_assay>`. The CAP
+pipeline ([cap-pipeline-config](https://github.com/cellannotation/cap-pipeline-config))
+loads `capo-base.owl` from `main`. Its
+`config/dumps/sparql/construct_Assay.sparql` labels every term in that subset
+as an Assay, the same way `construct_Organ.sparql` uses an organ subset.
+
+- Nothing needs editing in cap-pipeline-config when you add an assay. The tag
+  is added automatically by the issue form and by `make add-efo-terms`.
+- A new assay reaches CAP only after the CAPO release PR is merged into `main`.
+- The parent classes in `efo_cap.owl` are not tagged, so they don't become
+  Assays.
+
 ---
 
 ## When to add a term
@@ -83,7 +98,7 @@ There's no need to copy blocks from `efo.owl` by hand any more. The
 2. `src/scripts/efo_extract_terms.py` keeps only the axioms whose subject is the
    term: parents, restrictions, label, definition, synonyms, and annotations on
    them. It drops references from other classes, e.g. `child subClassOf term`.
-   It also checks that each term exists, isn't obsolete and isn't already present,
+   It tags the term with the `cap_assay` subset. It also checks that each term exists, isn't obsolete and isn't already present,
    and writes the report.
 3. `robot merge` adds the result to `efo_cap.owl`.
 
