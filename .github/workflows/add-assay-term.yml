@@ -1,0 +1,129 @@
+# Adds EFO assay terms to src/ontology/components/efo_cap.owl and opens a PR.
+# Triggered by an "Add assay term" issue (label new-assay-term) or manually.
+# See docs/adding-assay-terms.md
+
+name: Add assay terms
+
+on:
+  issues:
+    types: [opened, labeled]
+  workflow_dispatch:
+    inputs:
+      terms:
+        description: "EFO IDs, space separated (e.g. EFO:0022604 EFO:0005684)"
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: add-assay-term-${{ github.event.issue.number || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  add_terms:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.action == 'opened' && contains(github.event.issue.labels.*.name, 'new-assay-term')) ||
+      (github.event.action == 'labeled' && github.event.label.name == 'new-assay-term')
+    runs-on: ubuntu-latest
+    container: obolibrary/odkfull:v1.3.1
+    env:
+      ROBOT_JAVA_ARGS: -Xmx12G
+      ISSUE: ${{ github.event.issue.number }}
+
+    steps:
+      # Only people who can triage issues may trigger a run, so issues from
+      # anyone else wait until a maintainer re-applies the label.
+      - name: Check permission
+        if: github.event_name == 'issues'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data } = await github.rest.repos.getCollaboratorPermissionLevel({
+              ...context.repo, username: context.actor });
+            if (!['admin', 'maintain', 'write', 'triage'].includes(data.role_name)) {
+              const msg = 'Waiting for a maintainer: re-apply the `new-assay-term` label to run this.';
+              require('fs').writeFileSync('/tmp/efo_error.md', msg);
+              core.setFailed(msg);
+            }
+
+      - uses: actions/checkout@v4
+
+      - name: Get EFO release
+        id: efo
+        uses: actions/github-script@v7
+        with:
+          result-encoding: string
+          script: |
+            const { data } = await github.rest.repos.getLatestRelease({ owner: 'EBISPOT', repo: 'efo' });
+            return data.tag_name;
+
+      - uses: actions/cache@v4
+        with:
+          path: src/ontology/tmp/efo.owl
+          key: efo-${{ steps.efo.outputs.result }}
+
+      - name: Parse EFO IDs
+        id: ids
+        env:
+          BODY: ${{ github.event.issue.body }}
+          TERMS: ${{ inputs.terms }}
+        run: |
+          if [ -n "$TERMS" ]; then text="$TERMS"; else
+            # only the "EFO term IDs" section of the issue form
+            text=$(printf '%s\n' "$BODY" | awk '/^### /{s=($0 ~ /EFO term IDs/); next} s')
+          fi
+          ids=$(printf '%s\n' "$text" | grep -oE 'EFO[:_][0-9]{7}' | sed 's/_/:/' | sort -u | tr '\n' ' ')
+          if [ -z "$ids" ]; then echo "No EFO IDs (EFO:0000000) found." > /tmp/efo_error.md; exit 1; fi
+          echo "ids=$ids" >> "$GITHUB_OUTPUT"
+
+      - name: Add terms
+        working-directory: src/ontology
+        run: |
+          python3 -c "import rdflib" 2>/dev/null || pip install rdflib
+          make add-efo-terms EFO_TERMS="${{ steps.ids.outputs.ids }}" \
+            EFO_URL=https://github.com/EBISPOT/efo/releases/download/${{ steps.efo.outputs.result }}/efo.owl
+
+      - name: Run QC
+        working-directory: src/ontology
+        run: make test IMP=false PAT=false
+
+      - name: Write PR body
+        run: |
+          {
+            cat src/ontology/tmp/efo_report.md
+            echo "Source: EFO ${{ steps.efo.outputs.result }}"
+            echo
+            echo "After merging, the terms reach \`capo.owl\` only after a release. See [docs/adding-assay-terms.md](${{ github.server_url }}/${{ github.repository }}/blob/main/docs/adding-assay-terms.md#release-step-after-adding-terms)."
+            if [ -n "$ISSUE" ]; then echo; echo "Closes #$ISSUE"; fi
+          } > /tmp/pr_body.md
+
+      - name: Create PR
+        id: pr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          # PRs opened with the default token don't trigger CI; set CAPO_BOT_TOKEN to fix that
+          token: ${{ secrets.CAPO_BOT_TOKEN || github.token }}
+          add-paths: src/ontology/components/efo_cap.owl
+          branch: add-assay-terms/${{ github.event.issue.number && format('issue-{0}', github.event.issue.number) || github.run_id }}
+          commit-message: "Add ${{ steps.ids.outputs.ids }}to efo_cap.owl"
+          title: "Add assay terms: ${{ steps.ids.outputs.ids }}"
+          body-path: /tmp/pr_body.md
+
+      - name: Comment on issue
+        if: ${{ !cancelled() && github.event_name == 'issues' }}
+        uses: actions/github-script@v7
+        env:
+          PR_URL: ${{ steps.pr.outputs.pull-request-url }}
+        with:
+          script: |
+            const fs = require('fs');
+            const read = f => fs.existsSync(f) ? fs.readFileSync(f, 'utf8') : '';
+            const run = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const body = process.env.PR_URL
+              ? `Opened ${process.env.PR_URL}\n\n${read('src/ontology/tmp/efo_report.md')}`
+              : `Could not add the terms ([run log](${run})).\n\n${read('/tmp/efo_error.md') || read('src/ontology/tmp/efo_report.md')}`;
+            await github.rest.issues.createComment({ ...context.repo, issue_number: context.issue.number, body });

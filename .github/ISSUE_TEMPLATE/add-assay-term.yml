@@ -1,0 +1,25 @@
+name: Add assay term
+description: Add one or more existing EFO assay terms to CAPO. A bot opens the pull request.
+title: "Add assay term: "
+labels: ["new-assay-term"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The terms must already exist in EFO; search [OLS](https://www.ebi.ac.uk/ols4/ontologies/efo).
+        If a term is missing, request it from [EFO](https://github.com/EBISPOT/efo/issues) first.
+        See [docs/adding-assay-terms.md](https://github.com/cellannotation/cap_ontology/blob/main/docs/adding-assay-terms.md).
+  - type: textarea
+    id: terms
+    attributes:
+      label: EFO term IDs
+      description: One per line, e.g. EFO:0022604
+      placeholder: |
+        EFO:0022604
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      description: Which CAP datasets or annotations need these assays?
