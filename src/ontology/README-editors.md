@@ -72,6 +72,12 @@ to regenerate imports.
 Note: the ont_terms.txt file may include 'starter' classes seeded from
 the ontology starter kit. It is safe to remove these.
 
+## CAP organ slim template
+
+The CAP organ slim is generated from [../templates/cap_organ_slim.tsv](../templates/cap_organ_slim.tsv).
+Editing the TSV does not update the release. See [Updating the CAP organ slim](../../docs/updating-cap-organ-slim.md)
+for when and how to edit it and how to make the follow-up release PR.
+
 ## Design patterns
 
 You can automate (class) term generation from design patterns by placing DOSDP

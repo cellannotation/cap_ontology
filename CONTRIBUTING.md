@@ -82,6 +82,11 @@ If you have never editted this ontology before, first follow a [general tutorial
 1. Push changes upstream
 1. Create pull request
 
+### Updating the CAP organ slim
+
+To add or remove CAP tissue/organ groups, edit `src/templates/cap_organ_slim.tsv` rather than `capo-edit.owl`.
+Follow [Updating the CAP organ slim](docs/updating-cap-organ-slim.md). The template change and the release are two separate PRs.
+
 ## Best Practices
 
 <a id="great-issues"></a>
