@@ -28,6 +28,16 @@
           "sub": "http://www.ebi.ac.uk/efo/EFO_0030060"
         },
         {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0001457",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008722"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0001457",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008780"
+        },
+        {
           "obj": "http://www.ebi.ac.uk/efo/EFO_0003738",
           "pred": "is_a",
           "sub": "http://www.ebi.ac.uk/efo/EFO_0005684"
@@ -81,6 +91,16 @@
           "obj": "http://www.ebi.ac.uk/efo/EFO_0009918",
           "pred": "is_a",
           "sub": "http://www.ebi.ac.uk/efo/EFO_0008992"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0010183",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008722"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/efo/EFO_0010183",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/efo/EFO_0008780"
         },
         {
           "obj": "http://www.ebi.ac.uk/efo/EFO_0010183",
@@ -185,10 +205,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2026-09-25"
+            "val": "2026-10-28"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/capo/releases/2026-09-25/capo-full.json"
+        "version": "http://purl.obolibrary.org/obo/capo/releases/2026-10-28/capo-full.json"
       },
       "nodes": [
         {
@@ -235,7 +255,58 @@
             ],
             "definition": {
               "val": "An assay in which sequencing technology (e.g. Illumina) is used to generate RNA sequence, from the presumed coding transcibed regions of the genome, or analyse these or to quantitate transcript abundance in individual cells instead of a population of cells."
-            }
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008722",
+          "lbl": "Drop-seq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "Analyze mRNA transcripts from individual cells in droplets (Drop-seq)."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
+            "xrefs": [
+              {
+                "val": "PMID:26000488"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/efo/EFO_0008780",
+          "lbl": "inDrop",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Dani Welter"
+              }
+            ],
+            "definition": {
+              "val": "Indexing droplets (inDrop)."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
+            "xrefs": [
+              {
+                "val": "PMID:26000487"
+              }
+            ]
           },
           "type": "CLASS"
         },
@@ -252,6 +323,9 @@
             "definition": {
               "val": "Combine whole-cell electrophysiological patch-clamp recordings, single-cell RNA-sequencing, and morphological characterization (Patch-Seq)"
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
             "xrefs": [
               {
                 "val": "PMID:26689543"
@@ -273,6 +347,9 @@
             "definition": {
               "val": "Barcoded mRNA capture beads and single cells are sealed in an array of subnanoliter wells."
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
             "xrefs": [
               {
                 "val": "PMID:28192419"
@@ -294,6 +371,9 @@
             "definition": {
               "val": "Switch mechanism at the 5’ end of RNA templates (Smart)."
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
             "xrefs": [
               {
                 "val": "PMID:22820318"
@@ -315,6 +395,9 @@
             "definition": {
               "val": "Switch mechanism at the 5’ end of RNA templates (Smart). According to the authors, Smart-seq2 transcriptome libraries have improved detection, coverage, bias and accuracy compared to Smart-seq libraries, and are generated with off-the-shelf reagents at lower cost."
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
             "xrefs": [
               {
                 "val": "PMID:24056875"
@@ -336,6 +419,9 @@
             "definition": {
               "val": "MERFISH is an image-based approach to single-cell transcriptomics in which RNAs are identified via a combinatorial labeling approach that encodes RNA species with error-robust barcodes followed by sequential rounds of single-molecule fluorescence in situ hybridization (smFISH) to read out these barcodes"
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
@@ -363,6 +449,9 @@
             "definition": {
               "val": "10X 3' v2 is the second version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules. In the 3' assay, the polyd(T) sequence is part of the gel bead oligo (which also contains the 10x Barcode, UMI, and partial Illumina Read 1 sequence), with the template switch oligo (TSO) supplied in the RT Primer."
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
@@ -417,6 +506,9 @@
             "definition": {
               "val": "10X 5' v2 is the second version of the 10x sequencing technology that sequences from the 5' end of nucleic acid molecules. In the 5' assay, the polyd(T) is supplied in the RT Primer, and the template switch oligo (TSO) is part of the gel bead oligo."
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
@@ -447,6 +539,9 @@
             "definition": {
               "val": "10x 3' v1 is the first version of the 10X sequencing technology that sequences from the 3' end of nucleic acid molecules. Differs from 5' v1 in the captured end from the polyadenylated transcript."
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
@@ -493,6 +588,9 @@
             "definition": {
               "val": "10X 3' v3 is the third version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules."
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
@@ -544,6 +642,7 @@
               ]
             },
             "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay",
               "http://www.ebi.ac.uk/efo/added_for_HCA"
             ],
             "synonyms": [
@@ -573,6 +672,7 @@
               "val": "10x 5' v1 is the first version of the 10X sequencing technology that sequences from the 5' end of nucleic acid molecules. Differs from 3' v1 in the captured end from the polyadenylated transcript."
             },
             "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay",
               "http://www.ebi.ac.uk/efo/added_for_HCA"
             ],
             "synonyms": [
@@ -625,6 +725,9 @@
             "definition": {
               "val": "10X 3' v4 is the fourth version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules."
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
@@ -659,6 +762,9 @@
             "definition": {
               "val": "10X 5' v3 is the third version of the 10x sequencing technology that sequences from the 5' end of nucleic acid molecules. In the 5' assay, the polyd(T) is supplied in the RT Primer, and the template switch oligo (TSO) is part of the gel bead oligo."
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
@@ -691,7 +797,10 @@
               "xrefs": [
                 "https://orcid.org/0000-0002-8674-0039"
               ]
-            }
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ]
           },
           "type": "CLASS"
         },
@@ -710,7 +819,10 @@
               "xrefs": [
                 "https://orcid.org/0000-0002-8674-0039"
               ]
-            }
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ]
           },
           "type": "CLASS"
         },
@@ -730,6 +842,9 @@
                 "PMID:33053333"
               ]
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
@@ -759,6 +874,9 @@
                 "http://orcid.org/0000-0002-1196-4871"
               ]
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
@@ -789,6 +907,9 @@
                 "https://www.biorxiv.org/content/10.1101/434845v1"
               ]
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
@@ -813,20 +934,15 @@
               }
             ],
             "definition": {
-              "meta": {
-                "basicPropertyValues": [
-                  {
-                    "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
-                    "val": "PMID:33509999"
-                  }
-                ]
-              },
               "val": "A spatial transcriptomics assay that involves physically expanding specimens with polymer- and hydrogel-based systems followed by in situ sequencing.",
               "xrefs": [
                 "https://orcid.org/0000-0003-4389-9821",
                 "https://www.science.org/doi/10.1126/science.aax2656"
               ]
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ],
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
@@ -859,7 +975,10 @@
                 "PMID:33509999",
                 "https://orcid.org/0000-0003-4389-9821"
               ]
-            }
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ]
           },
           "type": "CLASS"
         },
@@ -883,32 +1002,37 @@
                 "PMID:33509999",
                 "https://orcid.org/0000-0003-4389-9821"
               ]
-            }
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/capo#cap_assay"
+            ]
           },
           "type": "CLASS"
-        },
-        {
-          "id": "http://purl.org/dc/terms/description",
-          "lbl": "description",
-          "propertyType": "ANNOTATION",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.org/dc/terms/license",
-          "lbl": "license",
-          "propertyType": "ANNOTATION",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.org/dc/terms/title",
-          "lbl": "title",
-          "propertyType": "ANNOTATION",
-          "type": "PROPERTY"
         },
         {
           "id": "http://purl.obolibrary.org/obo/CAPO_0000000",
           "lbl": "root node",
           "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/capo#cap_assay",
+          "lbl": "CAP assay",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/description",
+          "lbl": "description",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/license",
+          "lbl": "license",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/title",
+          "lbl": "title",
+          "type": "PROPERTY"
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_0000010",
@@ -975,6 +1099,15 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/UBERON_0000059",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000117",
           "meta": {
             "subsets": [
               "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
@@ -1136,7 +1269,25 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001005",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/UBERON_0001013",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001017",
           "meta": {
             "subsets": [
               "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
@@ -1245,6 +1396,15 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/UBERON_0001474",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001630",
           "meta": {
             "subsets": [
               "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
@@ -1460,6 +1620,15 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002294",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/UBERON_0002366",
           "meta": {
             "subsets": [
@@ -1497,6 +1666,15 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/UBERON_0002372",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0002394",
           "meta": {
             "subsets": [
               "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
@@ -1595,6 +1773,15 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0014892",
+          "meta": {
+            "subsets": [
+              "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/UBERON_0015143",
           "meta": {
             "subsets": [
@@ -1619,140 +1806,6 @@
               "http://purl.obolibrary.org/obo/uberon#cap_organ_slim"
             ]
           },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "propertyType": "OBJECT",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/BFO_0000055",
-          "propertyType": "OBJECT",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/IAO_0000115",
-          "propertyType": "ANNOTATION",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/IAO_0000117",
-          "propertyType": "ANNOTATION",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OBI_0000293",
-          "propertyType": "OBJECT",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/RO_0000081",
-          "propertyType": "OBJECT",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.org/dc/elements/1.1/contributor",
-          "propertyType": "ANNOTATION",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.org/dc/elements/1.1/creator",
-          "propertyType": "ANNOTATION",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.org/dc/elements/1.1/date",
-          "propertyType": "ANNOTATION",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.org/dc/terms/date",
-          "propertyType": "ANNOTATION",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
-          "propertyType": "ANNOTATION",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
-          "propertyType": "ANNOTATION",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
-          "propertyType": "ANNOTATION",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://www.geneontology.org/formats/oboInOwl#inSubset",
-          "propertyType": "ANNOTATION",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CHEBI_33697",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OBI_0000070",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OBI_0000275",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.ebi.ac.uk/efo/EFO_0001456",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.ebi.ac.uk/efo/EFO_0003738",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.ebi.ac.uk/efo/EFO_0007831",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.ebi.ac.uk/efo/EFO_0008913",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.ebi.ac.uk/efo/EFO_0008989",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.ebi.ac.uk/efo/EFO_0008990",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.ebi.ac.uk/efo/EFO_0008995",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.ebi.ac.uk/efo/EFO_0009918",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.ebi.ac.uk/efo/EFO_0010183",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.ebi.ac.uk/efo/EFO_0010184",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.ebi.ac.uk/efo/EFO_0010891",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.ebi.ac.uk/efo/EFO_0030005",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.ebi.ac.uk/efo/EFO_0030080",
           "type": "CLASS"
         }
       ]
